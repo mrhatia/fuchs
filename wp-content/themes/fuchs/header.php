@@ -143,7 +143,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
 			<div class="header-logo logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-						src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo.png"
+						src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo.svg"
 						alt="Site Logo" /></a>
 			</div>
 			<div class="right-header header-navigation">
@@ -161,6 +161,20 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 							);
 							?>
 						</div>
+						<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
+						<div class="header-btns desktop-hide">
+							<?php
+							if ( $bst_var_tohdr_btn ) {
+								echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
+							}
+
+							if ( $bst_var_tohdr_btn_two ) {
+								echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
+							}
+							?>
+
+						</div>
+						<?php } ?>
 					</div>
 				</div>
 				<div class="menu-btn">
@@ -169,7 +183,20 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 					<span class="bottom"></span>
 				</div>
 			</div>
+			<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
+			<div class="header-btns">
+				<?php
+				if ( $bst_var_tohdr_btn ) {
+					echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
+				}
 
+				if ( $bst_var_tohdr_btn_two ) {
+					echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
+				}
+				?>
+			</div>
+			<?php } ?>
+			<!-- header buttons -->
 		</div>
 		<!-- Header End -->
 	</header>
