@@ -145,24 +145,19 @@ jQuery( function() {
 		const dots = jQuery( '.dot' );
 		let current = 0;
 		let animating = false;
+		let touchStartY = 0;
+		let touchEndY = 0;
 
 		function showSlide( index ) {
 			if ( index < 0 || index >= slides.length || animating ) {
 				return;
 			}
-
 			animating = true;
 			const prev = current;
-
 			slides.removeClass( 'remove-active' );
 			slides.eq( prev ).addClass( 'remove-active' ).removeClass( 'active' );
-
-			gsap.to( slides.eq( prev ), {
-				opacity: 1,
-			} );
-
+			gsap.to( slides.eq( prev ), { opacity: 1 } );
 			current = index;
-
 			gsap.fromTo( slides.eq( current ), { opacity: 0 }, {
 				opacity: 1,
 				onComplete() {
@@ -170,7 +165,6 @@ jQuery( function() {
 					animating = false;
 				},
 			} );
-
 			dots.removeClass( 'active' );
 			dots.eq( current ).addClass( 'active' );
 		}
@@ -205,6 +199,22 @@ jQuery( function() {
 				const target = parseInt( jQuery( this ).data( 'slide' ) );
 				showSlide( target );
 			} );
+		} );
+
+		jQuery( window ).on( 'touchstart', function( e ) {
+			touchStartY = e.originalEvent.touches[ 0 ].clientY;
+		} );
+
+		jQuery( window ).on( 'touchend', function( e ) {
+			touchEndY = e.originalEvent.changedTouches[ 0 ].clientY;
+			if ( animating ) {
+				return;
+			}
+			if ( touchStartY - touchEndY > 50 ) {
+				showSlide( current + 1 );
+			} else if ( touchEndY - touchStartY > 50 ) {
+				showSlide( current - 1 );
+			}
 		} );
 	}
 

@@ -128,7 +128,7 @@ Mixin for transition
   --fc_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
   --fc_font_size_82: clamp(55 * 1px, 27 / 806 * (100vw - 474 * 1px) + 55 * 1px, 82 * 1px);
-  --fc_font_size_180: clamp(55 * 1px, 125 / 806 * (100vw - 474 * 1px) + 55 * 1px, 180 * 1px);
+  --fc_font_size_180: clamp(70 * 1px, 110 / 806 * (100vw - 474 * 1px) + 70 * 1px, 180 * 1px);
   /* -------------------------------------------------
   >> Color variables
   ------------------------------------------------- */
@@ -3483,6 +3483,38 @@ li.menu-item-has-children.active > .submenu-icon::before {
   height: calc(100vh - var(--wp-admin--admin-bar--height));
 }
 
+@media (max-width: 747px) {
+  .header-section {
+    background-color: var(--fc_color_primary);
+  }
+  .menu-btn {
+    width: 75px;
+    height: 70px;
+    padding: 0 28px;
+  }
+  .logo {
+    width: 190px;
+    position: relative;
+    right: -28px;
+    top: 2px;
+  }
+  .nav-overlay .header-nav ul li {
+    margin-bottom: 12px;
+  }
+  .nav-overlay .header-nav ul li a,
+  .nav-overlay .header-nav ul li a:visited {
+    line-height: 1.3;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 748px) and (max-width: 1003px) {
+  .logo {
+    width: 250px;
+  }
+  .menu-btn {
+    height: 87px;
+  }
+}
 @media (max-width: 782px) {
   .no-overflow .logged-in.admin-bar .left-header {
     top: 110px;
@@ -3516,6 +3548,15 @@ li.menu-item-has-children.active > .submenu-icon::before {
   }
   #wpadminbar {
     position: fixed !important;
+  }
+}
+@media (max-width: 359px) {
+  .nav-overlay .header-nav ul li {
+    margin-bottom: 10px;
+  }
+  .nav-overlay .header-nav ul li a,
+  .nav-overlay .header-nav ul li a:visited {
+    font-size: 30px;
   }
 }
 /*-------------------------------------------------
@@ -3581,6 +3622,8 @@ li.menu-item-has-children.active > .submenu-icon::before {
   top: 0;
   height: 100%;
   width: 50%;
+  aspect-ratio: 960/837;
+  max-height: 837px;
 }
 .home-hero-slide .home-hero-image img {
   width: 100%;
@@ -3592,7 +3635,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
 .slides {
   position: relative;
   width: 100%;
-  height: 95.5vh;
+  max-height: 837px;
   height: 100vh;
   overflow: hidden;
 }
@@ -4107,7 +4150,7 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
 }
 
 .ctn-full-width .wrapper {
-  max-width: 100%;
+  max-width: 1920px;
   width: 100%;
 }
 
@@ -5433,7 +5476,85 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 /* -------------------------------------------------
 >> Base Responsive queries
 ------------------------------------------------- */
+@media only screen and (min-width: 1346px) and (max-width: 1800px) {
+  .slide .home-hero-content {
+    width: 90%;
+  }
+  .bottom-section {
+    margin-top: calc(var(--fc_space_128) - 70px);
+  }
+  .slide:nth-child(5) .hero-split-text {
+    margin: 20px auto 0;
+  }
+  .slide:nth-child(5) .bottom-section {
+    margin-top: calc(var(--fc_space_128) - 70px);
+  }
+}
+@media only screen and (min-width: 1180px) and (max-width: 1345px) {
+  .slide .home-hero-content {
+    width: 90%;
+  }
+  .slide:nth-child(5) .hero-split-text {
+    margin: 20px auto 0;
+  }
+  .slide:nth-child(5) .bottom-section {
+    margin-top: calc(var(--fc_space_128) - 70px);
+  }
+}
+@media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .slide .home-hero-content {
+    padding-top: 150px;
+    width: 90%;
+  }
+  .slide:nth-child(5) .bottom-section {
+    margin-top: calc(var(--fc_space_128) - 20px);
+  }
+}
+@media only screen and (min-width: 748px) and (max-width: 1003px) {
+  .slide .home-hero-content {
+    padding-top: 150px;
+    width: 90%;
+  }
+  .slide:nth-child(5) .bottom-section {
+    margin-top: 70px;
+  }
+  .slide:nth-child(5) .hero-split-text {
+    margin: 35px auto 0;
+  }
+}
 @media only screen and (max-width: 747px) {
+  .slide:nth-child(5) .bottom-section {
+    margin-top: 140px;
+  }
+  .dots {
+    display: none;
+  }
+  .slides::after {
+    display: none;
+  }
+  .bottom-section {
+    margin-top: 140px;
+  }
+  .slide:nth-child(5) .hero-split-text {
+    margin: 141px auto 0;
+  }
+  .hero-split-text h2 {
+    font-size: 56.25px;
+  }
+  .hero-split-text {
+    margin-top: 141px;
+  }
+  .slide .heading-2 {
+    font-size: 22.5px;
+    letter-spacing: -0.1px;
+  }
+  .slide .home-hero-content {
+    padding-top: 157px;
+    width: 92.5%;
+  }
+  .home-hero-content .kicker {
+    display: none;
+  }
   .hero-default.with-image .hero-default-content,
   .hero-default.with-image .hero-default-image {
     width: 100%;
