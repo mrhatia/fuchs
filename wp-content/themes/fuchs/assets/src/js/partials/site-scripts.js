@@ -5,6 +5,7 @@
 import magnificPopup from '../vendors/jquery-magnificpopup';
 import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
+import gasap from '../vendors/gsap.min';
 jQuery( document ).on( 'scroll', function() {
 	if ( jQuery( document ).scrollTop() > 0 ) {
 		jQuery( 'header, body' ).addClass( 'shrink' );
@@ -127,5 +128,97 @@ jQuery( function() {
 			$text.css( 'min-height', $text[ 0 ].scrollHeight + 'px' );
 		}
 	}
+	// Menu animation
+	if ( jQuery( '.header-nav li' ).length ) {
+		jQuery( function() {
+			const base = 470;
+			const step = 70;
+
+			jQuery( '.header-nav li ' ).each( function( i ) {
+				const delay = base + i * step;
+				jQuery( this ).find( 'a' ).css( 'animation-delay', delay + 'ms' );
+			} );
+		} );
+	}
+	if ( jQuery( '.hero-home' ).length ) {
+		const slides = jQuery( '.slide' );
+		const dots = jQuery( '.dot' );
+		let current = 0;
+		let animating = false;
+
+		function showSlide( index ) {
+			if ( index < 0 || index >= slides.length || animating ) {
+				return;
+			}
+
+			animating = true;
+			const prev = current;
+
+			slides.removeClass( 'remove-active' );
+			slides.eq( prev ).addClass( 'remove-active' ).removeClass( 'active' );
+
+			gsap.to( slides.eq( prev ), {
+				opacity: 1,
+			} );
+
+			current = index;
+
+			gsap.fromTo( slides.eq( current ), { opacity: 0 }, {
+				opacity: 1,
+				onComplete() {
+					slides.eq( current ).addClass( 'active' );
+					animating = false;
+				},
+			} );
+
+			dots.removeClass( 'active' );
+			dots.eq( current ).addClass( 'active' );
+		}
+
+		slides.eq( current ).addClass( 'active' );
+		dots.eq( current ).addClass( 'active' );
+
+		jQuery( window ).on( 'wheel', function( e ) {
+			if ( animating ) {
+				return;
+			}
+			if ( e.originalEvent.deltaY > 0 ) {
+				showSlide( current + 1 );
+			} else if ( e.originalEvent.deltaY < 0 ) {
+				showSlide( current - 1 );
+			}
+		} );
+
+		jQuery( window ).on( 'keydown', function( e ) {
+			if ( animating ) {
+				return;
+			}
+			if ( e.key === 'ArrowDown' || e.key === 'ArrowRight' ) {
+				showSlide( current + 1 );
+			} else if ( e.key === 'ArrowUp' || e.key === 'ArrowLeft' ) {
+				showSlide( current - 1 );
+			}
+		} );
+
+		dots.each( function() {
+			jQuery( this ).on( 'click', function() {
+				const target = parseInt( jQuery( this ).data( 'slide' ) );
+				showSlide( target );
+			} );
+		} );
+	}
+
+	// if ( jQuery( '.loader' ).length ) {
+	// 	jQuery( window ).on( 'load', function() {
+	// 		const loader = jQuery( '.loader' );
+	// 		const spinner = jQuery( '.spinner-text' );
+
+	// 		spinner.addClass( 'spinner-loaded' );
+
+	// 		setTimeout( function() {
+	// 			loader.addClass( 'hide-loader' );
+	// 		}, 3200 );
+	// 	} );
+	// }
 } );
 

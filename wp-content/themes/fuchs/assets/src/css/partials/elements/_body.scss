@@ -6,7 +6,7 @@
 
 body {
 
-	@include font(axi, reg, family weight);
+	@include font(sour, reg, family weight);
 	transition: all 0.3s ease-in-out;
 	position: relative;
 	font-size: var(--fc_font_size_16);

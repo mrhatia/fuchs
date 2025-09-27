@@ -27,7 +27,7 @@
 		font-size: var(--fc_font_size_20);
 		line-height: 20px;
 		cursor: pointer;
-		@include font(axi, reg);
+		@include font(sour, reg);
 		width: 40px;
 		height: 40px;
 		@include transition(all, 0.4s, ease-in-out);

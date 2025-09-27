@@ -28,13 +28,13 @@
 
 	.member-name {
 
-		@include font(axi, bold);
+		@include font(sour, bold);
 		margin-bottom: 8px;
 	}
 
 	.designation {
 
-		@include font(axi, reg);
+		@include font(sour, reg);
 
 		font-size: var(--fc_font_size_18);
 		margin-bottom: 0;
@@ -173,7 +173,7 @@
 
 	.member-name-popup {
 
-		@include font(axi, bold);
+		@include font(sour, bold);
 
 		color: var(--wp--preset--color--dark_text);
 		margin-bottom: 5px;
@@ -181,7 +181,7 @@
 
 	.member-designation {
 
-		@include font(axi, reg);
+		@include font(sour, reg);
 
 		color: var(--wp--preset--color--lblack);
 		margin-bottom: 0;

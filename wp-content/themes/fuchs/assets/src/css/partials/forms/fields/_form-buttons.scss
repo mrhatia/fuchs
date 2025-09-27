@@ -25,7 +25,7 @@ input[type="reset"] {
 	outline: none;
 
 
-	@include font(axi, bold);
+	@include font(sour, bold);
 
 	font-size: var(--fc_font_size_16);
 	height: 50px;

@@ -33,11 +33,14 @@
 	@include font_size(--fc_font_size_22, 22, 20);
 	@include font_size(--fc_font_size_24, 24, 20);
 	@include font_size(--fc_font_size_26, 26, 22);
+	@include font_size(--fc_font_size_30, 30, 24);
 	@include font_size(--fc_font_size_32, 32, 24);
 	@include font_size(--fc_font_size_40, 40, 26);
 	@include font_size(--fc_font_size_48, 48, 30);
 	@include font_size(--fc_font_size_60, 60, 45);
 	@include font_size(--fc_font_size_68, 68, 55);
+	@include font_size(--fc_font_size_82, 82, 55);
+	@include font_size(--fc_font_size_180, 180, 55);
 
 
 	/* -------------------------------------------------
@@ -49,7 +52,7 @@
 	*/
 
 	// Theme Primary
-	--fc_color_primary: #00a4eb;
+	--fc_color_primary: #007857;
 	--fc_color_on_primary: #ffffff;
 
 	// Theme Secondary
@@ -58,7 +61,7 @@
 	// Theme Dark
 	--fc_black: #000000;
 	--fc_black_1: #14191f;
-	--fc_black_2: #606364;
+	--fc_black_2: #565969;
 
 	// Theme Light
 	--fc_white: #ffffff;
@@ -73,6 +76,7 @@
 	--fc_blue: #0013ff;
 	--fc_blue_1: #00a4eb;
 	--fc_blue_2: #2ca8dd;
+	--fc_blue_3: #001659;
 
 	--fc_navy: #091a17;
 	--fc_navy_1: #15332e;
@@ -97,6 +101,8 @@
 	--fc_danger: #dc3545;
 	--fc_light: #f8f9fa;
 	--fc_dark: #212529;
+	--fc_orange: #fe8400;
+	--fc_orange_1: #f2976a;
 
 
 	--fc_signal: #d14b3c;

@@ -17,10 +17,10 @@ h5,
 h6,
 .heading-6 {
 
-	@include font(axi, bold);
+	@include font(sour, bold);
 	margin: 0 0 20px;
 	color: var(--fc_heading_color);
-	line-height: 1.3;
+	line-height: 1;
 	text-transform: initial;
 
 	a {
@@ -36,12 +36,13 @@ h6,
 
 h1,
 .heading-1 {
-	font-size: var(--fc_font_size_60);
+	font-size: var(--fc_font_size_180);
 }
 
 h2,
 .heading-2 {
-	font-size: var(--fc_font_size_32);
+	font-size: var(--fc_font_size_82);
+	letter-spacing: -0.025rem;
 }
 
 h3,

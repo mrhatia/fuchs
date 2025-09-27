@@ -112,7 +112,7 @@
 }
 
 .editor-styles-wrapper {
-	@include font(axi, reg, family weight);
+	@include font(sour, reg, family weight);
 	font-size: var(--fc_font_size_20);
 	color: var(--fc_body_color);
 	line-height: 1.5;

@@ -6,120 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Toolkit - BaseTheme</title>
 	<link rel="stylesheet" href="../assets/build/styles.min.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-	<style>
-		html,
-		body {
-			margin: 0;
-			height: 100%;
-			overflow: hidden;
-			/* no vertical scroll */
-			font-family: Arial, sans-serif;
-		}
-
-		.slides {
-			position: relative;
-			width: 100%;
-			height: 100vh;
-			overflow: hidden;
-		}
-
-		.slide {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 3rem;
-			opacity: 0;
-			pointer-events: none;
-		}
-
-		.slide.active {
-			opacity: 1;
-			pointer-events: auto;
-		}
-
-		.slide1 {
-			background: #004d40;
-			color: white;
-		}
-
-		.slide2 {
-			background: #f0f0f0;
-			color: #222;
-		}
-
-		.slide3 {
-			background: #cfd8dc;
-			color: #000;
-		}
-
-		/* dot navigation */
-		.dots {
-			position: absolute;
-			right: 20px;
-			top: 50%;
-			transform: translateY(-50%);
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-		}
-
-		.dot {
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			background: #888;
-			cursor: pointer;
-		}
-
-		.dot.active {
-			background: #000;
-		}
-	</style>
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="spinner-text" data-title="CFuchs">CFuchs</div>
+		</div>
+	</div>
+
+
 	<header class="header-section">
-		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
+		<div class="header-wrapper header-inner d-flex justify-content-between">
 			<div class="header-logo logo">
-				<a href="#"><img src="../assets/src/images/site-logo.png" alt="Site Logo" /></a>
+				<a href="#"><img src="../assets/src/images/site-logo.svg" alt="Site Logo" /></a>
 			</div>
 			<div class="right-header header-navigation">
 				<div class="nav-overlay">
 					<div class="nav-container">
 						<div class="header-nav">
 							<ul>
-								<li><a href="toolkit.html">Toolkit</a></li>
-								<li class="menu-item current-menu-item menu-item-has-children">
-									<a href="#">Forms</a>
-									<ul class="sub-menu">
-										<li><a href="./basetheme/gravity-form.html">Gravity Form</a></li>
-										<li><a href="./basetheme/hubspot-form.html">Hubspot Form</a></li>
-									</ul>
-								</li>
-								<li><a href="./basetheme/html-formatting-tags.html">Html Tags</a></li>
-								<li><a href="./basetheme/wordpress-blocks.html">WordPress Blocks</a></li>
-								<li class="menu-item current-menu-item menu-item-has-children">
-									<a href="./basetheme/#">Default Pages</a>
-									<ul class="sub-menu">
-										<li class="menu-item current-menu-item">
-											<a href="./basetheme/blog-template.html">Blog
-												Template</a>
-										</li>
-										<li><a href="./basetheme/default-archive.html">Default Archive</a></li>
-										<li><a href="./basetheme/default-index.html">Default index</a></li>
-										<li><a href="./basetheme/default-page.html">Default Page</a></li>
-										<li><a href="./basetheme/default-post.html">Default post</a></li>
-										<li><a href="./basetheme/404.html">404</a></li>
+								<li class="current-menu-item"><a href="toolkit.html">Home</a></li>
+								<li><a href="./basetheme/html-formatting-tags.html">AKTUELLE PROJEKTE</a></li>
+								<li><a href="./basetheme/wordpress-blocks.html">PROJEKTE IN VORBEREITUNG</a></li>
+								<li><a href="./basetheme/wordpress-blocks.html">ANKAUF</a></li>
+								<li><a href="./basetheme/wordpress-blocks.html">Referenzen</a></li>
+								<li><a href="./basetheme/wordpress-blocks.html">Über uns</a></li>
 
-										<li><a href="./basetheme/default-archive.html">Default Archive</a></li>
-									</ul>
-								</li>
 							</ul>
 
 						</div>
@@ -138,71 +51,199 @@
 		<section id="" class="page-section">
 			<section class="ctn-full-width">
 				<div class="wrapper">
-					<div class="slides">
-						<div class="slide slide1 active">
+					<div class="hero-home slides">
+						<div class="slide">
 							<div class="home-hero-slide">
 								<div class="home-hero-image" tabindex="0" role="img"
 									aria-label="Image illustrating the content of this block">
-									<img src="../assets/src/images/uploads/default-image.webp" alt="">
+									<img src="../assets/src/images/uploads/hero-image-01.webp" alt="">
 								</div>
 								<div class="home-hero-content">
 									<div class="top-section">
-										<div class="kicker">wir planen, bauen und entwickeln</div>
-										<h1>WOHNUNGEN FÜR SIE</h1>
+										<div class="kicker">UNSER ANTRIEB</div>
+										<h1 class="heading-2">WIR ENTWICKELN
+										</h1>
+									</div>
+									<div class="hero-split-text">
+										<div class="split-text-left">
+											<h2 class="heading-1">
+												WERTE
+											</h2>
+										</div>
+										<div class="split-text-right">
+											<h2 class="heading-1">
+												WERTE
+											</h2>
+										</div>
+									</div>
+									<div class="bottom-section">
+										<p>ALLES AUS EINER HAND ALS TEIL DER</p>
+										<h3 class="slide-tagline">Firmengruppe CFuchs
+										</h3>
+									</div>
+								</div>
+								<div class="home-hero-slide-overlay"></div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="home-hero-slide">
+								<div class="home-hero-content">
+									<div class="top-section">
+										<div class="kicker">EINBLICKE In</div>
+										<h1 class="heading-2">AKTUELLE
+										</h1>
+									</div>
+									<div class="hero-split-text">
+										<div class="split-text-left">
+											<h2 class="heading-1">
+												PROJEKTE
+											</h2>
+										</div>
+										<div class="split-text-right">
+											<h2 class="heading-1">
+												PROJEKTE
+											</h2>
+										</div>
+									</div>
+									<div class="bottom-section">
+										<p>EIGENTUMSWOHNUNGEN UND INVESTORENOBJEKTE
+										</p>
+										<h3 class="slide-tagline">jetzt kaufen.
+										</h3>
+										<div class="bottom-section-button">
+											<a href="https://www.google.com/">
+												<span>
+													Mehr Infos
+												</span>
+												<div class="plus-button">
+													+
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="home-hero-slide-overlay"></div>
+
+							</div>
+						</div>
+						<div class="slide has-green-bg">
+							<div class="home-hero-slide">
+								<div class="home-hero-content">
+									<div class="top-section">
+										<div class="kicker">Bei Uns
+										</div>
+										<h1 class="heading-2">KAUFEN UND
+										</h1>
+									</div>
+									<div class="hero-split-text">
+										<div class="split-text-left">
+											<h2 class="heading-1">
+												INVESTIEREN
+											</h2>
+										</div>
+										<div class="split-text-right">
+											<h2 class="heading-1">
+												INVESTIEREN
+											</h2>
+										</div>
 									</div>
 
-									<h2 class="slide-title" tabindex="0">über uns über uns</h2>
+									<div class="bottom-section">
+										<p>WEIL WIR SEIT 100 JAHREN
+										</p>
+										<h3 class="slide-tagline">halten was wir versprechen.
+										</h3>
+										<div class="bottom-section-button">
+											<a href="https://www.google.com/">
+												<span>
+													Mehr Infos
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="home-hero-slide-overlay"></div>
+
+							</div>
+						</div>
+						<div class="slide has-green-bg">
+							<div class="home-hero-slide">
+								<div class="home-hero-content">
+									<div class="top-section">
+										<div class="kicker">Was ist für uns
+										</div>
+										<h1 class="heading-2">EIN GUTES
+										</h1>
+									</div>
+									<div class="hero-split-text">
+										<div class="split-text-left">
+											<h2 class="heading-1">
+												PROJEKT
+											</h2>
+										</div>
+										<div class="split-text-right">
+											<h2 class="heading-1">
+												PROJEKT
+											</h2>
+										</div>
+									</div>
 
 									<div class="bottom-section">
-										<p>VISIONÄR SEIT</p>
-										<h3 class="slide-tagline">vier Generationen.</h3>
-										<a href="#" class="button">Mehr Infos</a>
+										<p>Wie es gelingt, dass alle Beteiligten
+										</p>
+										<h3 class="slide-tagline">zufrieden sind.
+										</h3>
+										<div class="bottom-section-button">
+											<a href="https://www.google.com/">
+												<span>
+													Mehr Infos
+												</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="home-hero-slide-overlay"></div>
+
 						</div>
-						<div class="slide slide2">
+						<div class="slide">
 							<div class="home-hero-slide">
 								<div class="home-hero-image" tabindex="0" role="img"
 									aria-label="Image illustrating the content of this block">
-									<img src="../assets/src/images/uploads/default-image.webp" alt="">
+									<img src="../assets/src/images/uploads/hero-image-02.webp" alt="">
 								</div>
 								<div class="home-hero-content">
 									<div class="top-section">
-										<div class="kicker">wir planen, bauen und entwickeln</div>
-										<h1>WOHNUNGEN FÜR SIE</h1>
-									</div>
+										<div class="kicker">wir planen, bauen und entwickeln
 
-									<h2 class="slide-title" tabindex="0">über uns über uns</h2>
+										</div>
+										<h1 class="heading-2">WOHNUNGEN FÜR SIE
+										</h1>
+									</div>
+									<div class="hero-split-text">
+										<div class="split-text-left">
+											<h2 class="heading-1">
+												überuns
+											</h2>
+										</div>
+										<div class="split-text-right">
+											<h2 class="heading-1">
+												überuns
+											</h2>
+										</div>
+									</div>
 
 									<div class="bottom-section">
-										<p>VISIONÄR SEIT</p>
-										<h3 class="slide-tagline">vier Generationen.</h3>
-										<a href="#" class="button">Mehr Infos</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="slide slide3">
-							<div class="home-hero-slide">
-								<div class="home-hero-image" tabindex="0" role="img"
-									aria-label="Image illustrating the content of this block">
-									<img src="../assets/src/images/uploads/default-image.webp" alt="">
-								</div>
-								<div class="home-hero-content">
-									<div class="top-section">
-										<div class="kicker">wir planen, bauen und entwickeln</div>
-										<h1>WOHNUNGEN FÜR SIE</h1>
-									</div>
+										<p>VISIONÄR SEIT
 
-									<h2 class="slide-title" tabindex="0">über uns über uns</h2>
+										</p>
+										<h3 class="slide-tagline">vier Generationen.
+										</h3>
 
-									<div class="bottom-section">
-										<p>VISIONÄR SEIT</p>
-										<h3 class="slide-tagline">vier Generationen.</h3>
-										<a href="#" class="button">Mehr Infos</a>
 									</div>
 								</div>
+								<div class="home-hero-slide-overlay"></div>
+
 							</div>
 						</div>
 
@@ -210,173 +251,33 @@
 							<div class="dot active" data-slide="0"></div>
 							<div class="dot" data-slide="1"></div>
 							<div class="dot" data-slide="2"></div>
+							<div class="dot" data-slide="3"></div>
+							<div class="dot" data-slide="4"></div>
 						</div>
 					</div>
-
-					<script>
-						const slides = document.querySelectorAll('.slide');
-						const dots = document.querySelectorAll('.dot');
-						let current = 0;
-						let animating = false;
-
-						function showSlide(index) {
-							if (index < 0 || index >= slides.length || animating) {
-								return;
-							}
-							animating = true;
-
-							gsap.to(slides[current], {
-								opacity: 0, duration: 0.7, onComplete: () => {
-									slides[current].classList.remove('active');
-								},
-							});
-
-							current = index;
-							slides[current].classList.add('active');
-							gsap.fromTo(slides[current], { opacity: 0 }, {
-								opacity: 1, duration: 0.7, onComplete: () => {
-									animating = false;
-								},
-							});
-
-							dots.forEach((d) => d.classList.remove('active'));
-							dots[current].classList.add('active');
-						}
-
-						// Mouse wheel / trackpad scroll
-						window.addEventListener('wheel', (e) => {
-							if (animating) {
-								return;
-							}
-							if (e.deltaY > 0) {
-								showSlide(current + 1);
-							} else if (e.deltaY < 0) {
-								showSlide(current - 1);
-							}
-						});
-
-						// Keyboard navigation
-						window.addEventListener('keydown', (e) => {
-							if (animating) {
-								return;
-							}
-							if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-								showSlide(current + 1);
-							} else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-								showSlide(current - 1);
-							}
-						});
-
-						// Dot navigation
-						dots.forEach((dot) => {
-							dot.addEventListener('click', () => {
-								const target = parseInt(dot.dataset.slide);
-								showSlide(target);
-							});
-						});
-					</script>
 
 				</div>
 			</section>
 
 		</section>
 	</main>
-	<footer id="footer-section" class="footer-section">
-		<!-- Footer Start -->
-		<div class="footer-ctn">
-			<div class="wrapper">
-				<div class="footer-widgets d-flex justify-content-between flex-wrap">
-					<div class="single-widget">
-						<div class="footer-logo">
-							<a href="#">
-								<img src="../assets/src/images/site-logo-white.svg" alt="Logo">
-							</a>
-						</div>
-						<h5> Wordpress theme by DevDives.</h5>
-						<div class="address">
-							<p>501 Congress Avenue, Suite 150, Austin, Texas 78701<br> Call <a
-									href="tel:512.215.4236">512.215.4236</a></p>
-						</div>
-						<div class="social-icons d-flex">
-							<a href="#" class="facebook flex-center"><img src="../assets/src/images/facebook-icon.svg"
-									alt="Facebook Icon"></a> <a href="#" class="tweeter flex-center"><img
-									src="../assets/src/images/linkedin-icon.svg" alt="LinkedIn Icon"></a> <a href="#"
-								class="linkdhin flex-center"><img src="../assets/src/images/twitter-icon.svg"
-									alt="Twitter Icon"></a> <a href="#" class="instagram flex-center"><img
-									src="../assets/src/images/instagram-icon.svg" alt="Instagram Icon"></a>
-						</div>
-					</div>
-					<div class="single-widget">
-						<div class="footer-nav">
-							<div class="menu-footer-nav-one-container">
-								<ul id="menu-footer-nav-one" class="menu">
-									<li><a href="#">Front Page</a></li>
-									<li><a href="#">Clearing Floats</a></li>
-									<li><a href="#">Page B</a></li>
-									<li><a href="#">Page A</a></li>
-									<li><a href="#">Team</a></li>
-									<li><a href="#">Resources page</a></li>
-									<li><a href="#">Alignment</a></li>
-									<li><a href="#">Sample Page</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="single-widget">
-						<div class="footer-nav">
-							<div class="menu-footer-nav-two-container">
-								<ul id="menu-footer-nav-two" class="menu">
-									<li id="menu-item-1901"
-										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home first-menu-item menu-item-1901">
-										<a href="http://basethemedevcause.local/">Home</a>
-									</li>
-									<li><a href="#">Sample Page</a></li>
-									<li><a href="#">Level 2a</a></li>
-									<li><a href="#">Level 2b</a></li>
-									<li><a href="#">Block: Image</a></li>
-									<li><a href="#">Block: Button</a></li>
-									<li><a href="#">Alignment</a></li>
-									<li> <a href="#">Sample Page</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="single-widget">
-						<div class="footer-nav">
-							<div class="menu-footer-menu-three-container">
-								<ul id="menu-footer-menu-three" class="menu">
-									<li><a href="#">Sample Page</a></li>
-									<li><a href="#">Level 2b</a></li>
-									<li><a href="#">Block: Image</a></li>
-									<li><a href="#">Block: Button</a></li>
-									<li><a href="#">Alignment</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="gl-s72"></div>
-				<div class="footer-bottom d-flex align-items-center justify-content-between">
-					<div class="copy-right">Copyright © 2024 By DevDives</div>
-					<div class="legal-nav">
-						<div class="menu-legal-nav-container">
-							<ul id="menu-legal-nav" class="menu">
-								<li>
-									<a href="#">Sitemap</a>
-								</li>
-								<li><a href="#">Terms of Use</a></li>
-								<li>
-									<a href="#">Privacy Policy</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
 	<script type="text/javascript" src="../assets/src/js/vendors/jquery.min.js"></script>
 	<script type="text/javascript" src="../assets/build/scripts.min.js"></script>
+
+	<script>
+		if (jQuery('.loader').length) {
+			jQuery(window).on('load', function () {
+				const loader = jQuery('.loader');
+				const spinner = jQuery('.spinner-text');
+
+				spinner.addClass('spinner-loaded');
+
+				setTimeout(function () {
+					loader.addClass('hide-loader');
+				}, 3200);
+			});
+		}
+	</script>
 
 </body>
 

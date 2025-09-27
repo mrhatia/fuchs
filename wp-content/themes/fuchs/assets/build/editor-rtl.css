@@ -493,23 +493,26 @@ Mixin for transition
   --fc_font_size_22: clamp(20 * 1px, 2 / 806 * (100vw - 474 * 1px) + 20 * 1px, 22 * 1px);
   --fc_font_size_24: clamp(20 * 1px, 4 / 806 * (100vw - 474 * 1px) + 20 * 1px, 24 * 1px);
   --fc_font_size_26: clamp(22 * 1px, 4 / 806 * (100vw - 474 * 1px) + 22 * 1px, 26 * 1px);
+  --fc_font_size_30: clamp(24 * 1px, 6 / 806 * (100vw - 474 * 1px) + 24 * 1px, 30 * 1px);
   --fc_font_size_32: clamp(24 * 1px, 8 / 806 * (100vw - 474 * 1px) + 24 * 1px, 32 * 1px);
   --fc_font_size_40: clamp(26 * 1px, 14 / 806 * (100vw - 474 * 1px) + 26 * 1px, 40 * 1px);
   --fc_font_size_48: clamp(30 * 1px, 18 / 806 * (100vw - 474 * 1px) + 30 * 1px, 48 * 1px);
   --fc_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
+  --fc_font_size_82: clamp(55 * 1px, 27 / 806 * (100vw - 474 * 1px) + 55 * 1px, 82 * 1px);
+  --fc_font_size_180: clamp(55 * 1px, 125 / 806 * (100vw - 474 * 1px) + 55 * 1px, 180 * 1px);
   /* -------------------------------------------------
   >> Color variables
   ------------------------------------------------- */
   /*
   >> Base Colors
   */
-  --fc_color_primary: #00a4eb;
+  --fc_color_primary: #007857;
   --fc_color_on_primary: #ffffff;
   --fc_color_secondary: #0013ff;
   --fc_black: #000000;
   --fc_black_1: #14191f;
-  --fc_black_2: #606364;
+  --fc_black_2: #565969;
   --fc_white: #ffffff;
   --fc_white_1: #f1f1f1;
   --fc_white_2: #f1e9e9;
@@ -519,6 +522,7 @@ Mixin for transition
   --fc_blue: #0013ff;
   --fc_blue_1: #00a4eb;
   --fc_blue_2: #2ca8dd;
+  --fc_blue_3: #001659;
   --fc_navy: #091a17;
   --fc_navy_1: #15332e;
   --fc_navy_2: #2f655c;
@@ -535,6 +539,8 @@ Mixin for transition
   --fc_danger: #dc3545;
   --fc_light: #f8f9fa;
   --fc_dark: #212529;
+  --fc_orange: #fe8400;
+  --fc_orange_1: #f2976a;
   --fc_signal: #d14b3c;
   --fc_signal_bg: #fbede9;
   --fc_color_background: #ffffff;
@@ -815,7 +821,7 @@ Mixin for transition
 }
 
 .editor-styles-wrapper {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-size: var(--fc_font_size_20);
   color: var(--fc_body_color);
@@ -1082,8 +1088,8 @@ Mixin for transition
   font-size: var(--fc_font_size_22);
   margin: 8px 0;
   text-align: center;
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
 }
 .editor-styles-wrapper .acf-field-block-label .acf-label {
@@ -1094,8 +1100,8 @@ Mixin for transition
   font-size: var(--fc_font_size_22);
   margin: 8px 0;
   text-align: center;
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
 }
 .editor-styles-wrapper .wp-block-spacer {
@@ -1113,12 +1119,12 @@ Mixin for transition
 .editor-styles-wrapper .heading-5,
 .editor-styles-wrapper h6,
 .editor-styles-wrapper .heading-6 {
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   margin: 0 0 20px;
   color: var(--fc_heading_color);
-  line-height: 1.3;
+  line-height: 1;
   text-transform: initial;
 }
 .editor-styles-wrapper h1 a,
@@ -1163,11 +1169,12 @@ Mixin for transition
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper .heading-1 {
-  font-size: var(--fc_font_size_60);
+  font-size: var(--fc_font_size_180);
 }
 .editor-styles-wrapper h2,
 .editor-styles-wrapper .heading-2 {
-  font-size: var(--fc_font_size_32);
+  font-size: var(--fc_font_size_82);
+  letter-spacing: -0.025rem;
 }
 .editor-styles-wrapper h3,
 .editor-styles-wrapper .heading-3 {
@@ -1368,7 +1375,7 @@ Mixin for transition
 }
 .editor-styles-wrapper .page-section ol > li::before {
   color: var(--fc_ol_list_marker_color);
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   content: counters(list, ".") ".";
@@ -1576,7 +1583,7 @@ Mixin for transition
   text-align: right;
 }
 .editor-styles-wrapper .wp-caption p.wp-caption-text {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
@@ -1768,7 +1775,7 @@ Mixin for transition
   font-size: var(--fc_font_size_20);
   line-height: 20px;
   cursor: pointer;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 40px;
@@ -1857,7 +1864,7 @@ Mixin for transition
   border-bottom: none;
 }
 .editor-styles-wrapper .comment-author.vcard span {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -2061,8 +2068,8 @@ Mixin for transition
   border: 2px solid var(--fc_theme_btn_border_color);
   transition: all 0.35s ease-in-out;
   border-radius: 0;
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_16);
 }
@@ -2557,8 +2564,8 @@ Mixin for transition
 }
 .acf-block-preview .learn-more {
   color: var(--wp--preset--color--black);
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
 }
 .acf-block-preview a.button,
@@ -2579,8 +2586,8 @@ Mixin for transition
   text-align: center;
   border-radius: 0;
   line-height: 1.5;
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_16);
 }
@@ -2724,6 +2731,60 @@ Mixin for transition
 .acf-block-preview body #daextlwcnf-cookie-settings-button-2:hover {
   border-color: var(--fc_black_1) !important;
 }
+.acf-block-preview .loader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--fc_color_primary);
+  z-index: 2000;
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.acf-block-preview .loader.hide-loader {
+  transform: translateX(-101%);
+}
+.acf-block-preview .loader-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acf-block-preview .spinner-text {
+  font-family: "Yantramanav", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--fc_font_size_180);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--fc_orange_1);
+  backface-visibility: hidden;
+}
+.acf-block-preview .spinner-text::before, .acf-block-preview .spinner-text::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-text-stroke: 1px var(--fc_white);
+  -webkit-text-fill-color: var(--fc_white);
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+}
+.acf-block-preview .spinner-text::before {
+  animation: fill-up 7s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+}
+.acf-block-preview .spinner-text.spinner-loaded::after {
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  transition: clip-path 3.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+@keyframes fill-up {
+  to {
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+  }
+}
 .acf-block-preview .two-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(clamp(350px, 50% - 2%, 100%), 100%), 1fr));
@@ -2757,7 +2818,7 @@ Mixin for transition
   display: block;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
@@ -2808,7 +2869,7 @@ Mixin for transition
   text-transform: uppercase;
   font-size: var(--fc_font_size_16);
   line-height: 22px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 10px;
@@ -2833,7 +2894,7 @@ Mixin for transition
   background-color: rgba(40, 28, 60, 0.04);
   font-size: 15px;
   line-height: 20px;
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -2873,13 +2934,13 @@ Mixin for transition
   width: 100%;
 }
 .acf-block-preview .single-member .member-name {
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   margin-bottom: 8px;
 }
 .acf-block-preview .single-member .designation {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
@@ -2991,14 +3052,14 @@ Mixin for transition
   width: 64%;
 }
 .acf-block-preview .single-team .member-name-popup {
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   color: var(--wp--preset--color--dark_text);
   margin-bottom: 5px;
 }
 .acf-block-preview .single-team .member-designation {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--wp--preset--color--lblack);
@@ -3063,7 +3124,7 @@ Mixin for transition
 .acf-block-preview select,
 .acf-block-preview textarea,
 .acf-block-preview .gform-text-input-reset {
-  font-family: "Axiforma-Regular", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
@@ -3214,8 +3275,8 @@ Mixin for transition
   border: 1px solid var(--fc_button_bgcolor);
   color: var(--fc_button_color);
   outline: none;
-  font-family: "Axiforma-Bold", arial, sans-serif;
-  font-weight: 700;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_16);
   height: 50px;
