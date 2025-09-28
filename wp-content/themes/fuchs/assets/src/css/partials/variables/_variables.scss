@@ -40,6 +40,7 @@
 	@include font_size(--fc_font_size_60, 60, 45);
 	@include font_size(--fc_font_size_68, 68, 55);
 	@include font_size(--fc_font_size_82, 82, 55);
+	@include font_size(--fc_font_size_160, 160, 65);
 	@include font_size(--fc_font_size_180, 180, 70);
 
 
@@ -77,6 +78,7 @@
 	--fc_blue_1: #00a4eb;
 	--fc_blue_2: #2ca8dd;
 	--fc_blue_3: #001659;
+	--fc_blue_4: #071f65;
 
 	--fc_navy: #091a17;
 	--fc_navy_1: #15332e;

@@ -14,7 +14,6 @@ import gasap from '../vendors/gsap.min';
 // 	}
 // } );
 
-console.log( 'start-of the section' );
 jQuery( function() {
 	/**
 	 * Header Wrapper Height Calculation for Navigation Overlay

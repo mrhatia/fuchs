@@ -1,7 +1,37 @@
 .hero-section {
+	position: relative;
 	transition: all 0.3s ease-in-out;
 	background-color: var(--fc_white_1);
 	padding-top: var(--fc_space_128);
+	padding: 150px 0 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-hero {
+	.banner-content {
+		color: var(--fc_white);
+		margin-bottom: 0;
+
+		div,
+		h1 {
+			text-transform: uppercase;
+		}
+
+	}
+
+	.hero-split-text {
+		position: absolute;
+		top: 8%;
+		left: 8%;
+		visibility: visible;
+		opacity: 1;
+		font-size: var(--fc_font_size_160);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		font-weight: 700;
+		margin: 0;
+	}
 }
 
 .hero-ctn {

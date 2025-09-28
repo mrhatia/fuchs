@@ -71,6 +71,15 @@
 }
 
 @media only screen and (max-width: 747px) {
+
+	.desktop-hide {
+		display: block !important;
+	}
+
+	.mobile-hide {
+		display: none !important;
+	}
+
 	.slide:nth-child(5) .bottom-section {
 		margin-top: 140px;
 	}

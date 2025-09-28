@@ -500,6 +500,7 @@ Mixin for transition
   --fc_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
   --fc_font_size_82: clamp(55 * 1px, 27 / 806 * (100vw - 474 * 1px) + 55 * 1px, 82 * 1px);
+  --fc_font_size_160: clamp(65 * 1px, 95 / 806 * (100vw - 474 * 1px) + 65 * 1px, 160 * 1px);
   --fc_font_size_180: clamp(70 * 1px, 110 / 806 * (100vw - 474 * 1px) + 70 * 1px, 180 * 1px);
   /* -------------------------------------------------
   >> Color variables
@@ -523,6 +524,7 @@ Mixin for transition
   --fc_blue_1: #00a4eb;
   --fc_blue_2: #2ca8dd;
   --fc_blue_3: #001659;
+  --fc_blue_4: #071f65;
   --fc_navy: #091a17;
   --fc_navy_1: #15332e;
   --fc_navy_2: #2f655c;
@@ -2610,6 +2612,38 @@ Mixin for transition
   border: solid 2px var(--fc_theme_btn_border_color_hover);
   color: var(--fc_theme_btn_color_hover);
 }
+.acf-block-preview a.button.orange-button,
+.acf-block-preview a.button:visited.orange-button,
+.acf-block-preview span.button.orange-button,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.orange-button {
+  --fc_theme_btn_color: var(--fc_white);
+  --fc_theme_btn_bgcolor: var(--fc_orange);
+  --fc_button_border_color: var(--fc_transparent);
+}
+.acf-block-preview a.button.orange-button:hover,
+.acf-block-preview a.button:visited.orange-button:hover,
+.acf-block-preview span.button.orange-button:hover,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.orange-button:hover {
+  --fc_theme_btn_color_hover: var(--fc_white);
+  --fc_theme_btn_bgcolor_hover: var(--fc_orange_1);
+  --fc_theme_btn_border_color_hover: var(--fc_transparent);
+}
+.acf-block-preview a.button.blue-button,
+.acf-block-preview a.button:visited.blue-button,
+.acf-block-preview span.button.blue-button,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.blue-button {
+  --fc_theme_btn_color: var(--fc_white);
+  --fc_theme_btn_bgcolor: var(--fc_blue_3);
+  --fc_button_border_color: var(--fc_transparent);
+}
+.acf-block-preview a.button.blue-button:hover,
+.acf-block-preview a.button:visited.blue-button:hover,
+.acf-block-preview span.button.blue-button:hover,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.blue-button:hover {
+  --fc_theme_btn_color_hover: var(--fc_white);
+  --fc_theme_btn_bgcolor_hover: var(--fc_blue_4);
+  --fc_theme_btn_border_color_hover: var(--fc_transparent);
+}
 .acf-block-preview a.button.header-button,
 .acf-block-preview a.button:visited.header-button,
 .acf-block-preview span.button.header-button,
@@ -3951,6 +3985,12 @@ Mixin for transition
   }
 }
 @media only screen and (max-width: 747px) {
+  .acf-block-preview .desktop-hide {
+    display: block !important;
+  }
+  .acf-block-preview .mobile-hide {
+    display: none !important;
+  }
   .acf-block-preview .slide:nth-child(5) .bottom-section {
     margin-top: 140px;
   }

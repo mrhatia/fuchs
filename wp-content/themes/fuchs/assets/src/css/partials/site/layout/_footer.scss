@@ -1,5 +1,6 @@
 .footer-ctn {
-	background-color: var(--fc_footer_bgcolor);
+	// background-color: var(--fc_footer_bgcolor);
+	background-color: #027757;
 	padding: 80px 0 0;
 	box-sizing: border-box;
 
@@ -29,11 +30,23 @@
 }
 
 .footer-widgets {
+	// background-color: #EFEEE8;
+
 	.single-widget {
 		width: 14%;
 
 		&:first-child {
 			width: 38%;
+		}
+
+		&:nth-child(2) {
+			width: 30%;
+			background-color: #EFEEE8;
+			padding: 20px;
+		}
+
+		&:nth-child(2) h4 {
+			color: black;
 		}
 	}
 }
@@ -108,17 +121,16 @@
 
 .footer-bottom {
 	padding: 30px 0 40px;
-	border-top: 1px solid var(--fc_border_3);
 }
 
 .copy-right {
-	width: 45%;
+	// width: 45%;
 	color: var(--fc_copyright_color);
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .legal-nav {
-	width: 55%;
+	// width: 55%;
 
 	ul {
 		margin: 0;
@@ -144,6 +156,7 @@
 				color: var(--fc_legal_nav_color);
 				position: relative;
 				display: block;
+				font-size: 20px;
 
 				&::after {
 					content: "";
@@ -192,7 +205,6 @@
 
 .social-icons {
 	a {
-		background-color: var(--fc_white);
 		width: 30px;
 		height: 30px;
 		margin-right: 20px;

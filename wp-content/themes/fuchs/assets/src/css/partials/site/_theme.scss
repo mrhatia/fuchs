@@ -319,6 +319,33 @@ span.button,
 		color: var(--fc_theme_btn_color_hover);
 	}
 
+	&.orange-button {
+
+		--fc_theme_btn_color: var(--fc_white);
+		--fc_theme_btn_bgcolor: var(--fc_orange);
+		--fc_button_border_color: var(--fc_transparent);
+
+		&:hover {
+			--fc_theme_btn_color_hover: var(--fc_white);
+			--fc_theme_btn_bgcolor_hover: var(--fc_orange_1);
+			--fc_theme_btn_border_color_hover: var(--fc_transparent);
+		}
+	}
+
+	&.blue-button {
+
+		--fc_theme_btn_color: var(--fc_white);
+		--fc_theme_btn_bgcolor: var(--fc_blue_3);
+		--fc_button_border_color: var(--fc_transparent);
+
+		&:hover {
+			--fc_theme_btn_color_hover: var(--fc_white);
+			--fc_theme_btn_bgcolor_hover: var(--fc_blue_4);
+			--fc_theme_btn_border_color_hover: var(--fc_transparent);
+		}
+	}
+
+
 	&.header-button {
 		background-color: white;
 		border-radius: 10px;

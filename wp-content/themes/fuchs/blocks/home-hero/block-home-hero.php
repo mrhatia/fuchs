@@ -26,6 +26,7 @@ BaseTheme::block(
 						<?php
 							foreach ( $fh_var_hero_slides as $slide ) {
 								$slide_image       = $slide['image'] ?? null;
+								$slide_image_mobile       = $slide['image_mobile'] ?? null;
 								$slide_kicker      = $slide['kicker'] ?? null;
 								$slide_sub_headline = $slide['sub_headline'] ?? null;
 								$slide_title_left   		= $slide['slide_title_left'] ?? null;
@@ -36,12 +37,16 @@ BaseTheme::block(
 								?>
 								<div class="slide <?php if ( $slide_bg_color ) { echo " has-green-bg "; } if($slide_image){ echo " has-image "; } ?> ">
 									<div class="home-hero-slide">
-										<div class="home-hero-image" tabindex="0" role="img"
-											aria-label="Image illustrating the content of this block">
-											<?php if ( $slide_image ) { ?>
+										<?php if ( $slide_image ) { ?>
+											<div class="home-hero-image <?php if($slide_image_mobile){ echo " mobile-hide ";  } ?> " tabindex="0" role="img" aria-label="Image illustrating the content of this block">
 												<?php BaseTheme::the_attachment_image( $slide_image, 1000 ); ?>
-											<?php } ?>
-										</div>
+											</div>
+										<?php } ?>
+										<?php if ( $slide_image_mobile ) { ?>
+											<div class="home-hero-image desktop-hide" tabindex="0" role="img" aria-label="Image illustrating the content of this block">
+												<?php BaseTheme::the_attachment_image( $slide_image_mobile, 1000 ); ?>
+											</div>
+										<?php } ?>
 										<div class="home-hero-content">
 											<div class="top-section">
 												<?php if ( $slide_kicker ) {  ?>
