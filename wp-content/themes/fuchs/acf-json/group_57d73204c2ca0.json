@@ -156,6 +156,31 @@
             "selected": 0
         },
         {
+            "key": "field_68d874ae05a47",
+            "label": "Button",
+            "name": "bst_var_header_btn",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6458cfe12a26f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 1
+        },
+        {
             "key": "field_642e880af2dc6",
             "label": "Call To Action (CTA)",
             "name": "",
@@ -1370,5 +1395,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758833482
+    "modified": 1759016127
 }

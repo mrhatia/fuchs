@@ -43,6 +43,7 @@ h2,
 .heading-2 {
 	font-size: var(--fc_font_size_82);
 	letter-spacing: -0.025rem;
+	@include font(sour, sbold);
 }
 
 h3,

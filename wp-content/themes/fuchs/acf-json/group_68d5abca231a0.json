@@ -21,6 +21,24 @@
             "esc_html": 0
         },
         {
+            "key": "field_68d88e610fe47",
+            "label": "Expand For More Options",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
             "key": "field_68d5ac80bfa36",
             "label": "Hero Slides",
             "name": "fh_var_hero_slides",
@@ -42,6 +60,28 @@
             "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
+                {
+                    "key": "field_68d8401ea1f5b",
+                    "label": "Show Green Background",
+                    "name": "slide_bg_color",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_68d5ac80bfa36"
+                },
                 {
                     "key": "field_68d5acf0bfa37",
                     "label": "Kicker",
@@ -89,7 +129,7 @@
                 {
                     "key": "field_68d5ad07bfa39",
                     "label": "Slide Title",
-                    "name": "slide_title",
+                    "name": "slide_title_left",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -196,5 +236,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758834057
+    "modified": 1759022754
 }

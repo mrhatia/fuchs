@@ -1175,6 +1175,9 @@ Mixin for transition
 .editor-styles-wrapper .heading-2 {
   font-size: var(--fc_font_size_82);
   letter-spacing: -0.025rem;
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .editor-styles-wrapper h3,
 .editor-styles-wrapper .heading-3 {
@@ -1238,7 +1241,6 @@ Mixin for transition
 .editor-styles-wrapper b,
 .editor-styles-wrapper strong {
   font-weight: 700;
-  color: var(--fc_strong_color);
 }
 .editor-styles-wrapper u {
   border-bottom: 1px solid var(--fc_underline_border_color);
@@ -2608,6 +2610,26 @@ Mixin for transition
   border: solid 2px var(--fc_theme_btn_border_color_hover);
   color: var(--fc_theme_btn_color_hover);
 }
+.acf-block-preview a.button.header-button,
+.acf-block-preview a.button:visited.header-button,
+.acf-block-preview span.button.header-button,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.header-button {
+  background-color: white;
+  border-radius: 10px;
+  color: var(--fc_black_2);
+  border: none;
+  padding: 15px 45px 11px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.acf-block-preview a.button.header-button:hover,
+.acf-block-preview a.button:visited.header-button:hover,
+.acf-block-preview span.button.header-button:hover,
+.acf-block-preview .is-style-mycustomstyle .wp-element-button.header-button:hover {
+  border: none;
+  background-color: var(--fc_orange);
+  color: #ffffff;
+}
 .acf-block-preview a.button.outline-btn,
 .acf-block-preview a.button:visited.outline-btn,
 .acf-block-preview span.button.outline-btn,
@@ -3925,6 +3947,17 @@ Mixin for transition
 @media only screen and (max-width: 747px) {
   .acf-block-preview .slide:nth-child(5) .bottom-section {
     margin-top: 140px;
+  }
+  .acf-block-preview .slide.active .hero-split-text {
+    line-height: 1;
+  }
+  .acf-block-preview .has-image .hero-split-text {
+    padding: 15px 45px;
+  }
+  .acf-block-preview .bottom-section,
+  .acf-block-preview .top-section {
+    left: 0;
+    position: relative;
   }
   .acf-block-preview .dots {
     display: none;

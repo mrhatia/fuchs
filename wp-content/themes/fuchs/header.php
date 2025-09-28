@@ -21,8 +21,7 @@ $bst_var_tbar_btn     = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 $bst_var_tbar_text    = $bst_option_fields['bst_var_tbar_text'] ?? null;
 
 
-$bst_var_tohdr_btn     = $bst_option_fields['bst_var_tohdr_btn'] ?? null;
-$bst_var_tohdr_btn_two = $bst_option_fields['bst_var_tohdr_btn_two'] ?? null;
+$bst_var_header_btn     = $bst_option_fields['bst_var_header_btn'] ?? null;
 $bst_var_tbar_vsblty   = $bst_option_fields['bst_var_tbar_vsblty'] ?? null;
 $bst_var_tbar_text     = $bst_option_fields['bst_var_tbar_text'] ?? null;
 $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
@@ -114,32 +113,14 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 
 	<a class="skip-link screen-reader-text"
 		href="#page-section"><?php esc_html_e( 'Skip to content', 'basetheme_td' ); ?></a>
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="spinner-text" data-title="CFuchs">CFuchs</div>
+		</div>
+	</div>
 	<header id="header-section" class="header-section">
 		<!-- Header Start -->
-		<?php if ( $bst_var_tbar_vsblty ) { ?>
-			<div class="top-bar" id="top-bar-ajax" style="display:none;">
-				<div class="header-wrapper">
-					<div class="top-bar-text">
-						<?php
-						if ( $bst_var_tbar_text ) {
-							echo html_entity_decode( $bst_var_tbar_text );
-						}
-						?>
-						<?php
-						if ( $bst_var_tbar_btn ) {
-							echo BaseTheme::button( $bst_var_tbar_btn, '' );
-						}
-						?>
-					</div>
-				</div>
-				<div class="top-bar-cross">
-					<span>
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/topbar-cross-icon.svg"
-							width="16" height="16" alt="<?php esc_attr_e( 'Top bar', 'basetheme_td' ); ?>">
-					</span>
-				</div>
-			</div>
-		<?php } ?>
+
 		<div class="header-wrapper header-inner d-flex justify-content-between">
 			<div class="header-logo logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
@@ -160,21 +141,17 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 								)
 							);
 							?>
-						</div>
-						<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
-						<div class="header-btns desktop-hide">
-							<?php
-							if ( $bst_var_tohdr_btn ) {
-								echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
-							}
+						<?php if ( $bst_var_header_btn ) { ?>
+							<div class="header-btns desktop-hide">
+								<?php
+								if ( $bst_var_header_btn ) {
+									echo BaseTheme::button( $bst_var_header_btn, 'button header-button' );
+								}
+								?>
 
-							if ( $bst_var_tohdr_btn_two ) {
-								echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
-							}
-							?>
-
-						</div>
+							</div>
 						<?php } ?>
+						</div>
 					</div>
 				</div>
 				<div class="menu-btn">
@@ -183,19 +160,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 					<span class="bottom"></span>
 				</div>
 			</div>
-			<?php if ( $bst_var_tohdr_btn || $bst_var_tohdr_btn_two ) { ?>
-			<div class="header-btns">
-				<?php
-				if ( $bst_var_tohdr_btn ) {
-					echo BaseTheme::button( $bst_var_tohdr_btn, 'button' );
-				}
 
-				if ( $bst_var_tohdr_btn_two ) {
-					echo BaseTheme::button( $bst_var_tohdr_btn_two, 'button' );
-				}
-				?>
-			</div>
-			<?php } ?>
 			<!-- header buttons -->
 		</div>
 		<!-- Header End -->

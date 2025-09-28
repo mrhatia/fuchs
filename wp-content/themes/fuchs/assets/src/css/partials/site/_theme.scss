@@ -307,6 +307,7 @@ span.button,
 	@include font(sour, bold);
 	font-size: var(--fc_font_size_16);
 
+
 	&:last-child {
 		margin-right: 0;
 	}
@@ -316,6 +317,22 @@ span.button,
 		background-color: var(--fc_theme_btn_bgcolor_hover);
 		border: solid 2px var(--fc_theme_btn_border_color_hover);
 		color: var(--fc_theme_btn_color_hover);
+	}
+
+	&.header-button {
+		background-color: white;
+		border-radius: 10px;
+		color: var(--fc_black_2);
+		border: none;
+		padding: 15px 45px 11px;
+		font-size: 17px;
+		font-weight: 600;
+
+		&:hover {
+			border: none;
+			background-color: var(--fc_orange);
+			color: #ffffff;
+		}
 	}
 
 	&.outline-btn {

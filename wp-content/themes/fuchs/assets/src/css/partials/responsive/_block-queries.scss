@@ -66,6 +66,20 @@
 		margin-top: 140px;
 	}
 
+	.slide.active .hero-split-text {
+		line-height: 1;
+	}
+
+	.has-image .hero-split-text {
+		padding: 15px 45px;
+	}
+
+	.bottom-section,
+	.top-section {
+		left: 0;
+		position: relative;
+	}
+
 	.dots {
 		display: none;
 	}
