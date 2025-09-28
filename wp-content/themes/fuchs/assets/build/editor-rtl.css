@@ -3899,17 +3899,23 @@ Mixin for transition
   margin: 0 !important;
 }
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+  .acf-block-preview .slide .heading-2 {
+    font-size: 68px;
+  }
+  .acf-block-preview .hero-split-text {
+    margin: 35px auto 0;
+  }
   .acf-block-preview .slide .home-hero-content {
     width: 90%;
   }
   .acf-block-preview .bottom-section {
-    margin-top: calc(var(--fc_space_128) - 70px);
+    margin-top: calc(var(--fc_space_128) - 75px);
   }
   .acf-block-preview .slide:nth-child(5) .hero-split-text {
-    margin: 20px auto 0;
+    margin: 35px auto 0;
   }
   .acf-block-preview .slide:nth-child(5) .bottom-section {
-    margin-top: calc(var(--fc_space_128) - 70px);
+    margin-top: calc(var(--fc_space_128) - 75px);
   }
 }
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
@@ -3966,10 +3972,10 @@ Mixin for transition
     display: none;
   }
   .acf-block-preview .bottom-section {
-    margin-top: 140px;
+    margin-top: 100px;
   }
   .acf-block-preview .slide:nth-child(5) .hero-split-text {
-    margin: 141px auto 0;
+    margin: 120px auto 0;
   }
   .acf-block-preview .hero-split-text h2 {
     font-size: 56.25px;

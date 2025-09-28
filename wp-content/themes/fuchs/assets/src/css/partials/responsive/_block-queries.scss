@@ -1,18 +1,27 @@
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+	.slide .heading-2 {
+		font-size: 68px;
+	}
+
+	.hero-split-text {
+		margin: 35px auto 0;
+
+	}
+
 	.slide .home-hero-content {
 		width: 90%;
 	}
 
 	.bottom-section {
-		margin-top: calc(var(--fc_space_128) - 70px);
+		margin-top: calc(var(--fc_space_128) - 75px);
 	}
 
 	.slide:nth-child(5) .hero-split-text {
-		margin: 20px auto 0;
+		margin: 35px auto 0;
 	}
 
 	.slide:nth-child(5) .bottom-section {
-		margin-top: calc(var(--fc_space_128) - 70px);
+		margin-top: calc(var(--fc_space_128) - 75px);
 	}
 
 }
@@ -91,11 +100,11 @@
 	}
 
 	.bottom-section {
-		margin-top: 140px;
+		margin-top: 100px;
 	}
 
 	.slide:nth-child(5) .hero-split-text {
-		margin: 141px auto 0;
+		margin: 120px auto 0;
 	}
 
 	.hero-split-text {
