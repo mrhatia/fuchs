@@ -5851,53 +5851,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 /*-------------------------------------------------
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
-.image-overlap-text {
-  min-height: 700px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-.image-overlap-text .iat-content {
-  background-color: green;
-  z-index: 9;
-  right: calc(50% - 810px);
-  position: relative;
-  width: 33%;
-}
-.image-overlap-text .iat-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: calc(100% - 430px);
-}
-.image-overlap-text .iat-image img {
-  height: 100%;
-  width: 100%;
-}
-
-/*-------------------------------------------------
->> Basic styles for Image Alongside Text Block
--------------------------------------------------*/
-.icons-grid .column {
-  padding: 0 0 122px 25px;
-}
-.icons-grid .kicker {
-  font-size: 12px;
-  padding-top: 16px;
-}
-.icons-grid .heading-4 {
-  margin-bottom: 0;
-}
-.icons-grid p {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-/*-------------------------------------------------
->> Basic styles for Image Alongside Text Block
--------------------------------------------------*/
 .testimonial-item {
   background-color: var(--fc_white);
   border: 1px solid #e8e8e9;
@@ -6003,15 +5956,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 /*-------------------------------------------------
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
-.ctn-full-width {
-  width: 100%;
-}
-.ctn-full-width .wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 .theme-images-slider {
   position: relative;
   display: flex;
@@ -6059,6 +6003,53 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .theme-images-slider .slides-wrap-inner .slide-image:nth-child(2) {
   flex: 0 0 50%;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.image-overlap-text {
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.image-overlap-text .iat-content {
+  background-color: green;
+  z-index: 9;
+  right: calc(50% - 810px);
+  position: relative;
+  width: 33%;
+}
+.image-overlap-text .iat-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 430px);
+}
+.image-overlap-text .iat-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.icons-grid .column {
+  padding: 0 0 122px 25px;
+}
+.icons-grid .kicker {
+  font-size: 12px;
+  padding-top: 16px;
+}
+.icons-grid .heading-4 {
+  margin-bottom: 0;
+}
+.icons-grid p {
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 /*-------------------------------------------------
