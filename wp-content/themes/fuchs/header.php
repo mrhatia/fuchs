@@ -58,17 +58,17 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/icon.svg">
 	<link rel="manifest"
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/site.webmanifest">
-	<meta name="theme-color" content="#0047FE">
+	<meta name="theme-color" content="#007857">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Base Theme Package">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton_color" content="#0047FE">
-	<meta name="msapplication-TileColor" content="#0047FE">
+	<meta name="msapplication-navbutton_color" content="#007857">
+	<meta name="msapplication-TileColor" content="#007857">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="msapplication-TileImage"
 		content="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/pwa-icon-144.png">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#0047FE">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#007857">
 	<?php
 		// Tracking Code.
 	if ( '' !== $bst_var_tracking ) {
