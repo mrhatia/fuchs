@@ -294,14 +294,15 @@
 			font-weight: 500;
 		}
 
-		.plus-button {
-			border-radius: 2px;
-			font-size: 20px;
-			padding: 10px 20px;
-			color: var(--fc_white);
-			background-color: var(--fc_color_primary);
-			transition: background-color .5s cubic-bezier(.49, .79, .17, .94), box-shadow .5s 50ms cubic-bezier(.49, .79, .17, .94), -webkit-box-shadow .5s 50ms cubic-bezier(.49, .79, .17, .94);
-		}
+	}
+
+	.plus-button {
+		border-radius: 2px;
+		font-size: 20px;
+		padding: 10px 20px;
+		color: var(--fc_white);
+		background-color: var(--fc_color_primary);
+		transition: background-color .5s cubic-bezier(.49, .79, .17, .94), box-shadow .5s 50ms cubic-bezier(.49, .79, .17, .94), -webkit-box-shadow .5s 50ms cubic-bezier(.49, .79, .17, .94);
 	}
 
 }

@@ -1,7 +1,25 @@
 // image positions
 
-.image-at-right {
-	.iat-image {
+.image-at-left {
+	.iat-content {
 		order: 2;
+	}
+}
+
+.iat-content {
+	width: 45%;
+}
+
+.iat-image {
+	width: 45%;
+}
+
+.image-alongside-text {
+	.kicker {
+		font-size: 12px;
+	}
+
+	h2 {
+		font-size: 45px;
 	}
 }

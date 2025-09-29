@@ -3877,8 +3877,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   color: var(--fc_blue_3);
   font-weight: 500;
 }
-.bottom-section-button a .plus-button,
-.bottom-section-button a:visited .plus-button {
+.bottom-section-button .plus-button {
   border-radius: 2px;
   font-size: 20px;
   padding: 10px 20px;
@@ -5416,8 +5415,70 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 /*-------------------------------------------------
 >> Basic styles for Image Alongside Text Block
 -------------------------------------------------*/
-.image-at-right .iat-image {
+.image-at-left .iat-content {
   order: 2;
+}
+
+.iat-content {
+  width: 45%;
+}
+
+.iat-image {
+  width: 45%;
+}
+
+.image-alongside-text .kicker {
+  font-size: 12px;
+}
+.image-alongside-text h2 {
+  font-size: 45px;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.image-overlap-text {
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.image-overlap-text .iat-content {
+  background-color: green;
+  z-index: 9;
+  left: calc(50% - 810px);
+  position: relative;
+  width: 33%;
+}
+.image-overlap-text .iat-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 430px);
+}
+.image-overlap-text .iat-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Image Alongside Text Block
+-------------------------------------------------*/
+.icons-grid .column {
+  padding: 0 25px 122px 0;
+}
+.icons-grid .kicker {
+  font-size: 12px;
+  padding-top: 16px;
+}
+.icons-grid .heading-4 {
+  margin-bottom: 0;
+}
+.icons-grid p {
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 /*-------------------------------------------------

@@ -2164,6 +2164,12 @@ Mixin for transition
   /*-------------------------------------------------
   >> Basic styles for Image Alongside Text Block
   -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Image Alongside Text Block
+  -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Image Alongside Text Block
+  -------------------------------------------------*/
   /* Forms */
   /* -------------------------------------------------
   >> Styles for form fields
@@ -3142,8 +3148,59 @@ Mixin for transition
 .acf-block-preview .mfp-wrap {
   z-index: 999999 !important;
 }
-.acf-block-preview .image-at-right .iat-image {
+.acf-block-preview .image-at-left .iat-content {
   order: 2;
+}
+.acf-block-preview .iat-content {
+  width: 45%;
+}
+.acf-block-preview .iat-image {
+  width: 45%;
+}
+.acf-block-preview .image-alongside-text .kicker {
+  font-size: 12px;
+}
+.acf-block-preview .image-alongside-text h2 {
+  font-size: 45px;
+}
+.acf-block-preview .image-overlap-text {
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.acf-block-preview .image-overlap-text .iat-content {
+  background-color: green;
+  z-index: 9;
+  right: calc(50% - 810px);
+  position: relative;
+  width: 33%;
+}
+.acf-block-preview .image-overlap-text .iat-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 430px);
+}
+.acf-block-preview .image-overlap-text .iat-image img {
+  height: 100%;
+  width: 100%;
+}
+.acf-block-preview .icons-grid .column {
+  padding: 0 0 122px 25px;
+}
+.acf-block-preview .icons-grid .kicker {
+  font-size: 12px;
+  padding-top: 16px;
+}
+.acf-block-preview .icons-grid .heading-4 {
+  margin-bottom: 0;
+}
+.acf-block-preview .icons-grid p {
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 .acf-block-preview form {
   margin: 0 0 20px;
