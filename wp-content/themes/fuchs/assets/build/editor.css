@@ -496,6 +496,7 @@ Mixin for transition
   --fc_font_size_30: clamp(24 * 1px, 6 / 806 * (100vw - 474 * 1px) + 24 * 1px, 30 * 1px);
   --fc_font_size_32: clamp(24 * 1px, 8 / 806 * (100vw - 474 * 1px) + 24 * 1px, 32 * 1px);
   --fc_font_size_40: clamp(26 * 1px, 14 / 806 * (100vw - 474 * 1px) + 26 * 1px, 40 * 1px);
+  --fc_font_size_45: clamp(26 * 1px, 19 / 806 * (100vw - 474 * 1px) + 26 * 1px, 45 * 1px);
   --fc_font_size_48: clamp(30 * 1px, 18 / 806 * (100vw - 474 * 1px) + 30 * 1px, 48 * 1px);
   --fc_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
@@ -2872,8 +2873,8 @@ Mixin for transition
 }
 .acf-block-preview .four-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(clamp(250px, 25% - 2%, 100%), 100%), 1fr));
-  gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(min(clamp(250px, 25% - 4%, 100%), 100%), 1fr));
+  gap: 4%;
   row-gap: var(--fc_space_30);
 }
 .acf-block-preview .five-columns {
@@ -3172,7 +3173,7 @@ Mixin for transition
   font-size: 12px;
 }
 .acf-block-preview .image-alongside-text h2 {
-  font-size: 45px;
+  font-size: var(--fc_font_size_60);
 }
 .acf-block-preview .testimonial-item {
   background-color: var(--fc_white);
@@ -3344,9 +3345,6 @@ Mixin for transition
 .acf-block-preview .image-overlap-text .iat-image img {
   height: 100%;
   width: 100%;
-}
-.acf-block-preview .icons-grid .column {
-  padding: 0 25px 122px 0;
 }
 .acf-block-preview .icons-grid .kicker {
   font-size: 12px;

@@ -124,6 +124,18 @@
 	aspect-ratio: 1905/655;
 	width: 100%;
 	height: 100%;
+	position: relative;
+
+	&::before {
+		content: "";
+		background-color: black;
+		opacity: 0.4;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
 
 	img {
 		width: 100%;
@@ -132,7 +144,64 @@
 	}
 }
 
-.hero-inner-slider {
+.hero-inner-slider.archive-hero {
+	height: 600px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	.kicker {
+		color: var(--fc_black);
+	}
+
+	.hero-slide-image {
+		aspect-ratio: unset;
+	}
+
+	.banner-content {
+		margin: 210px auto 0;
+	}
+}
+
+.slick-slider {
+	.slick-dots {
+		li {
+			padding: 0;
+
+			&:before {
+				display: none !important;
+			}
+		}
+	}
+}
+
+.hero-inner-slider.full-width-image {
+
+	.slick-dots {
+		display: none;
+	}
+
+	.hero-split-text {
+
+		left: 5px;
+	}
+
+	.hero-slide-item {
+		height: 550px;
+	}
+
+	.banner-content {
+
+		margin-top: 217px;
+	}
+
+}
+
+.hero-inner-slider:not(.archive-hero, .full-width-image) {
 	margin: 0 !important;
 
 	&::after {
@@ -146,6 +215,7 @@
 		background-image: url(../images/hero-shape.png);
 		z-index: 1;
 	}
+
 
 	.slick-prev,
 	.slick-next {

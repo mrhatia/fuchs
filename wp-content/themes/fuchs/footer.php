@@ -52,62 +52,24 @@ $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null
 				<div class="single-widget">
 					<div class="footer-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo-white.svg"
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo.png"
 								alt="Logo" />
 						</a>
 					</div>
-					<?php if ( $bst_var_ftrop_title ) { ?>
-					<h5><?php echo html_entity_decode( $bst_var_ftrop_title ); ?></h5>
-					<?php } ?>
-					<?php if ( $bst_var_ftrop_text ) { ?>
-					<div class="address"><?php echo html_entity_decode( $bst_var_ftrop_text ); ?></div>
-					<?php } ?>
-					<div class="social-icons d-flex">
-						<?php BaseTheme::the_social_icons( $bst_var_social_profiles ); ?>
-					</div>
+
+
 				</div>
-				<div class="single-widget">
-					<div class="footer-nav">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'footer-nav-one',
-									'fallback_cb'    => 'BaseTheme::nav_fallback',
-								)
-							);
-							?>
-					</div>
+				<div class="single-widget d-flex flex-column">
+						<h4>FOLGE UNS</h4>
+						<div class="social-icons d-flex">
+							<?php BaseTheme::the_social_icons( $bst_var_social_profiles ); ?>
+						</div>
+
 				</div>
-				<div class="single-widget">
-					<div class="footer-nav">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'footer-nav-two',
-									'fallback_cb'    => 'BaseTheme::nav_fallback',
-								)
-							);
-							?>
-					</div>
-				</div>
-				<div class="single-widget">
-					<div class="footer-nav">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'footer-nav-three',
-									'fallback_cb'    => 'BaseTheme::nav_fallback',
-								)
-							);
-							?>
-					</div>
-				</div>
+
 			</div>
 			<div class="gl-s72"></div>
 			<div class="footer-bottom d-flex align-items-center justify-content-between">
-				<?php if ( $bst_var_ftrop_copyright ) { ?>
-				<div class="copy-right"><?php echo esc_html( $bst_var_ftrop_copyright ); ?></div>
-				<?php } ?>
 				<div class="legal-nav">
 					<?php
 						wp_nav_menu(
@@ -118,6 +80,10 @@ $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null
 						);
 						?>
 				</div>
+				<?php if ( $bst_var_ftrop_copyright ) { ?>
+				<div class="copy-right"><?php echo esc_html( $bst_var_ftrop_copyright ); ?></div>
+				<?php } ?>
+
 			</div>
 		</div>
 	</div>

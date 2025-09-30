@@ -41,6 +41,7 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'home-hero' );
 		// Register a block - Media Alongside Text.
 		self::register_acf_block( 'media-alongside-text' );
+		self::register_acf_block( 'hero-image-slider' );
 		// Register a block - Jump Location.
 		self::register_acf_block( 'jump-location' );
 		// Register a block - AcfBlock.

@@ -12,7 +12,7 @@
 
 .four-columns {
 	display: grid;
-	@include fluidColumns(4, 250px, 2%);
+	@include fluidColumns(4, 250px, 4%);
 	row-gap: var(--fc_space_30);
 }
 

@@ -2,6 +2,7 @@
 	.top-bar.center-align {
 		text-align: left;
 	}
+
 	// masthead
 	.hero-single {
 		padding: 40px 0 30px;
@@ -53,7 +54,6 @@
 		.single-widget {
 			width: 43%;
 			margin-right: 20px;
-			margin-bottom: 50px;
 
 			&:nth-child(1) {
 				width: 100%;
@@ -71,7 +71,7 @@
 	}
 
 	.footer-logo {
-		max-width: 190px;
+		width: 65%;
 	}
 
 	.footer-bottom {
@@ -95,15 +95,77 @@
 			width: 100%;
 		}
 	}
+
+
+
+	// blocks
+
+	.image-alongside-text {
+		flex-wrap: wrap;
+
+		.iat-content,
+		.iat-image {
+			width: 100%;
+		}
+
+	}
+
+	.hero-inner-slider.full-width-image .hero-slide-item {
+		height: 500px;
+	}
+
+	.hero-inner-slider.full-width-image .hero-split-text {
+		top: -50px;
+	}
+
+	.testimonial-item-content {
+		width: 100%;
+	}
+
 }
 
-@media only screen and (max-width: 459px) {
+@media only screen and (max-width: 577px) {
+	.icons-grid {
+		.four-columns {
+			row-gap: 50px;
+		}
+
+		.column.center-align {
+			width: 70%;
+			max-width: 220px;
+			margin: 0 auto;
+
+		}
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.single-widget.d-flex.flex-column {
+		h4 {
+			font-size: 14px;
+		}
+
+	}
+
+
+	.footer-widgets .single-widget:nth-child(2) {
+		width: 100%;
+		padding: 18px;
+	}
+
 	.footer-widgets .single-widget {
 		width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 
-		&:first-child {
-			margin-bottom: 50px;
-		}
+		// &:first-child {
+		// 	margin-bottom: 50px;
+		// }
+	}
+
+
+	.footer-ctn {
+		padding: 70px 0 0;
 	}
 }

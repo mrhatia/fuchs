@@ -249,3 +249,19 @@
 .post-meta {
 	margin-bottom: 30px;
 }
+
+.post-archive-box.column {
+	.bottom-section-button {
+		display: inline-block;
+
+		.plus-button {
+			background-color: transparent;
+			color: inherit;
+
+			&:hover {
+				background-color: var(--fc_color_primary);
+				color: #ffffff;
+			}
+		}
+	}
+}

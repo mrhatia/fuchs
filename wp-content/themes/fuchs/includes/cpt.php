@@ -28,6 +28,33 @@ new WP_Theme_CPT(
 		'show_ui'      => true,
 		'taxonomies'   => array(
 			array(
+				'slug'          => 'category',
+				'name'          => 'categories',
+				'singular_name' => 'categories',
+				'plural_name'   => 'categories',
+			),
+		),
+	)
+);
+
+new WP_Theme_CPT(
+	array(
+		'labels'       => array(
+			'singular_capital'   => 'Project',
+			'plural_capital'     => 'Projects',
+			'singular_lowercase' => 'project',
+			'plural_lowercase'   => 'projects',
+			// CPT Slug & Name.
+			'register_key'       => 'project',
+			'slug'               => 'project',
+		),
+		'supports'     => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
+		'menu_icon'    => 'dashicons-format-quote',
+		'public'       => true,
+		'show_in_menu' => true,
+		'show_ui'      => true,
+		'taxonomies'   => array(
+			array(
 				'slug'          => 'testimonials',
 				'register_key'  => 'testimonials', // if not given default is slug value.
 				'name'          => 'Category',
@@ -45,6 +72,7 @@ new WP_Theme_CPT(
 		),
 	)
 );
+
 new WP_Theme_CPT(
 	array(
 		'labels'    => array(
