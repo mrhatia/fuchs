@@ -96,6 +96,8 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		}
 	});
 	</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.0.2/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12.0.2/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -113,11 +115,11 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 
 	<a class="skip-link screen-reader-text"
 		href="#page-section"><?php esc_html_e( 'Skip to content', 'basetheme_td' ); ?></a>
-	<div class="loader">
+	<!-- <div class="loader">
 		<div class="loader-inner">
 			<div class="spinner-text" data-title="CFuchs">CFuchs</div>
 		</div>
-	</div>
+	</div> -->
 	<header id="header-section" class="header-section">
 		<!-- Header Start -->
 

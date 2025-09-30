@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	gap: 24px;
 	transition: all 0.3s ease-in-out;
+	margin: 0 15px;
 
 	&:hover,
 	&.slick-current {
@@ -91,6 +92,7 @@
 		gap: 60px;
 		height: 100%;
 		box-sizing: border-box;
+
 
 		.testimonial-meta {
 			margin-top: 20px;

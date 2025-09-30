@@ -3282,6 +3282,7 @@ Mixin for transition
   box-sizing: border-box;
   gap: 24px;
   transition: all 0.3s ease-in-out;
+  margin: 0 15px;
 }
 .acf-block-preview .testimonial-item:hover, .acf-block-preview .testimonial-item.slick-current {
   background-color: var(--fc_color_primary);
