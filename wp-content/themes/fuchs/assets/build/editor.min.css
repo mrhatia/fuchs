@@ -502,6 +502,7 @@ Mixin for transition
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
   --fc_font_size_80: clamp(52 * 1px, 28 / 806 * (100vw - 474 * 1px) + 52 * 1px, 80 * 1px);
   --fc_font_size_82: clamp(55 * 1px, 27 / 806 * (100vw - 474 * 1px) + 55 * 1px, 82 * 1px);
+  --fc_font_size_120: clamp(40 * 1px, 80 / 806 * (100vw - 474 * 1px) + 40 * 1px, 120 * 1px);
   --fc_font_size_160: clamp(65 * 1px, 95 / 806 * (100vw - 474 * 1px) + 65 * 1px, 160 * 1px);
   --fc_font_size_180: clamp(70 * 1px, 110 / 806 * (100vw - 474 * 1px) + 70 * 1px, 180 * 1px);
   /* -------------------------------------------------
@@ -3566,6 +3567,9 @@ Mixin for transition
 .acf-block-preview .tabbed-content-single p:last-of-type {
   margin: 0;
 }
+.acf-block-preview .tabbed-content-single .column {
+  line-height: 0.65;
+}
 .acf-block-preview .tabbed-map-content-inner {
   margin-top: 19px;
 }
@@ -3696,6 +3700,7 @@ Mixin for transition
 }
 .acf-block-preview .media-with-text-image {
   width: 67.1%;
+  position: relative;
 }
 .acf-block-preview .media-with-text-image img {
   min-height: 711px;
@@ -3711,6 +3716,17 @@ Mixin for transition
 .acf-block-preview .media-with-text.variation .media-with-text-content-box {
   right: auto;
   left: 15.9%;
+}
+.acf-block-preview .media-with-text-image-text {
+  font-size: var(--fc_font_size_120);
+  font-family: "Yantramanav", arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--fc_orange);
+  line-height: 0.8;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
 }
 .acf-block-preview .logo-grid {
   display: flex;
@@ -4534,6 +4550,9 @@ Mixin for transition
   .acf-block-preview .slide:nth-child(5) .bottom-section {
     margin-top: calc(var(--fc_space_128) - 75px);
   }
+  .acf-block-preview .media-with-text-image-text {
+    bottom: 3%;
+  }
 }
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
   .acf-block-preview .offering-block-content {
@@ -4557,8 +4576,14 @@ Mixin for transition
   .acf-block-preview .slide:nth-child(5) .bottom-section {
     margin-top: calc(var(--fc_space_128) - 70px);
   }
+  .acf-block-preview .media-with-text-image-text {
+    bottom: 3%;
+  }
 }
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .acf-block-preview .media-with-text-image-text {
+    bottom: 3%;
+  }
   .acf-block-preview .faq-image {
     width: 46%;
   }
@@ -4580,6 +4605,9 @@ Mixin for transition
   }
 }
 @media only screen and (max-width: 1003px) {
+  .acf-block-preview .media-with-text-image-text {
+    bottom: 5%;
+  }
   .acf-block-preview .testimonial-variation.swiper {
     padding: 0;
   }

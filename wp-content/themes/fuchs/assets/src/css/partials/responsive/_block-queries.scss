@@ -32,6 +32,9 @@
 		margin-top: calc(var(--fc_space_128) - 75px);
 	}
 
+	.media-with-text-image-text {
+		bottom: 3%;
+	}
 }
 
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
@@ -62,9 +65,17 @@
 	.slide:nth-child(5) .bottom-section {
 		margin-top: calc(var(--fc_space_128) - 70px);
 	}
+
+	.media-with-text-image-text {
+		bottom: 3%;
+	}
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.media-with-text-image-text {
+		bottom: 3%;
+	}
+
 	.faq-image {
 		width: 46%;
 	}
@@ -92,6 +103,10 @@
 }
 
 @media only screen and (max-width: 1003px) {
+	.media-with-text-image-text {
+		bottom: 5%;
+	}
+
 	.testimonial-variation.swiper {
 		padding: 0;
 	}
