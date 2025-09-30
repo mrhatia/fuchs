@@ -65,6 +65,8 @@
 .testimonial-variation.swiper {
 	position: relative;
 	overflow: hidden;
+	padding: var(--fc_space_96) 0;
+	box-sizing: border-box;
 
 	&::before {
 		content: "";
@@ -163,5 +165,24 @@
 		font-size: var(--fc_font_size_20);
 		@include font(yan, reg);
 		margin: 0;
+	}
+}
+
+.testimonial-slider {
+	margin: 0 !important;
+	padding-bottom: 47px;
+	box-sizing: border-box;
+	cursor: grab;
+
+	.slick-slide {
+		margin: 0 15px;
+
+		.slick-list {
+			margin: 0 -15px;
+		}
+	}
+
+	.slick-dots {
+		bottom: 0px;
 	}
 }
