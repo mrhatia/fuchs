@@ -71,6 +71,40 @@
 }
 
 @media only screen and (max-width: 747px) {
+	.hero-slide-image {
+		min-height: 580px;
+	}
+
+	a.button,
+	a.button:visited,
+	span.button,
+	.is-style-mycustomstyle .wp-element-button {
+		font-size: 16px;
+	}
+
+	.hero-inner-slider {
+		.hero-split-text {
+			display: none;
+		}
+
+		.banner-content {
+			h1 {
+				font-size: 45px;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.hero-inner-slider {
+
+		.slick-prev,
+		.slick-next {
+			display: none !important;
+		}
+	}
 
 	.desktop-hide {
 		display: block !important;
@@ -192,6 +226,20 @@
 		td,
 		th {
 			width: 140px;
+		}
+	}
+}
+
+@media only screen and (max-width: 359px) {
+	.hero-inner-slider .banner-content h1 {
+		font-size: 34px;
+	}
+
+	.banner-content {
+		.hero-buttons {
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 10px;
 		}
 	}
 }

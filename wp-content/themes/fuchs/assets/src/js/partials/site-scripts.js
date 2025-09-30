@@ -310,32 +310,46 @@ jQuery( function() {
 			],
 		} );
 	}
-	jQuery( function() {
-		const slides = jQuery( '.slides-wrap-inner .slide-image' );
-		let index = 0;
-
-		function showSlides( dir ) {
-			index += dir;
-			if ( index < 0 ) {
-				index = slides.length - 1;
-			}
-			if ( index >= slides.length ) {
-				index = 0;
-			}
-
-			gsap.to( '.slides-wrap-inner', {
-				x: -index * ( jQuery( '.slide-image' ).outerWidth( true ) ),
-				duration: 1,
-				ease: 'power2.inOut',
-			} );
-		}
-
-		jQuery( '.arrow.prev' ).on( 'click', function() {
-			showSlides( -1 );
+	if ( jQuery( '.tabbed-map-items' ).length > 0 ) {
+		jQuery( '.tabbed-map-nav a' ).on( 'click', function( event ) {
+			event.preventDefault();
+			const tabId = jQuery( this ).attr( 'href' );
+			jQuery( '.tabbed-id-item' ).hide();
+			jQuery( `.tabbed-id-item${ tabId }` ).fadeIn( 400 ).addClass( 'active' );
+			jQuery( '.tabbed-map-nav a' ).removeClass( 'active' );
+			jQuery( this ).addClass( 'active' );
 		} );
-		jQuery( '.arrow.next' ).on( 'click', function() {
-			showSlides( 1 );
+	}
+	// jQuery( document ).ready( function() {
+	// 	jQuery( '.testimonial-variation' ).slick( {
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+	// 		dots: true,
+	// 		arrows: false,
+	// 		autoplay: true,
+	// 		autoplaySpeed: 4000,
+	// 		adaptiveHeight: true,
+	// 		vertical: true,
+	// 		verticalSwiping: true,
+	// 		speed: 800,
+	// 		cssEase: 'ease-in-out',
+	// 	} );
+	// } );
+	if ( jQuery( '.faq-block' ).length > 0 ) {
+		jQuery( '.faq-head' ).on( 'click keypress', function() {
+			const currentFaq = jQuery( this );
+
+			if ( currentFaq.hasClass( 'active' ) ) {
+				currentFaq.removeClass( 'active' );
+				currentFaq.siblings( '.faq-content' ).slideUp( 400 );
+			} else {
+				jQuery( '.faq-head' ).removeClass( 'active' );
+				jQuery( '.faq-content' ).slideUp();
+
+				currentFaq.addClass( 'active' );
+				currentFaq.siblings( '.faq-content' ).slideDown( 400 );
+			}
 		} );
-	} );
+	}
 } );
 

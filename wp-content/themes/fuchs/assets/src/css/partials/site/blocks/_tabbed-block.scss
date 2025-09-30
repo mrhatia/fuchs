@@ -1,0 +1,46 @@
+.tabbed-map-nav {
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 63px;
+		margin: 0;
+
+		li {
+			padding: 0;
+			list-style: none;
+			margin: 0;
+
+			&::before {
+				display: none;
+			}
+
+			a,
+			a:visited {
+				font-size: var(--fc_font_size_26);
+				@include font(yan, med);
+				color: var(--fc_gray_3);
+
+				&.active,
+				&:hover {
+					color: var(--fc_color_primary);
+				}
+			}
+		}
+	}
+}
+
+.tabbed-content-single {
+	p {
+		color: var(--fc_gray_4);
+		font-size: var(--fc_font_size_18);
+		@include font(yan, reg);
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}
+
+.tabbed-map-content-inner {
+	margin-top: 19px;
+}
