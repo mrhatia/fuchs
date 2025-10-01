@@ -2900,6 +2900,130 @@ Mixin for transition
   width: -moz-max-content;
   width: max-content;
 }
+.acf-block-preview .iat-image,
+.acf-block-preview .faq-image,
+.acf-block-preview .offering-block-image,
+.acf-block-preview .media-with-text-content-box {
+  position: relative;
+  overflow: hidden;
+}
+.acf-block-preview .iat-image:after, .acf-block-preview .iat-image:before,
+.acf-block-preview .faq-image:after,
+.acf-block-preview .faq-image:before,
+.acf-block-preview .offering-block-image:after,
+.acf-block-preview .offering-block-image:before,
+.acf-block-preview .media-with-text-content-box:after,
+.acf-block-preview .media-with-text-content-box:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.acf-block-preview .iat-image.iat-image-appear:before,
+.acf-block-preview .faq-image.iat-image-appear:before,
+.acf-block-preview .offering-block-image.iat-image-appear:before,
+.acf-block-preview .media-with-text-content-box.iat-image-appear:before {
+  animation: iat-image-animation 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+.acf-block-preview .iat-image:before,
+.acf-block-preview .faq-image:before,
+.acf-block-preview .offering-block-image:before,
+.acf-block-preview .media-with-text-content-box:before {
+  background-color: var(--fc_color_primary);
+  z-index: 1;
+  transform: translateX(101%);
+}
+.acf-block-preview .iat-image::after,
+.acf-block-preview .faq-image::after,
+.acf-block-preview .offering-block-image::after,
+.acf-block-preview .media-with-text-content-box::after {
+  background-color: var(--fc_orange);
+  z-index: 2;
+  transform: translateX(101%);
+}
+.acf-block-preview .iat-image.iat-image-appear:after,
+.acf-block-preview .faq-image.iat-image-appear:after,
+.acf-block-preview .offering-block-image.iat-image-appear:after,
+.acf-block-preview .media-with-text-content-box.iat-image-appear:after {
+  animation: iat-image-animation 1.2s 0.2s cubic-bezier(1, 0, 0.54, 0.99) forwards;
+}
+@keyframes iat-image-animation {
+  0% {
+    transform: translateX(101%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-101%);
+  }
+}
+.acf-block-preview .hero-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-split-text {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: textReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.8s forwards;
+}
+.acf-block-preview .hero-slide-item.slick-active .button-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 1.2s forwards;
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-reveal:nth-child(1) {
+  animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.3s forwards;
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-reveal:nth-child(2) {
+  animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.6s forwards;
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-reveal:nth-child(3) {
+  animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.9s forwards;
+}
+.acf-block-preview .hero-slide-item.slick-active .hero-reveal:nth-child(4) {
+  animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 1.2s forwards;
+}
+.acf-block-preview .hero-inner-slider.full-width-image .hero-split-text {
+  display: inline-block;
+  overflow: hidden;
+  animation: none;
+  opacity: 1;
+  transform: initial;
+}
+.acf-block-preview .hero-inner-slider.full-width-image .hero-split-text span {
+  display: inline-block;
+  transform: translateX(100%);
+  opacity: 0;
+  white-space: pre;
+}
 .acf-block-preview .two-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(clamp(350px, 50% - 2%, 100%), 100%), 1fr));

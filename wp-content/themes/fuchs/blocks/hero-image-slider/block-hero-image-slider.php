@@ -47,17 +47,20 @@ BaseTheme::block(
 												<div class="hero-split-text"><?php echo html_entity_decode( $background_text ); ?></div>
 											<?php } ?>
 											<?php if ( $slide_kicker ) {  ?>
-												<div class="kicker"><?php echo html_entity_decode( $slide_kicker ); ?></div>
+												<div class="kicker hero-reveal"><?php echo html_entity_decode( $slide_kicker ); ?></div>
 											<?php } ?>
 
 											<?php if ( $slide_title ) {  ?>
-												<h1 class="heading-2"><?php echo html_entity_decode( $slide_title ); ?></h1>
+												<h1 class="heading-2 hero-reveal"><?php echo html_entity_decode( $slide_title ); ?></h1>
 											<?php } ?>
 
-											<?php if ( $slide_text ) {  ?>
-												<?php echo html_entity_decode( $slide_text ); ?>
+											<?php if ( $slide_text ) { ?>
+												<div class="hero-reveal">
+													<?php echo html_entity_decode( $slide_text ); ?>
+												</div>
 											<?php } ?>
-											<div class="hero-buttons">
+
+											<div class="hero-buttons button-reveal">
 												<?php if ( $slide_button_one ) { ?>
 													<?php echo BaseTheme::button( $slide_button_one, 'button orange-button' ); ?>
 												<?php } ?>

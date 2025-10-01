@@ -6,6 +6,7 @@ import magnificPopup from '../vendors/jquery-magnificpopup';
 import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
 import gasap from '../vendors/gsap.min';
+import gsapScroll from '../vendors/ScrollTrigger.min';
 // jQuery( document ).on( 'scroll', function() {
 // 	if ( jQuery( document ).scrollTop() > 0 ) {
 // 		jQuery( 'header, body' ).addClass( 'shrink' );
@@ -318,21 +319,49 @@ jQuery( function() {
 			jQuery( this ).addClass( 'active' );
 		} );
 	}
-	// jQuery( document ).ready( function() {
-	// 	jQuery( '.testimonial-variation' ).slick( {
-	// 		slidesToShow: 1,
-	// 		slidesToScroll: 1,
-	// 		dots: true,
-	// 		arrows: false,
-	// 		autoplay: true,
-	// 		autoplaySpeed: 4000,
-	// 		adaptiveHeight: true,
-	// 		vertical: true,
-	// 		verticalSwiping: true,
-	// 		speed: 800,
-	// 		cssEase: 'ease-in-out',
-	// 	} );
-	// } );
+
+	if ( jQuery( '.image-alongside-text .iat-image, .offering-block-image ,.faq-image ,.media-with-text-content-box' ).length > 0 ) {
+		gsap.registerPlugin( ScrollTrigger );
+		gsap.utils.toArray( '.image-alongside-text .iat-image, .offering-block-image ,.faq-image ,.media-with-text-content-box' ).forEach( ( el ) => {
+			gsap.from( el, {
+				scrollTrigger: {
+					trigger: el,
+					start: 'top 80%',
+					toggleClass: { targets: el, className: 'iat-image-appear' },
+					once: true,
+				},
+			} );
+		} );
+	}
+	if ( jQuery( '.hero-inner-slider.full-width-image .hero-split-text' ).length > 0 ) {
+		gsap.registerPlugin( ScrollTrigger );
+
+		jQuery( function() {
+			jQuery( '.hero-inner-slider.full-width-image .hero-split-text' ).each( function() {
+				const el = jQuery( this );
+				const text = el.text().trim();
+				const wrapped = text.split( '' ).map( function( char ) {
+					return '<span>' + ( char === ' ' ? '&nbsp;' : char ) + '</span>';
+				} ).join( '' );
+				el.html( wrapped );
+
+				gsap.to( el.find( 'span' ), {
+					x: '0%',
+					opacity: 1,
+					ease: 'power3.out',
+					duration: 0.9,
+					stagger: 0.09,
+					scrollTrigger: {
+						trigger: el[ 0 ],
+						start: 'top 80%',
+						toggleActions: 'play none none none',
+						once: true,
+					},
+				} );
+			} );
+		} );
+	}
+
 	if ( jQuery( '.faq-block' ).length > 0 ) {
 		jQuery( '.faq-head' ).on( 'click keypress', function() {
 			const currentFaq = jQuery( this );
