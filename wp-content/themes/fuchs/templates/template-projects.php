@@ -39,12 +39,14 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 						</div>
 						<div class="banner-content">
 							<div class="hero-split-text">SCHEDULE</div>
-							<div class="kicker">Explore the features</div>
-							<h1 class="heading-2"><?php echo esc_html( $bst_var_pagetitle ); ?></h1>
+							<div class="kicker hero-reveal">Explore the features</div>
+							<h1 class="heading-2 hero-reveal"><?php echo esc_html( $bst_var_pagetitle ); ?></h1>
+							<div class="hero-reveal">
 							<p>Etiam Scelerisque tortor at lectus dapibus, nec fermentum diam feugiat. Morbi rutrum
 								magna et
 								dui feugiat, non tristique mi convallis liquam.</p>
-							<!-- <div class="hero-buttons">
+							</div>
+							<!-- <div class="hero-buttons button-reveal">
 								<a href="#" class="button orange-button">Read More</a>
 								<a href="#" class="button blue-button">Contact us</a>
 							</div> -->

@@ -5505,30 +5505,37 @@ body #daextlwcnf-cookie-settings-button-2:hover {
     transform: translateX(0);
   }
 }
-.hero-slide-item.slick-active .hero-split-text {
+.hero-slide-item.slick-active .hero-split-text,
+.hero-project.archive-hero .hero-split-text {
   opacity: 0;
   transform: translateX(40px);
   animation: textReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.8s forwards;
 }
-.hero-slide-item.slick-active .button-reveal {
+.hero-slide-item.slick-active .button-reveal,
+.hero-project.archive-hero .button-reveal {
   opacity: 0;
   transform: translateY(40px);
   animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 1.2s forwards;
 }
-.hero-slide-item.slick-active .hero-reveal {
+.hero-slide-item.slick-active .hero-reveal,
+.hero-project.archive-hero .hero-reveal {
   opacity: 0;
   transform: translateY(40px);
 }
-.hero-slide-item.slick-active .hero-reveal:nth-child(1) {
+.hero-slide-item.slick-active .hero-reveal:nth-child(1),
+.hero-project.archive-hero .hero-reveal:nth-child(1) {
   animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.3s forwards;
 }
-.hero-slide-item.slick-active .hero-reveal:nth-child(2) {
+.hero-slide-item.slick-active .hero-reveal:nth-child(2),
+.hero-project.archive-hero .hero-reveal:nth-child(2) {
   animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.6s forwards;
 }
-.hero-slide-item.slick-active .hero-reveal:nth-child(3) {
+.hero-slide-item.slick-active .hero-reveal:nth-child(3),
+.hero-project.archive-hero .hero-reveal:nth-child(3) {
   animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 0.9s forwards;
 }
-.hero-slide-item.slick-active .hero-reveal:nth-child(4) {
+.hero-slide-item.slick-active .hero-reveal:nth-child(4),
+.hero-project.archive-hero .hero-reveal:nth-child(4) {
   animation: heroReveal 1.4s cubic-bezier(0.23, 1, 0.32, 1) 1.2s forwards;
 }
 
