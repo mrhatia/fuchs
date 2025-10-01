@@ -32,6 +32,61 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 		</div>
 	</section>
 	<div class="gl-s48"></div>
+	<!-- <section>
+		<div class="wrapper">
+			<div class="icons-grid">
+				<div class="four-columns">
+					<div class="column center-align">
+						<div class="icon">
+							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-01.png"
+								alt="">
+						</div>
+						<div class="kicker">
+							Explore the features
+						</div>
+						<h3 class="heading-4">Baubeginn Herbst 2025</h3>
+						<p><strong>Wohnungsgröße</strong><br>46 m2 bis 20 m2</p>
+					</div>
+					<div class="column center-align">
+						<div class="icon">
+							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-02.png"
+								alt="">
+						</div>
+						<div class="kicker">
+							Explore the Features
+						</div>
+						<h3 class="heading-4">KfW-40</h3>
+						<p>Effizienzhaus mit „Qualitätssigel Nachhaltiges Gebäude“ (QNG) mit attraktiver Förderung
+						</p>
+					</div>
+					<div class="column center-align">
+						<div class="icon">
+							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-04.png"
+								alt="">
+						</div>
+						<div class="kicker">
+							Explore the Features
+						</div>
+						<h3 class="heading-4">für jede Lebensphase</h3>
+						<p>Senioren, Singles, Pendler, Manager, Studenten
+						</p>
+					</div>
+					<div class="column center-align">
+						<div class="icon">
+							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-05.png"
+								alt="">
+						</div>
+						<div class="kicker">
+							Explore the features
+						</div>
+						<h3 class="heading-4">alles aus einer Hand</h3>
+						<p>vom erfahrenen Bauträger aus der Region rundum betereut
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
 	<section>
 		<div class="wrapper">
 			<div class="icons-grid">
@@ -95,13 +150,18 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 				class="image-alongside-text image-at-right d-flex justify-content-between flex-wrap align-items-center">
 				<div class="iat-content column">
 					<div class="kicker">Explore the features</div>
-					<h2 class="heading-">We are delivering high quality projects</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident in hic ipsam
-						pariatur et facere id animi ullam perferendis.</p>
-					<a href="#" class="button">Read More</a>
+					<h2 class="heading-">Wohnen im Zentrum von Nürnberg</h2>
+					<p>Glockenhof ist ein lebendiger Stadtteil, welcher direkt südlich an die Nürnberger Altstadt angrenzt. Aufgrund dieser Lage ist Glockenhof vor allem wohnwirtschaftlich geprägt.
+					In diesem Umfeld haben sich über viele Jahre hinweg Restaurants, medizinische Versorgung, Einkaufsmöglichkeiten etc. angesiedelt und sorgen für eine <strong>hohe Freizeit- und Lebensqualität.</strong>
+					<br>
+					Hier vereinen sich <strong>historische Wurzeln</strong> mit <strong>urbanem Leben</strong>. Die Mischung aus Innenstadtnähe, guter Infrastruktur und der guten Anbindung an die öffentlichen Verkehrsmittel machen den
+					<br>
+					Stadtteil zu einem attraktiven Wohnort für Berufspendler, Senioren und Studenten.
+					Die Wohnbebauung in Verbindung des gewachsenen Umfelds ist ein Garant für permanente Wohnraumnachfrage.
+</p>
 				</div>
 				<div class="iat-image column">
-					<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg"
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/Bildschirmfoto 2025-08-16 um 18.10.52 Kopie.png"
 						alt="">
 				</div>
 			</div>
@@ -188,93 +248,139 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 	<!-- Tabbed content -->
 
 
-		<section>
-			<div class="wrapper">
-				<div class="tabbed-content-main tabbed-map-items">
-					<div class="tabbed-map-nav">
-						<ul role="list">
-							<li class="dropdown-list-title">
-								<a href="#tab-01" class="active">Grundrisse</a>
-							</li>
-							<li class="dropdown-list-title">
-								<a href="#tab-02" class="">Objekt</a>
-							</li>
-							<li class="dropdown-list-title">
-								<a href="#tab-03" class="">Details</a>
-							</li>
-							<li class="dropdown-list-title">
-								<a href="#tab-04" class="">Lage</a>
-							</li>
-						</ul>
-					</div>
-					<div class="tabbed-map-content-inner">
-						<div id="tab-01" class="tabbed-content-single tabbed-id-item active" style="">
-							<div class="gl-s48"></div>
-							<div class="two-columns">
-								<div class="column">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-1.png" alt="">
-								</div>
-								<div class="column">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-2.png" alt="">
-								</div>
-								<div class="column">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-3.png" alt="">
-								</div>
-								<div class="column">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-4.png" alt="">
-								</div>
-							</div>
-						</div>
-
-						<div class="gl-s48"></div>
-
-						<div id="tab-02" class="tabbed-content-single tabbed-id-item tabbed-text-columns" style="display: none;">
-							<div class="two-columns">
-								<div class="column">
-									<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
-									<br><br>
-									<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
-										<div class="gl-s48"></div>
-
-									<div class="tabbed-image ">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
-										<div class="gl-s12"></div>
-
-										<div class="center-align"><strong>Ansicht Hofseite</strong></div>
-									</div>
-								</div>
-								<div class="column">
-									<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
-									<br><br>
-									<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
-										<div class="gl-s48"></div>
-
-									<div class="tabbed-image ">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
-										<div class="gl-s12"></div>
-
-										<div class="center-align"><strong>Ansicht Hofseite</strong></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab-03" class="tabbed-content-single tabbed-id-item" style="display: none;">
-							<h3>Maximale Wohnqualität auf effizientem Raum</h3>
-							<h4 class="heading-5">IRAUM Glockenhof</h4>
-							<p>Appartement- Wohnungen erfüllen die Anforderungen moderner Lebensstile- kompakt, durch- dacht und wirtschaftlich. Gerade in zentralen Lagen sind sie eine attraktive Wohnform: Die laufenden Kosten sind überschaubar, der Bedarf an Wohnfläche ist angepasst an eine breite Zielgruppe. Für Menschen, die bewusst kompakt und effizient wohnen möchten- ob Studie- rende, Pendler, Senioren oder Singles .</p>
-							<p>Unser Projekt steht dabei für ein bewusstes Gegenmodell zu anonymen Großanlagen . Ein kleines, energieeffizientes Mehrfamilienhaus schafft ein persönliches Wohnumfeld, das Nähe und Übersichtlichkeit vereint. Gleichzeitig bleibt die Verwaltung effizient, Instand- haltungskosten sind besser kalkulierbar, und individuelle Maßnahmen zur Werterhaltung lassen sich gezielter umsetzen .</p>
-							<p>1RAUM- Viele Möglichkeiten</p>
-						</div>
-						<div id="tab-04" class="tabbed-content-single tabbed-id-item" style="display: none;">
-							<h3>Glockenhof­straße 45, 90478 Nürnberg</h3>
-							<p>Zentrale Lage in der Innenstadt von Nürnberg ,fußläufig zwischen der Altstadt und dem <br> Naherholungsgebiet Wöhrder See.</p>
-							<div class="gl-s36"></div>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.0165009085!2d-74.14431153175639!3d40.697024322520015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1759273618319!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-
+	<section>
+		<div class="wrapper">
+			<div class="tabbed-content-main tabbed-map-items">
+				<div class="tabbed-map-nav">
+					<ul role="list">
+						<li class="dropdown-list-title">
+							<a href="#tab-01" class="active">Grundrisse</a>
+						</li>
+						<li class="dropdown-list-title">
+							<a href="#tab-02" class="">Objekt</a>
+						</li>
+						<li class="dropdown-list-title">
+							<a href="#tab-03" class="">Details</a>
+						</li>
+						<li class="dropdown-list-title">
+							<a href="#tab-04" class="">Lage</a>
+						</li>
+					</ul>
 				</div>
+				<div class="tabbed-map-content-inner">
+					<div id="tab-01" class="tabbed-content-single tabbed-id-item active" style="">
+						<div class="gl-s48"></div>
+						<div class="two-columns">
+							<div class="column">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-1.png" alt="">
+							</div>
+							<div class="column">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-2.png" alt="">
+							</div>
+							<div class="column">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-3.png" alt="">
+							</div>
+							<div class="column">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-4.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="gl-s48"></div>
+
+					<div id="tab-02" class="tabbed-content-single tabbed-id-item tabbed-text-columns" style="display: none;">
+						<div class="two-columns">
+							<div class="column">
+								<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
+								<br><br>
+								<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
+									<div class="gl-s48"></div>
+
+								<div class="tabbed-image ">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
+									<div class="gl-s12"></div>
+
+									<div class="center-align"><strong>Ansicht Hofseite</strong></div>
+								</div>
+							</div>
+							<div class="column">
+								<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
+								<br><br>
+								<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
+									<div class="gl-s48"></div>
+
+								<div class="tabbed-image ">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
+									<div class="gl-s12"></div>
+
+									<div class="center-align"><strong>Ansicht Hofseite</strong></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-03" class="tabbed-content-single tabbed-id-item" style="display: none;">
+						<h3>Maximale Wohnqualität auf effizientem Raum</h3>
+						<h4 class="heading-5">IRAUM Glockenhof</h4>
+						<p>Appartement- Wohnungen erfüllen die Anforderungen moderner Lebensstile- kompakt, durch- dacht und wirtschaftlich. Gerade in zentralen Lagen sind sie eine attraktive Wohnform: Die laufenden Kosten sind überschaubar, der Bedarf an Wohnfläche ist angepasst an eine breite Zielgruppe. Für Menschen, die bewusst kompakt und effizient wohnen möchten- ob Studie- rende, Pendler, Senioren oder Singles .</p>
+						<p>Unser Projekt steht dabei für ein bewusstes Gegenmodell zu anonymen Großanlagen . Ein kleines, energieeffizientes Mehrfamilienhaus schafft ein persönliches Wohnumfeld, das Nähe und Übersichtlichkeit vereint. Gleichzeitig bleibt die Verwaltung effizient, Instand- haltungskosten sind besser kalkulierbar, und individuelle Maßnahmen zur Werterhaltung lassen sich gezielter umsetzen .</p>
+						<p>1RAUM- Viele Möglichkeiten</p>
+					</div>
+					<div id="tab-04" class="tabbed-content-single tabbed-id-item" style="display: none;">
+						<h3>Glockenhof­straße 45, 90478 Nürnberg</h3>
+						<p>Zentrale Lage in der Innenstadt von Nürnberg ,fußläufig zwischen der Altstadt und dem <br> Naherholungsgebiet Wöhrder See.</p>
+						<div class="gl-s36"></div>
+						<!-- <style>
+							#map {
+							height: 400px;
+							width: 100%;
+							}
+						</style>
+						  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMr02RSFG_S1_OLWYRTSdc92oXkx_XQes"></script>
+							<script>
+								function initMap() {
+								const styledMap = [
+									{ elementType: "geometry", stylers: [{ color: "#f5f5f5" }] },
+									{ elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+									{ elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
+									{ elementType: "labels.text.stroke", stylers: [{ color: "#f5f5f5" }] },
+									{ featureType: "administrative.land_parcel", elementType: "labels.text.fill", stylers: [{ color: "#bdbdbd" }] },
+									{ featureType: "poi", elementType: "geometry", stylers: [{ color: "#eeeeee" }] },
+									{ featureType: "poi", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
+									{ featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
+									{ featureType: "poi.park", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] },
+									{ featureType: "road", elementType: "geometry", stylers: [{ color: "#ffffff" }] },
+									{ featureType: "road.arterial", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
+									{ featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#dadada" }] },
+									{ featureType: "road.highway", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
+									{ featureType: "road.local", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] },
+									{ featureType: "transit.line", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] },
+									{ featureType: "transit.station", elementType: "geometry", stylers: [{ color: "#eeeeee" }] },
+									{ featureType: "water", elementType: "geometry", stylers: [{ color: "#c9c9c9" }] },
+									{ featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }
+								];
+
+								const map = new google.maps.Map(document.getElementById("map"), {
+									center: { lat: 40.72327, lng: -73.88406 },
+									zoom: 12,
+									styles: styledMap
+								});
+
+								// Optional: Add a marker
+								new google.maps.Marker({
+									position: { lat: 40.72327, lng: -73.88406 },
+									map: map
+								});
+								}
+
+								window.onload = initMap;
+							</script>
+						<div id="map"></div> -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.0165009085!2d-74.14431153175639!3d40.697024322520015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1759273618319!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
 			</div>
-		</section>
+		</div>
+	</section>
 
 	<div class="gl-s96"></div>
 
@@ -283,11 +389,11 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 		<div class="wrapper">
 			<div class="image-alongside-text image-at-left d-flex justify-content-between flex-wrap align-items-center">
 				<div class="iat-content column">
-					<div class="kicker">Explore the features</div>
-					<h2 class="heading-">We are delivering high quality projects</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat provident in hic ipsam
-						pariatur et facere id animi ullam perferendis.</p>
-					<a href="#" class="button">Read More</a>
+					<div class="kicker">zukunftssichere Investition</div>
+					<h2 class="heading-2">Nachfrageüberhang bei 1Raum-Wohnungen</h2>
+					<p>Die Nachfrage nach urbanen, kleinen 1 Personen- Neubau- Appartements in Metropolregionen wie Nürnberg übersteigt     das Angebot.
+Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojekte nach der Zinswende und vereint höchste Marktattraktivität und Entwicklungsprognose.</p>
+
 				</div>
 				<div class="iat-image column">
 					<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg"
@@ -375,23 +481,23 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 			</div>
 		</div>
 	</section>
-	<div class="gl-s96"></div>
+	<div class="gl-s48"></div>
+
 	<!-- Testimonial Section -->
 	<section>
 		<div class="wrapper">
 			<div class="swiper testimonial-variation">
 				<div class="swiper-wrapper">
+
 					<div class="swiper-slide testimonial-single">
-						<div class="testimonial-single-image image-cover">
+						<div class="testimonial-single-image image-cover  mobile-hide">
 						</div>
 						<div class="testimonial-single-content">
 							<p class="testimonial-text">
-								Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus im
-								tincidunt.
-								Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis eo magna. Sed
-								consequat, leo
-								eget
-								bibendum sodales, augue velit. Aliquam lorem.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+								ut? Vero sequi quisquam optio suscipit nesciunt magni quo quia non deleniti ullam dolore vel,
+								labore officiis pariatur iusto corrupti ex. Quia quas qui animi natus. Quibusdam rem, culpa qui modi,
+								dolore ipsam labore provident cumque, consequatur accusantium sint enim minus!
 							</p>
 							<div class="testimonial-meta">
 								<span class="testimonial-role">ARCHITECT</span>
@@ -400,7 +506,7 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 						</div>
 					</div>
 					<div class="swiper-slide testimonial-single">
-						<div class="testimonial-single-image image-cover">
+						<div class="testimonial-single-image image-cover mobile-hide">
 						</div>
 						<div class="testimonial-single-content">
 							<p class="testimonial-text">
@@ -412,8 +518,8 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 								bibendum sodales, augue velit. Aliquam lorem.
 							</p>
 							<div class="testimonial-meta">
-								<span class="testimonial-role">ARCHITECT</span>
-								<h4 class="testimonial-name">Philip Larson</h4>
+								<span class="testimonial-role">Designer</span>
+								<h4 class="testimonial-name">Jason Roy</h4>
 							</div>
 						</div>
 					</div>
@@ -427,29 +533,48 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			const swiper = new Swiper('.testimonial-variation', {
-				direction: 'vertical',
+
+			function initSwiper() {
+			// Destroy existing swiper if it exists to avoid duplicates
+			if (window.testimonialSwiper) {
+				window.testimonialSwiper.destroy(true, true);
+			}
+
+			window.testimonialSwiper = new Swiper('.testimonial-variation', {
+				effect: 'fade',           // Fade effect
+				fadeEffect: {
+				crossFade: true,       // Smooth cross-fade
+				},
+				direction: window.innerWidth <= 768 ? 'horizontal' : 'vertical', // 👉 Horizontal on mobile
 				slidesPerView: 1,
 				loop: true,
-				speed: 800,
+				speed: 1500,
 				spaceBetween: 0,
 				autoHeight: true,
-				autoplay: {
+			   autoplay: {
 					delay: 3000,
 					disableOnInteraction: false,
 				},
 				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
+				el: '.swiper-pagination',
+				clickable: true,
 				},
-				mousewheel: true,
+				mousewheel: false,
 				keyboard: {
-					enabled: true,
-					onlyInViewport: true,
+				enabled: true,
+				onlyInViewport: true,
 				},
 			});
+			}
+
+			// Initialize swiper on load
+			initSwiper();
+
+			// Reinitialize on resize (helpful for orientation changes)
+			window.addEventListener('resize', initSwiper);
 		});
-	</script>
+		</script>
+
 	<div class="gl-s96"></div>
 
 	<!-- Faqs -->
@@ -581,6 +706,9 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 			<div class="media-with-text">
 				<div class="media-with-text-image image-cover">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/our-services-title-img.jpg" alt="">
+					<div class="media-with-text-image-text">
+						UPDATES
+					</div>
 				</div>
 				<div class="media-with-text-content-box">
 					<div class="kicker">

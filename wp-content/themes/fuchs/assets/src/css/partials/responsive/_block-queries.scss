@@ -108,7 +108,16 @@
 	}
 
 	.testimonial-variation.swiper {
-		padding: 0;
+		padding: 0 0 60px;
+
+		.testimonial-single-content {
+
+			padding-top: 0;
+		}
+
+		.swiper-pagination {
+			bottom: 0 !important;
+		}
 	}
 }
 
@@ -186,6 +195,17 @@
 }
 
 @media only screen and (max-width: 747px) {
+
+	.image-alongside-text.image-at-left {
+		.iat-content {
+
+			h2 {
+				word-break: break-all;
+			}
+		}
+
+	}
+
 	.media-with-text.variation .media-with-text-content-box {
 		left: 0;
 		right: 0;
@@ -319,20 +339,34 @@
 	}
 
 	.tabbed-map-nav ul {
-		gap: 30px;
+		gap: 20px;
 
 		li {
 
 			a,
 			a:visited {
-				font-size: 26px;
+				font-size: 22px;
 			}
 		}
 	}
 
+
+
 	.tabbed-content-single {
+		.two-columns {
+			row-gap: 50px;
+		}
+
 		p {
 			font-size: 18px;
+		}
+
+		.tabbed-image {
+			width: 100%;
+		}
+
+		iframe {
+			height: 300px;
 		}
 	}
 
@@ -371,9 +405,11 @@
 	span.button,
 	.is-style-mycustomstyle .wp-element-button {
 		font-size: 16px;
+		padding: 10px 30px;
 	}
 
-	.hero-inner-slider {
+	.hero-inner-slider,
+	.hero-project {
 		.hero-split-text {
 			display: none;
 		}

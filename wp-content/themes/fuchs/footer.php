@@ -68,7 +68,7 @@ $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null
 				</div>
 
 			</div>
-			<div class="gl-s72"></div>
+			<div class="gl-s48"></div>
 			<div class="footer-bottom d-flex align-items-center justify-content-between">
 				<div class="legal-nav">
 					<?php

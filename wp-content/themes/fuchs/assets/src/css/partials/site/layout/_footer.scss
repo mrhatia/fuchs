@@ -1,7 +1,7 @@
 .footer-ctn {
 	// background-color: var(--fc_footer_bgcolor);
 	background-color: #027757;
-	padding: 80px 0 0;
+	padding: 40px 0 0;
 	box-sizing: border-box;
 
 	h1,
@@ -41,8 +41,7 @@
 
 		&:nth-child(2) {
 			width: 30%;
-			padding: 20px;
-			max-width: 320px;
+			max-width: 305px;
 		}
 
 		&:nth-child(2) h4 {
