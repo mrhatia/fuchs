@@ -601,3 +601,30 @@ body {
 		-webkit-clip-path: inset(0 0 0 0);
 	}
 }
+
+
+
+
+.section-head {
+	position: relative;
+	color: var(--fc_orange);
+
+	.hero-split-text {
+		position: absolute;
+		top: -137px;
+		left: -18%;
+		visibility: visible;
+		opacity: 1;
+		font-size: var(--fc_font_size_180);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		font-weight: 700;
+		margin: 0;
+		font-family: "Yantramanav", arial, sans-serif;
+		font-weight: bold;
+		font-style: normal;
+		letter-spacing: -1.7px;
+		width: max-content;
+	}
+
+}

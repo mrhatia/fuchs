@@ -21,7 +21,17 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 <div class="">
 
 	<?php get_template_part( 'partials/content' ); ?>
-	<div class="gl-s96"></div>
+	<div class="gl-s128"></div>
+
+	<section class="ctn-1100">
+		<div class="wrapper">
+			<div class="section-head">
+				<div class="hero-split-text">1 RAUM</div>
+				<h1 class="heading-2">VIELE GRUNDE</h1>
+			</div>
+		</div>
+	</section>
+	<div class="gl-s48"></div>
 	<section>
 		<div class="wrapper">
 			<div class="icons-grid">
@@ -178,47 +188,93 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 	<!-- Tabbed content -->
 
 
-	<section>
-		<div class="wrapper">
-			<div class="tabbed-content-main tabbed-map-items">
-				<div class="tabbed-map-nav">
-					<ul role="list">
-						<li class="dropdown-list-title">
-							<a href="#tab-01" class="active">Marketing</a>
-						</li>
-						<li class="dropdown-list-title">
-							<a href="#tab-02" class="">Design</a>
-						</li>
-						<li class="dropdown-list-title">
-							<a href="#tab-03" class="">Branding</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tabbed-map-content-inner">
-					<div id="tab-01" class="tabbed-content-single tabbed-id-item active" style="">
-						<p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
-							ut metus varius laoreet.
-							Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-							ultricies nisi. Nam eget dui.
-							Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-							sit amet adipiscing sem neque
-							sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas
-							nec odio.</p>
+		<section>
+			<div class="wrapper">
+				<div class="tabbed-content-main tabbed-map-items">
+					<div class="tabbed-map-nav">
+						<ul role="list">
+							<li class="dropdown-list-title">
+								<a href="#tab-01" class="active">Grundrisse</a>
+							</li>
+							<li class="dropdown-list-title">
+								<a href="#tab-02" class="">Objekt</a>
+							</li>
+							<li class="dropdown-list-title">
+								<a href="#tab-03" class="">Details</a>
+							</li>
+							<li class="dropdown-list-title">
+								<a href="#tab-04" class="">Lage</a>
+							</li>
+						</ul>
 					</div>
-					<div id="tab-02" class="tabbed-content-single tabbed-id-item" style="display: none;">
-						<p>Content nulla nibh amet a adipiscing fringilla. Amet amet ac faucibus metus at
-							nullam. In sit quisque amet morbi</p>
-					</div>
-					<div id="tab-03" class="tabbed-content-single tabbed-id-item" style="display: none;">
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id accusantium, sint enim ex,
-							eveniet consequatur blanditiis omnis consectetur dolores quaerat suscipit sed nemo
-							sapiente. Minima dolore eum sint maxime dignissimos.</p>
-					</div>
-				</div>
+					<div class="tabbed-map-content-inner">
+						<div id="tab-01" class="tabbed-content-single tabbed-id-item active" style="">
+							<div class="gl-s48"></div>
+							<div class="two-columns">
+								<div class="column">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-1.png" alt="">
+								</div>
+								<div class="column">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-2.png" alt="">
+								</div>
+								<div class="column">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-3.png" alt="">
+								</div>
+								<div class="column">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/design-4.png" alt="">
+								</div>
+							</div>
+						</div>
 
+						<div class="gl-s48"></div>
+
+						<div id="tab-02" class="tabbed-content-single tabbed-id-item tabbed-text-columns" style="display: none;">
+							<div class="two-columns">
+								<div class="column">
+									<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
+									<br><br>
+									<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
+										<div class="gl-s48"></div>
+
+									<div class="tabbed-image ">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
+										<div class="gl-s12"></div>
+
+										<div class="center-align"><strong>Ansicht Hofseite</strong></div>
+									</div>
+								</div>
+								<div class="column">
+									<p>Baubeginn Herbst 2025 <br> Fertigstellung Frühjahr 2027</p>
+									<br><br>
+									<p>Zentrumsnähe und Wohnkomfort <br> freie Nutzung, kein Betreiberkonzept</p>
+										<div class="gl-s48"></div>
+
+									<div class="tabbed-image ">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/tabbed-column-one-image.png" alt="">
+										<div class="gl-s12"></div>
+
+										<div class="center-align"><strong>Ansicht Hofseite</strong></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-03" class="tabbed-content-single tabbed-id-item" style="display: none;">
+							<h3>Maximale Wohnqualität auf effizientem Raum</h3>
+							<h4 class="heading-5">IRAUM Glockenhof</h4>
+							<p>Appartement- Wohnungen erfüllen die Anforderungen moderner Lebensstile- kompakt, durch- dacht und wirtschaftlich. Gerade in zentralen Lagen sind sie eine attraktive Wohnform: Die laufenden Kosten sind überschaubar, der Bedarf an Wohnfläche ist angepasst an eine breite Zielgruppe. Für Menschen, die bewusst kompakt und effizient wohnen möchten- ob Studie- rende, Pendler, Senioren oder Singles .</p>
+							<p>Unser Projekt steht dabei für ein bewusstes Gegenmodell zu anonymen Großanlagen . Ein kleines, energieeffizientes Mehrfamilienhaus schafft ein persönliches Wohnumfeld, das Nähe und Übersichtlichkeit vereint. Gleichzeitig bleibt die Verwaltung effizient, Instand- haltungskosten sind besser kalkulierbar, und individuelle Maßnahmen zur Werterhaltung lassen sich gezielter umsetzen .</p>
+							<p>1RAUM- Viele Möglichkeiten</p>
+						</div>
+						<div id="tab-04" class="tabbed-content-single tabbed-id-item" style="display: none;">
+							<h3>Glockenhof­straße 45, 90478 Nürnberg</h3>
+							<p>Zentrale Lage in der Innenstadt von Nürnberg ,fußläufig zwischen der Altstadt und dem <br> Naherholungsgebiet Wöhrder See.</p>
+							<div class="gl-s36"></div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.0165009085!2d-74.14431153175639!3d40.697024322520015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1759273618319!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 	<div class="gl-s96"></div>
 
@@ -662,6 +718,6 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 			</div>
 		</section>
 	</div>
-	<div class="gl-s96"></div>
+	<div class="gl-s30"></div>
 
 </div>

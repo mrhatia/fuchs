@@ -22,7 +22,7 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 ?>
 		<section class="ctn-full-width">
 			<div class="wrapper">
-				<div class="hero-inner-slider archive-hero">
+				<div class="hero-project archive-hero">
 					<div class="hero-slide-item">
 						<div class="hero-slide-image">
 
@@ -38,7 +38,7 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 									?>
 						</div>
 						<div class="banner-content">
-							<!-- <div class="hero-split-text">SCHEDULE</div> -->
+							<div class="hero-split-text">SCHEDULE</div>
 							<div class="kicker">Explore the features</div>
 							<h1 class="heading-2"><?php echo esc_html( $bst_var_pagetitle ); ?></h1>
 							<p>Etiam Scelerisque tortor at lectus dapibus, nec fermentum diam feugiat. Morbi rutrum

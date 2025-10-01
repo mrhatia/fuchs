@@ -41,12 +41,25 @@
 
 		&:nth-child(2) {
 			width: 30%;
-			background-color: #EFEEE8;
 			padding: 20px;
+			max-width: 320px;
 		}
 
 		&:nth-child(2) h4 {
-			color: black;
+			font-size: var(--fc_font_size_18);
+		}
+	}
+
+	.social-icons {
+		svg path {
+			fill: #ffffff;
+		}
+
+		a:hover {
+			svg path {
+				fill: #007857 !important;
+			}
+
 		}
 	}
 }
@@ -126,7 +139,7 @@
 .copy-right {
 	// width: 45%;
 	color: var(--fc_copyright_color);
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .legal-nav {
@@ -156,7 +169,7 @@
 				color: var(--fc_legal_nav_color);
 				position: relative;
 				display: block;
-				font-size: 20px;
+				font-size: 18px;
 
 				&::after {
 					content: "";

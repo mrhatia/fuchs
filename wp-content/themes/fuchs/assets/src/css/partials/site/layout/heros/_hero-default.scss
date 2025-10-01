@@ -4,7 +4,10 @@
 
 }
 
-.hero-inner-slider {
+
+
+.hero-inner-slider,
+.hero-project {
 	.banner-content {
 		color: var(--fc_white);
 		position: absolute;
@@ -67,6 +70,19 @@
 		margin: 0;
 		@include font(yan, bold);
 		letter-spacing: -1.7px;
+	}
+}
+
+.hero-project {
+
+	.hero-slide-image {
+		aspect-ratio: unset;
+		min-height: 480px;
+		height: 50vh;
+	}
+
+	.banner-content {
+		top: 110px;
 	}
 }
 
