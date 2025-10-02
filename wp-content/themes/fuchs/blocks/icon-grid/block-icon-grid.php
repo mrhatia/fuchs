@@ -16,7 +16,9 @@ BaseTheme::block(
 
 		// Block variables.
 		$fh_var_blk_icon_columns     = $bst_block_fields['fh_var_blk_icon_columns'] ?? null;
+
 		?>
+
 
 		<?php if($fh_var_blk_icon_columns){ ?>
 			<section>
@@ -43,9 +45,9 @@ BaseTheme::block(
 											<div class="kicker"><?php echo html_entity_decode( $column_kicker ); ?></div>
 										<?php } ?>
 
-										<?php if ( $title ) {  ?>
+										<?php if ( $column_title ) {  ?>
 
-											<h3 class="heading-4"><?php echo html_entity_decode( $title ); ?></h3>
+											<h3 class="heading-4"><?php echo html_entity_decode( $column_title ); ?></h3>
 										<?php } ?>
 
 										<?php if ( $column_text ) {  ?>

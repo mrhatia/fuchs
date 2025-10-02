@@ -475,49 +475,7 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 		</div>
 	</section>
 
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
 
-			function initSwiper() {
-			// Destroy existing swiper if it exists to avoid duplicates
-			if (window.testimonialSwiper) {
-				window.testimonialSwiper.destroy(true, true);
-			}
-
-			window.testimonialSwiper = new Swiper('.testimonial-variation', {
-				effect: 'fade',           // Fade effect
-				fadeEffect: {
-				crossFade: true,       // Smooth cross-fade
-				},
-				direction: window.innerWidth <= 768 ? 'horizontal' : 'vertical', // 👉 Horizontal on mobile
-				slidesPerView: 1,
-				loop: true,
-				speed: 1500,
-				spaceBetween: 0,
-				autoHeight: true,
-			   autoplay: {
-					delay: 3000,
-					disableOnInteraction: false,
-				},
-				pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-				},
-				mousewheel: false,
-				keyboard: {
-				enabled: true,
-				onlyInViewport: true,
-				},
-			});
-			}
-
-			// Initialize swiper on load
-			initSwiper();
-
-			// Reinitialize on resize (helpful for orientation changes)
-			window.addEventListener('resize', initSwiper);
-		});
-		</script>
 
 	<div class="gl-s96"></div>
 
@@ -714,87 +672,68 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 		<section>
 			<div class="wrapper">
 				<div class="post-archive three-columns">
-					<article class="post-archive-box column">
-						<div class="post-archive-box-img post-image">
-							<a href="#"> <img
-									src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg">
-							</a>
-						</div>
-						<div class="post-content">
-							<div class="post-box-meta d-flex justify-content-between">
-								<div class="ac-post-cat">
-									<a href="http://basethemedevcause.local/category/cat-a/">11. December. 2018</a>
-								</div>
-							</div>
-							<div class="post-archive-box-title post-title">
-								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
-							</div>
-							<div class="bottom-section-button">
-								<a href="#">
-									<span>
-										Read More
-									</span>
-									<div class="plus-button">
-										+
+					<?php
+						$args = array(
+							'post_type'      => 'project',
+							'posts_per_page' => 3,
+							'orderby'        => 'date',
+							'order'          => 'DESC',
+						);
+
+						$bst_query = new WP_Query( $args );
+
+						if ( $bst_query->have_posts() ) :
+							while ( $bst_query->have_posts() ) : $bst_query->the_post();
+							list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+							?>
+
+
+
+								<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-archive-box column' ); ?>>
+									<div class="post-archive-box-img post-image">
+										<a href="<?php the_permalink(); ?>">
+											<?php
+												if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
+													echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
+												} else {
+													echo get_the_post_thumbnail(
+														$bst_var_post_id,
+														'thumb_1000',
+													);
+												}
+											?>
+										</a>
 									</div>
-								</a>
-							</div>
-						</div>
-					</article>
-					<article class="post-archive-box column">
-						<div class="post-archive-box-img post-image">
-							<a href="#"> <img
-									src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg">
-							</a>
-						</div>
-						<div class="post-content">
-							<div class="post-box-meta d-flex justify-content-between">
-								<div class="ac-post-cat">
-									<a href="http://basethemedevcause.local/category/cat-a/">11. December. 2018</a>
-								</div>
-							</div>
-							<div class="post-archive-box-title post-title">
-								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
-							</div>
-							<div class="bottom-section-button">
-								<a href="#">
-									<span>
-										Read More
-									</span>
-									<div class="plus-button">
-										+
+									<div class="post-content">
+										<div class="post-box-meta d-flex justify-content-between">
+											<div class="ac-post-cat">
+												<a href="http://basethemedevcause.local/category/cat-a/">Green Design</a>
+											</div>
+										</div>
+										<div class="post-archive-box-title post-title">
+											<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h4>
+										</div>
+										<div class="bottom-section-button">
+											<a href="<?php the_permalink(); ?>">
+												<span>
+													Read More
+												</span>
+												<div class="plus-button">
+													+
+												</div>
+											</a>
+										</div>
 									</div>
-								</a>
-							</div>
-						</div>
-					</article>
-					<article class="post-archive-box column">
-						<div class="post-archive-box-img post-image">
-							<a href="#"> <img
-									src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg">
-							</a>
-						</div>
-						<div class="post-content">
-							<div class="post-box-meta d-flex justify-content-between">
-								<div class="ac-post-cat">
-									<a href="http://basethemedevcause.local/category/cat-a/">11. December. 2018</a>
-								</div>
-							</div>
-							<div class="post-archive-box-title post-title">
-								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
-							</div>
-							<div class="bottom-section-button">
-								<a href="#">
-									<span>
-										Read More
-									</span>
-									<div class="plus-button">
-										+
-									</div>
-								</a>
-							</div>
-						</div>
-					</article>
+								</article>
+
+							<?php endwhile;
+							wp_reset_postdata();
+						else :
+							echo '<p>No projects found.</p>';
+						endif;
+						?>
+
+
 
 				</div>
 			</div>

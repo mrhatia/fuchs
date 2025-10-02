@@ -20,7 +20,10 @@ BaseTheme::block(
 		$bst_var_blk_mat_text        = $bst_block_fields['bst_var_blk_mat_text'] ?? null;
 		$bst_var_blk_mat_button        = $bst_block_fields['bst_var_blk_mat_button'] ?? null;
 		$bst_var_blk_mat_image        = $bst_block_fields['bst_var_blk_mat_image'] ?? null;
-		$bst_var_blk_mat_img_location        = ("left" === $bst_block_fields['bst_var_blk_mat_img_location']) ? "image-at-left" : "image-at-right";
+		$bst_var_blk_mat_img_location = $bst_block_fields['bst_var_blk_mat_img_position'] ?? null;
+
+		$bst_var_blk_mat_img_location        = ("left" == $bst_var_blk_mat_img_location) ? "image-at-left" : "image-at-right";
+
 		?>
 
 

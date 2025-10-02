@@ -23,7 +23,8 @@
 			text-transform: uppercase;
 		}
 
-		h1 {
+		h1,
+		.heading-2 {
 			// font-size: var(--fc_font_size_80);
 			// @include font(sour, bold);
 			letter-spacing: -0.1px;

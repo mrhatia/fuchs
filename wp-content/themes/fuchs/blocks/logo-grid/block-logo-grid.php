@@ -15,13 +15,13 @@ BaseTheme::block(
 	function ( $bst_block_id, $bst_block_name, $bst_block_fields, $bst_option_fields ) {
 
 		// Block variables.
-		$fh_var_blk_logos     = $bst_block_fields['fh_var_blk_logos'] ?? null;
+		$fh_var_blk_logos     = $bst_block_fields['fh_var_blk_icon_columns'] ?? null;
 		?>
 
 		<?php if($fh_var_blk_logos){ ?>
 			<section>
 				<div class="wrapper">
-					<div class="logo-grid">
+					<div class="logo-grid align-items-center justify-content-around">
 						<?php foreach ( $fh_var_blk_logos as $logo ) {
 							$column_logo       = $logo['logo'] ?? null;
 							?>

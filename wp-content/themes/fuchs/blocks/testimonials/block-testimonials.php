@@ -27,7 +27,7 @@ BaseTheme::block(
 								$column_kicker      = $column['kicker'] ?? null;
 								$column_title   	= $column['title'] ?? null;
 								$column_text   = $column['text'] ?? null;
-								$column_icon       = $column['icon'] ?? null;
+								$column_icon       = $column['image'] ?? null;
 								?>
 
 								<div class="testimonial-item">
@@ -41,8 +41,8 @@ BaseTheme::block(
 											<div class="small-text"><?php echo html_entity_decode( $column_kicker ); ?></div>
 										<?php } ?>
 
-										<?php if ( $title ) {  ?>
-											<h2 class="heading-3"><?php echo html_entity_decode( $title ); ?></h2>
+										<?php if ( $column_title ) {  ?>
+											<h2 class="heading-3"><?php echo html_entity_decode( $column_title ); ?></h2>
 										<?php } ?>
 
 										<?php if ( $column_text ) {  ?>
@@ -78,8 +78,8 @@ BaseTheme::block(
 												<?php if ( $column_kicker ) {  ?>
 													<span class="testimonial-role"><?php echo html_entity_decode( $column_kicker ); ?></span>
 												<?php } ?>
-												<?php if ( $title ) {  ?>
-													<h4 class="testimonial-name"><?php echo html_entity_decode( $title ); ?></h4>
+												<?php if ( $column_title ) {  ?>
+													<h4 class="testimonial-name"><?php echo html_entity_decode( $column_title ); ?></h4>
 												<?php } ?>
 											</div>
 										</div>
@@ -90,6 +90,49 @@ BaseTheme::block(
 					</div>
 				</div>
 			</section>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+
+					function initSwiper() {
+					// Destroy existing swiper if it exists to avoid duplicates
+					if (window.testimonialSwiper) {
+						window.testimonialSwiper.destroy(true, true);
+					}
+
+					window.testimonialSwiper = new Swiper('.testimonial-variation', {
+						effect: 'fade',           // Fade effect
+						fadeEffect: {
+						crossFade: true,       // Smooth cross-fade
+						},
+						direction: window.innerWidth <= 768 ? 'horizontal' : 'vertical', // 👉 Horizontal on mobile
+						slidesPerView: 1,
+						loop: true,
+						speed: 1500,
+						spaceBetween: 0,
+						autoHeight: true,
+					autoplay: {
+							delay: 3000,
+							disableOnInteraction: false,
+						},
+						pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+						},
+						mousewheel: false,
+						keyboard: {
+						enabled: true,
+						onlyInViewport: true,
+						},
+					});
+					}
+
+					// Initialize swiper on load
+					initSwiper();
+
+					// Reinitialize on resize (helpful for orientation changes)
+					window.addEventListener('resize', initSwiper);
+				});
+			</script>
 
 		<?php } ?>
 

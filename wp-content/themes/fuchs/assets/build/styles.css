@@ -3885,7 +3885,9 @@ li.menu-item-has-children.active > .submenu-icon::before {
   text-transform: uppercase;
 }
 .hero-inner-slider .banner-content h1,
-.hero-project .banner-content h1 {
+.hero-inner-slider .banner-content .heading-2,
+.hero-project .banner-content h1,
+.hero-project .banner-content .heading-2 {
   letter-spacing: -0.1px;
   margin-bottom: 12px;
   position: relative;
@@ -6734,7 +6736,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .logo-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   row-gap: 20px;
 }
 

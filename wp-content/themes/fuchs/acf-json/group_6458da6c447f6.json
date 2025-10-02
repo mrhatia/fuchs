@@ -5,22 +5,20 @@
         {
             "key": "field_6465c85dce97e",
             "label": "FAQs",
-            "name": "faqs",
+            "name": "",
             "aria-label": "",
-            "type": "text",
+            "type": "message",
             "instructions": "",
-            "required": false,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
         },
         {
             "key": "field_6458dbc863902",
@@ -152,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759426947
+    "modified": 1759445580
 }
