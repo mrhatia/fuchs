@@ -115,7 +115,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 
 	<a class="skip-link screen-reader-text"
 		href="#page-section"><?php esc_html_e( 'Skip to content', 'basetheme_td' ); ?></a>
-	<!-- <div class="loader">
+	<div class="loader">
 		<div class="loader-inner">
 			<div class="spinner-text" data-title="CFuchs">CFuchs</div>
 		</div>
