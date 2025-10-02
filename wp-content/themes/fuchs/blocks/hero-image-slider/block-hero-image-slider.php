@@ -65,7 +65,7 @@ BaseTheme::block(
 													<?php echo BaseTheme::button( $slide_button_one, 'button orange-button' ); ?>
 												<?php } ?>
 												<?php if ( $slide_button_two ) { ?>
-													<?php echo BaseTheme::button( $slide_button_two, 'button blue-button' ); ?>
+													<?php echo BaseTheme::button( $slide_button_two, 'button green-button' ); ?>
 												<?php } ?>
 											</div>
 										</div>

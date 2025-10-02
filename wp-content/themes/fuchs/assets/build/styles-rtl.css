@@ -426,6 +426,7 @@ Mixin for transition
   >> Base Colors
   */
   --fc_color_primary: #007857;
+  --fc_green_dark: #016c50;
   --fc_color_on_primary: #ffffff;
   --fc_color_secondary: #0013ff;
   --fc_black: #000000;
@@ -461,11 +462,12 @@ Mixin for transition
   --fc_light: #f8f9fa;
   --fc_dark: #212529;
   --fc_orange: #fe8400;
+  --fc_orange_dark: #e27602;
   --fc_orange_1: #f2976a;
   --fc_signal: #d14b3c;
   --fc_signal_bg: #fbede9;
   --fc_color_background: #ffffff;
-  --fc_color_on_background: #14191f;
+  --fc_color_on_background: #565969;
   --fc_border: #30353c;
   --fc_border_1: #545454;
   --fc_border_2: #adadad;
@@ -486,7 +488,7 @@ Mixin for transition
   --fc_highlight_color: var(--fc_color_on_primary);
   --fc_highlight_bg: var(--fc_color_primary);
   --fc_caption: var(--fc_black_2);
-  --fc_heading_color: inherit;
+  --fc_heading_color: var(--fc_color_primary);
   --fc_heading_link_color: var(--fc_dark_text);
   --fc_heading_link_color_hover: var(--fc_dark_text);
   --fc_link_color: var(--fc_color_primary);
@@ -543,10 +545,10 @@ Mixin for transition
   --fc_meter_value_bgcolor: var(--fc_color_primary);
   --fc_button_color: var(--fc_white_text);
   --fc_button_bgcolor: var(--fc_color_primary);
-  --fc_button_color_hover: var(--fc_dark_text);
-  --fc_button_bgcolor_hover: var(--fc_transparent);
+  --fc_button_color_hover: var(--fc_white_text);
+  --fc_button_bgcolor_hover: var(--fc_green_dark);
   --fc_button_border_color: var(--fc_color_primary);
-  --fc_button_border_color_hover: var(--fc_border);
+  --fc_button_border_color_hover: var(--fc_green_dark);
   --fc_reset_button_bgcolor: var(--fc_button_bgcolor);
   --fc_reset_button_color: var(--fc_white_text);
   --fc_theme_btn_color: var(--fc_button_color);
@@ -890,10 +892,10 @@ h1,
 
 h2,
 .heading-2 {
-  font-size: var(--fc_font_size_82);
+  font-size: var(--fc_font_size_80);
   letter-spacing: -0.025rem;
   font-family: "Source Sans 3", arial, sans-serif;
-  font-weight: 600;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -3884,10 +3886,6 @@ li.menu-item-has-children.active > .submenu-icon::before {
 }
 .hero-inner-slider .banner-content h1,
 .hero-project .banner-content h1 {
-  font-size: var(--fc_font_size_80);
-  font-family: "Yantramanav", arial, sans-serif;
-  font-weight: bold;
-  font-style: normal;
   letter-spacing: -0.1px;
   margin-bottom: 12px;
   position: relative;
@@ -3934,7 +3932,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   font-weight: bold;
   font-style: normal;
   letter-spacing: -1.7px;
-  opacity: 0.3;
+  opacity: 0.4 !important;
 }
 
 .hero-project .hero-slide-image {
@@ -4042,7 +4040,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   display: none;
 }
 .hero-inner-slider.full-width-image .hero-split-text {
-  right: 5px;
+  top: -138px;
 }
 .hero-inner-slider.full-width-image .hero-slide-item {
   height: 550px;
@@ -4304,7 +4302,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   margin-bottom: 0;
 }
 .hero-split-text .split-text-left {
-  width: 50%;
+  width: 100%;
   overflow: hidden;
 }
 .hero-split-text .split-text-left .heading-1 {
@@ -4320,7 +4318,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   top: 50%;
   transform: translateY(-50%);
   right: 50%;
-  width: 50%;
+  width: 100%;
   overflow: hidden;
 }
 .hero-split-text .split-text-right .heading-1 {
@@ -5154,9 +5152,8 @@ a.button.orange-button:hover,
 a.button:visited.orange-button:hover,
 span.button.orange-button:hover,
 .is-style-mycustomstyle .wp-element-button.orange-button:hover {
-  box-shadow: rgb(254, 131, 1) 0 10px 20px 0;
-  background-color: var(--fc_orange);
-  border-color: var(--fc_orange);
+  background-color: var(--fc_orange_dark);
+  border-color: var(--fc_orange_dark);
   color: var(--fc_white);
 }
 a.button.blue-button,
@@ -5416,6 +5413,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   letter-spacing: -1.7px;
   width: -moz-max-content;
   width: max-content;
+  z-index: -1;
 }
 
 .iat-image,
@@ -6187,7 +6185,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 
 .iat-content {
-  width: 45%;
+  width: 47%;
 }
 
 .iat-image {
@@ -7369,14 +7367,14 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 @font-face {
   font-family: "Source Sans 3";
   font-style: normal;
-  font-weight: 600;
-  src: url(fonts/SourceSans3-SemiBold.woff2) format("woff2");
+  font-weight: 400;
+  src: url(fonts/SourceSans3-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Source Sans 3";
   font-style: normal;
-  font-weight: 400;
-  src: url(fonts/SourceSans3-Regular.woff2) format("woff2");
+  font-weight: 600;
+  src: url(fonts/SourceSans3-SemiBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Source Sans 3";
@@ -7393,12 +7391,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 @font-face {
   font-family: "Yantramanav";
   font-style: normal;
-  font-weight: bold;
-  src: url(fonts/Yantramanav-Bold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Yantramanav";
-  font-style: normal;
   font-weight: 500;
   src: url(fonts/Yantramanav-Medium.woff2) format("woff2");
 }
@@ -7407,6 +7399,12 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   font-style: normal;
   font-weight: 300;
   src: url(fonts/Yantramanav-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Yantramanav";
+  font-style: normal;
+  font-weight: bold;
+  src: url(fonts/Yantramanav-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Yantramanav";

@@ -42,9 +42,9 @@ h1,
 
 h2,
 .heading-2 {
-	font-size: var(--fc_font_size_82);
+	font-size: var(--fc_font_size_80);
 	letter-spacing: -0.025rem;
-	@include font(sour, sbold);
+	@include font(sour, bold);
 }
 
 h3,

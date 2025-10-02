@@ -268,7 +268,7 @@ jQuery( function() {
 
 			setTimeout( function() {
 				loader.addClass( 'hide-loader' );
-			}, 3200 );
+			}, 3000 );
 		} );
 	}
 	if ( jQuery( '.hero-inner-slider' ).length ) {

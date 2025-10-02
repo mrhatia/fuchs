@@ -27,66 +27,11 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 		<div class="wrapper">
 			<div class="section-head">
 				<div class="hero-split-text">1 RAUM</div>
-				<h1 class="heading-2">VIELE GRUNDE</h1>
+				<h1 class="heading-2">VIELE GRÜNDE</h1>
 			</div>
 		</div>
 	</section>
 	<div class="gl-s48"></div>
-	<!-- <section>
-		<div class="wrapper">
-			<div class="icons-grid">
-				<div class="four-columns">
-					<div class="column center-align">
-						<div class="icon">
-							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-01.png"
-								alt="">
-						</div>
-						<div class="kicker">
-							Explore the features
-						</div>
-						<h3 class="heading-4">Baubeginn Herbst 2025</h3>
-						<p><strong>Wohnungsgröße</strong><br>46 m2 bis 20 m2</p>
-					</div>
-					<div class="column center-align">
-						<div class="icon">
-							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-02.png"
-								alt="">
-						</div>
-						<div class="kicker">
-							Explore the Features
-						</div>
-						<h3 class="heading-4">KfW-40</h3>
-						<p>Effizienzhaus mit „Qualitätssigel Nachhaltiges Gebäude“ (QNG) mit attraktiver Förderung
-						</p>
-					</div>
-					<div class="column center-align">
-						<div class="icon">
-							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-04.png"
-								alt="">
-						</div>
-						<div class="kicker">
-							Explore the Features
-						</div>
-						<h3 class="heading-4">für jede Lebensphase</h3>
-						<p>Senioren, Singles, Pendler, Manager, Studenten
-						</p>
-					</div>
-					<div class="column center-align">
-						<div class="icon">
-							<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2019/02/h5-icon-img-05.png"
-								alt="">
-						</div>
-						<div class="kicker">
-							Explore the features
-						</div>
-						<h3 class="heading-4">alles aus einer Hand</h3>
-						<p>vom erfahrenen Bauträger aus der Region rundum betereut
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<section>
 		<div class="wrapper">
 			<div class="icons-grid">
@@ -732,7 +677,17 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 			</div>
 		</div>
 	</section>
+	<div class="gl-s200"></div>
 
+
+	<section class="ctn-980">
+		<div class="wrapper">
+			<div class="section-head">
+				<div class="hero-split-text">PARTNER</div>
+				<h1 class="heading-2">ALLES AUS EINER HAND</h1>
+			</div>
+		</div>
+	</section>
 	<div class="gl-s96"></div>
 	<!-- Logo Grid -->
 	<section>

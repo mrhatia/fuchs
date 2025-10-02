@@ -24,8 +24,8 @@
 		}
 
 		h1 {
-			font-size: var(--fc_font_size_80);
-			@include font(yan, bold);
+			// font-size: var(--fc_font_size_80);
+			// @include font(yan, bold);
 			letter-spacing: -0.1px;
 			margin-bottom: 12px;
 			position: relative;
@@ -70,7 +70,7 @@
 		margin: 0;
 		@include font(yan, bold);
 		letter-spacing: -1.7px;
-		opacity: 0.3;
+		opacity: 0.4 !important;
 	}
 }
 
@@ -204,8 +204,7 @@
 	}
 
 	.hero-split-text {
-
-		left: 5px;
+		top: -138px;
 	}
 
 	.hero-slide-item {

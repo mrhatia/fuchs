@@ -57,6 +57,7 @@
 
 	// Theme Primary
 	--fc_color_primary: #007857;
+	--fc_green_dark: #016c50;
 	--fc_color_on_primary: #ffffff;
 
 	// Theme Secondary
@@ -109,6 +110,7 @@
 	--fc_light: #f8f9fa;
 	--fc_dark: #212529;
 	--fc_orange: #fe8400;
+	--fc_orange_dark: #e27602;
 	--fc_orange_1: #f2976a;
 
 
@@ -117,7 +119,7 @@
 
 
 	--fc_color_background: #ffffff;
-	--fc_color_on_background: #14191f;
+	--fc_color_on_background: #565969;
 
 	// Borders
 	--fc_border: #30353c;
@@ -150,7 +152,7 @@
 
 	// Headings
 
-	--fc_heading_color: inherit;
+	--fc_heading_color: var(--fc_color_primary);
 	--fc_heading_link_color: var(--fc_dark_text);
 	--fc_heading_link_color_hover: var(--fc_dark_text);
 
@@ -230,10 +232,10 @@
 	// Button
 	--fc_button_color: var(--fc_white_text);
 	--fc_button_bgcolor: var(--fc_color_primary);
-	--fc_button_color_hover: var(--fc_dark_text);
-	--fc_button_bgcolor_hover: var(--fc_transparent);
+	--fc_button_color_hover: var(--fc_white_text);
+	--fc_button_bgcolor_hover: var(--fc_green_dark);
 	--fc_button_border_color: var(--fc_color_primary);
-	--fc_button_border_color_hover: var(--fc_border);
+	--fc_button_border_color_hover: var(--fc_green_dark);
 
 	--fc_reset_button_bgcolor: var(--fc_button_bgcolor);
 	--fc_reset_button_color: var(--fc_white_text);
