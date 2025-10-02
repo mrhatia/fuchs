@@ -40,7 +40,12 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'faqs' );
 		self::register_acf_block( 'home-hero' );
 		// Register a block - Media Alongside Text.
+		self::register_acf_block( 'section-head' );
+		self::register_acf_block( 'testimonials' );
+		self::register_acf_block( 'icon-grid' );
+		self::register_acf_block( 'logo-grid' );
 		self::register_acf_block( 'media-alongside-text' );
+		self::register_acf_block( 'contact-person' );
 		self::register_acf_block( 'hero-image-slider' );
 		// Register a block - Jump Location.
 		self::register_acf_block( 'jump-location' );

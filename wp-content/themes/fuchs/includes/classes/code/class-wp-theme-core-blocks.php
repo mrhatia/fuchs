@@ -18,6 +18,7 @@ namespace BaseTheme\Core;
  * @category Setting_Class
  * @package  Base Theme Package
  */
+
 class WP_Core_Blocks {
 	/**
 	 * Define class Constructor

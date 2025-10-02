@@ -102,8 +102,7 @@ $bst_var_post_title = $bst_fields['bst_var_post_title'] ?? get_the_title();
 					Hier vereinen sich <strong>historische Wurzeln</strong> mit <strong>urbanem Leben</strong>. Die Mischung aus Innenstadtnähe, guter Infrastruktur und der guten Anbindung an die öffentlichen Verkehrsmittel machen den
 					<br>
 					Stadtteil zu einem attraktiven Wohnort für Berufspendler, Senioren und Studenten.
-					Die Wohnbebauung in Verbindung des gewachsenen Umfelds ist ein Garant für permanente Wohnraumnachfrage.
-</p>
+					Die Wohnbebauung in Verbindung des gewachsenen Umfelds ist ein Garant für permanente Wohnraumnachfrage.</p>
 				</div>
 				<div class="iat-image column">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/src/images/uploads/Bildschirmfoto 2025-08-16 um 18.10.52 Kopie.png"

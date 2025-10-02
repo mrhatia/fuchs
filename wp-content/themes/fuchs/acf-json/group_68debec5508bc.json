@@ -1,29 +1,27 @@
 {
-    "key": "group_627946c545bce",
-    "title": "Block - Media Alongside Text",
+    "key": "group_68debec5508bc",
+    "title": "Block - Contact Person",
     "fields": [
         {
-            "key": "field_627946d1c50e7",
-            "label": "Media Alongside Text",
-            "name": "media_alongside_text",
+            "key": "field_68debec552a11",
+            "label": "Contact Person",
+            "name": "",
             "aria-label": "",
-            "type": "text",
+            "type": "message",
             "instructions": "",
-            "required": false,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
         },
         {
-            "key": "field_62794720c50e9",
+            "key": "field_68debec552a1e",
             "label": "Expand for options",
             "name": "",
             "aria-label": "",
@@ -41,9 +39,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_68dea3fc1336c",
+            "key": "field_68debec552a28",
             "label": "Kicker",
-            "name": "bst_var_blk_mat_kicker",
+            "name": "bst_var_blk_ctp_kicker",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -62,13 +60,13 @@
             "append": ""
         },
         {
-            "key": "field_68dea44f1336d",
+            "key": "field_68debec552a30",
             "label": "Title",
-            "name": "bst_var_blk_mat_title",
+            "name": "bst_var_blk_ctp_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": false,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -77,14 +75,15 @@
             },
             "default_value": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
         },
         {
-            "key": "field_62794734c50ea",
+            "key": "field_68debec552a39",
             "label": "Text",
-            "name": "bst_var_blk_mat_text",
+            "name": "bst_var_blk_ctp_text",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -96,16 +95,58 @@
                 "id": ""
             },
             "default_value": "",
-            "wysiwyg_height": "",
+            "allow_in_bindings": 1,
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 0,
             "delay": 0
         },
         {
-            "key": "field_6279476dc50eb",
-            "label": "Button",
-            "name": "bst_var_blk_mat_button",
+            "key": "field_68debfa7c4568",
+            "label": "Email",
+            "name": "bst_var_blk_ctp_email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68debfb5c4569",
+            "label": "Phone",
+            "name": "bst_var_blk_ctp_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68debec552a42",
+            "label": "Button One",
+            "name": "bst_var_blk_ctp_button_one",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -116,33 +157,28 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "array",
+            "allow_in_bindings": 1
         },
         {
-            "key": "field_62794da70c37b",
-            "label": "Image Location",
-            "name": "bst_var_blk_mat_img_location",
+            "key": "field_68debf8cc4567",
+            "label": "Button Two",
+            "name": "bst_var_blk_ctp_button_two",
             "aria-label": "",
-            "type": "button_group",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "left": "Left",
-                "right": "Right"
-            },
-            "default_value": "right",
-            "return_format": "value",
-            "allow_null": 0,
-            "layout": "horizontal"
+            "return_format": "array",
+            "allow_in_bindings": 1
         },
         {
-            "key": "field_62794d860c37a",
+            "key": "field_68debec552a53",
             "label": "Image Upload Instructions",
             "name": "",
             "aria-label": "",
@@ -168,9 +204,9 @@
             "esc_html": 0
         },
         {
-            "key": "field_62794780c50ec",
+            "key": "field_68debec552a5b",
             "label": "Image",
-            "name": "bst_var_blk_mat_image",
+            "name": "bst_var_blk_ctp_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -192,6 +228,48 @@
             "mime_types": "",
             "allow_in_bindings": 1,
             "preview_size": "admin-portrait"
+        },
+        {
+            "key": "field_68dec06c77c24",
+            "label": "Designation",
+            "name": "bst_var_blk_ctp_designation",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68dec07c77c25",
+            "label": "Name",
+            "name": "bst_var_blk_ctp_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -199,7 +277,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/media-alongside-text"
+                "value": "acf\/contact-person"
             }
         ]
     ],
@@ -212,5 +290,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759422356
+    "modified": 1759429242
 }
