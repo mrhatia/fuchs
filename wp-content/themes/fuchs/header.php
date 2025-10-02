@@ -119,7 +119,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		<div class="loader-inner">
 			<div class="spinner-text" data-title="CFuchs">CFuchs</div>
 		</div>
-	</div> -->
+	</div>
 	<header id="header-section" class="header-section">
 		<!-- Header Start -->
 
