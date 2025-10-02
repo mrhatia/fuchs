@@ -30,7 +30,7 @@
 	.kicker {
 		color: var(--fc_white);
 		font-size: 14px;
-		@include font(yan, med);
+		@include font(sour, med);
 		letter-spacing: 0.1em;
 		margin-bottom: 8px;
 
@@ -39,7 +39,7 @@
 	.heading-2 {
 		font-size: var(--fc_font_size_60);
 		color: var(--fc_white);
-		@include font(yan, med);
+		@include font(sour, med);
 		letter-spacing: -1.3px;
 		line-height: 0.94;
 		margin-bottom: 21px
@@ -47,7 +47,7 @@
 
 	p {
 		font-size: var(--fc_font_size_18);
-		@include font(yan, lig);
+		@include font(sour, lig);
 		color: var(--fc_white);
 		line-height: 26px;
 		margin-bottom: 0;
@@ -83,7 +83,7 @@
 
 .media-with-text-image-text {
 	font-size: var(--fc_font_size_120);
-	@include font(yan, bold);
+	@include font(sour, bold);
 	color: var(--fc_orange);
 	line-height: 0.8;
 	position: absolute;

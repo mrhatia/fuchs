@@ -42,21 +42,21 @@
 
 	.small-text {
 		font-size: 12px;
-		@include font(yan, med);
+		@include font(sour, med);
 		text-transform: uppercase;
 		letter-spacing: 1.2px;
 		margin-bottom: 11px;
 	}
 
 	.heading-3 {
-		@include font(yan, bold);
+		@include font(sour, bold);
 		letter-spacing: 0;
 		color: var(--fc_color_primary);
 		margin-bottom: 17px
 	}
 
 	p {
-		@include font(yan, reg);
+		@include font(sour, reg);
 		font-size: var(--fc_font_size_18);
 		color: #565969;
 		margin: 0;
@@ -100,7 +100,7 @@
 			margin-top: 20px;
 
 			.testimonial-role {
-				@include font(yan, reg);
+				@include font(sour, reg);
 				font-size: 14px;
 				margin-bottom: 5px;
 				text-transform: uppercase;
@@ -110,7 +110,7 @@
 			}
 
 			.testimonial-name {
-				@include font(yan, bold);
+				@include font(sour, bold);
 				font-size: var(--fc_font_size_26);
 				color: var(--fc_color_primary);
 				margin: 0;
@@ -200,7 +200,7 @@
 
 	p {
 		font-size: var(--fc_font_size_20);
-		@include font(yan, reg);
+		@include font(sour, reg);
 		margin: 0;
 	}
 }

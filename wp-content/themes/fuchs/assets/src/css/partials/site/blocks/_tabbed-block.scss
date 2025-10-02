@@ -17,7 +17,7 @@
 			a,
 			a:visited {
 				font-size: var(--fc_font_size_26);
-				@include font(yan, med);
+				@include font(sour, med);
 				color: var(--fc_gray_3);
 
 				&.active,
@@ -35,7 +35,7 @@
 	p {
 		color: var(--fc_gray_4);
 		font-size: var(--fc_font_size_20);
-		@include font(yan, regular);
+		@include font(sour, regular);
 		font-weight: 600;
 		line-height: 1.3;
 
