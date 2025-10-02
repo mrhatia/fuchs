@@ -35,7 +35,7 @@
 			background-repeat: no-repeat;
 			background-position: center left;
 			font-size: var(--fc_font_size_18);
-			@include font(yan, reg);
+			@include font(sour, reg);
 			background-size: 20px;
 		}
 
@@ -56,7 +56,7 @@
 	}
 
 	.heading-2 {
-		@include font(yan, bold);
+		@include font(sour, bold);
 		font-size: var(--fc_font_size_60);
 		color: var(--fc_color_primary);
 		letter-spacing: -1.2px;
@@ -66,7 +66,7 @@
 
 	p {
 		font-size: var(--fc_font_size_18);
-		@include font(yan, reg);
+		@include font(sour, reg);
 		margin-bottom: 20px;
 	}
 

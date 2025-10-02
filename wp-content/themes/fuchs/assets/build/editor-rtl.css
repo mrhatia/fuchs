@@ -2626,7 +2626,7 @@ Mixin for transition
   text-align: center;
   border-radius: 0;
   line-height: 1.5;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: var(--fc_font_size_16);
@@ -2843,7 +2843,7 @@ Mixin for transition
   align-items: center;
 }
 .acf-block-preview .spinner-text {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_180);
@@ -2881,6 +2881,8 @@ Mixin for transition
 }
 .acf-block-preview .section-head {
   position: relative;
+}
+.acf-block-preview .section-head .heading-2 {
   color: var(--fc_orange);
 }
 .acf-block-preview .section-head .hero-split-text {
@@ -2894,8 +2896,9 @@ Mixin for transition
   -webkit-text-stroke-width: 1px;
   font-weight: 700;
   margin: 0;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
+  font-style: normal;
   font-style: normal;
   letter-spacing: -1.7px;
   width: -moz-max-content;
@@ -3107,7 +3110,7 @@ Mixin for transition
 }
 .acf-block-preview .faq-content p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3208,7 +3211,7 @@ Mixin for transition
   font-size: var(--fc_font_size_26);
   margin: 0;
   color: var(--fc_color_primary);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -3472,7 +3475,7 @@ Mixin for transition
 }
 .acf-block-preview .testimonial-item-content .small-text {
   font-size: 12px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
@@ -3480,7 +3483,7 @@ Mixin for transition
   margin-bottom: 11px;
 }
 .acf-block-preview .testimonial-item-content .heading-3 {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0;
@@ -3488,7 +3491,7 @@ Mixin for transition
   margin-bottom: 17px;
 }
 .acf-block-preview .testimonial-item-content p {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
@@ -3528,7 +3531,7 @@ Mixin for transition
   margin-top: 20px;
 }
 .acf-block-preview .testimonial-variation.swiper .swiper-slide .testimonial-meta .testimonial-role {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -3539,7 +3542,7 @@ Mixin for transition
   display: block;
 }
 .acf-block-preview .testimonial-variation.swiper .swiper-slide .testimonial-meta .testimonial-name {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_26);
@@ -3602,7 +3605,7 @@ Mixin for transition
 }
 .acf-block-preview .testimonial-single-content p {
   font-size: var(--fc_font_size_20);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -3723,7 +3726,7 @@ Mixin for transition
 .acf-block-preview .tabbed-map-nav ul li a,
 .acf-block-preview .tabbed-map-nav ul li a:visited {
   font-size: var(--fc_font_size_26);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--fc_gray_3);
@@ -3788,7 +3791,7 @@ Mixin for transition
   background-repeat: no-repeat;
   background-position: center right;
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-size: 20px;
@@ -3807,7 +3810,7 @@ Mixin for transition
   color: var(--fc_gray_4);
 }
 .acf-block-preview .offering-block-content .heading-2 {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_60);
@@ -3817,7 +3820,7 @@ Mixin for transition
 }
 .acf-block-preview .offering-block-content p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 20px;
@@ -3857,7 +3860,7 @@ Mixin for transition
 .acf-block-preview .media-with-text-content-box .kicker {
   color: var(--fc_white);
   font-size: 14px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -3866,7 +3869,7 @@ Mixin for transition
 .acf-block-preview .media-with-text-content-box .heading-2 {
   font-size: var(--fc_font_size_60);
   color: var(--fc_white);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: -1.3px;
@@ -3875,7 +3878,7 @@ Mixin for transition
 }
 .acf-block-preview .media-with-text-content-box p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   color: var(--fc_white);
@@ -3903,7 +3906,7 @@ Mixin for transition
 }
 .acf-block-preview .media-with-text-image-text {
   font-size: var(--fc_font_size_120);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--fc_orange);

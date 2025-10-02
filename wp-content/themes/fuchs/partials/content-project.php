@@ -340,7 +340,7 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 
 				</div>
 				<div class="iat-image column">
-					<img src="https://wilmer.qodeinteractive.com/wp-content/uploads/2018/12/h5-blog-img-01.jpg"
+					<img src="https://wordpress.p681800.webspaceconfig.de/wp-content/uploads/2025/10/map-block.png"
 						alt="">
 				</div>
 			</div>
@@ -727,7 +727,7 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 								</div>
 							</div>
 							<div class="post-archive-box-title post-title">
-								<h4><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h4>
+								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
 							</div>
 							<div class="bottom-section-button">
 								<a href="#">
@@ -754,7 +754,7 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 								</div>
 							</div>
 							<div class="post-archive-box-title post-title">
-								<h4><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h4>
+								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
 							</div>
 							<div class="bottom-section-button">
 								<a href="#">
@@ -781,7 +781,7 @@ Unsere 1RAUM- Projektentwicklung ist eine der ersten entsprechenden Neubauprojek
 								</div>
 							</div>
 							<div class="post-archive-box-title post-title">
-								<h4><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h4>
+								<h3><a href="#">Phasellus et viverra nulla metus vari quis lorem ispum</a> </h3>
 							</div>
 							<div class="bottom-section-button">
 								<a href="#">

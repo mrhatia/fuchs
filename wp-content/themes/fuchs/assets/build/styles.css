@@ -3890,11 +3890,12 @@ li.menu-item-has-children.active > .submenu-icon::before {
   margin-bottom: 12px;
   position: relative;
   left: -3px;
+  color: var(--fc_white);
 }
 .hero-inner-slider .banner-content .kicker,
 .hero-project .banner-content .kicker {
   font-size: 14px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
@@ -3906,7 +3907,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
 .hero-project .banner-content p {
   font-size: var(--fc_font_size_20);
   max-width: 597px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0;
@@ -3928,7 +3929,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   -webkit-text-stroke-width: 1px;
   font-weight: 700;
   margin: 0;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   letter-spacing: -1.7px;
@@ -5117,7 +5118,7 @@ span.button,
   text-align: center;
   border-radius: 0;
   line-height: 1.5;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: var(--fc_font_size_16);
@@ -5355,7 +5356,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 
 .spinner-text {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_180);
@@ -5394,6 +5395,8 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .section-head {
   position: relative;
+}
+.section-head .heading-2 {
   color: var(--fc_orange);
 }
 .section-head .hero-split-text {
@@ -5407,8 +5410,9 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   -webkit-text-stroke-width: 1px;
   font-weight: 700;
   margin: 0;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
+  font-style: normal;
   font-style: normal;
   letter-spacing: -1.7px;
   width: -moz-max-content;
@@ -5844,7 +5848,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .faq-content p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -5952,7 +5956,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   font-size: var(--fc_font_size_26);
   margin: 0;
   color: var(--fc_color_primary);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -6245,7 +6249,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .testimonial-item-content .small-text {
   font-size: 12px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
@@ -6253,7 +6257,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   margin-bottom: 11px;
 }
 .testimonial-item-content .heading-3 {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0;
@@ -6261,7 +6265,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   margin-bottom: 17px;
 }
 .testimonial-item-content p {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
@@ -6302,7 +6306,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   margin-top: 20px;
 }
 .testimonial-variation.swiper .swiper-slide .testimonial-meta .testimonial-role {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -6313,7 +6317,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   display: block;
 }
 .testimonial-variation.swiper .swiper-slide .testimonial-meta .testimonial-name {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_26);
@@ -6378,7 +6382,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .testimonial-single-content p {
   font-size: var(--fc_font_size_20);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -6516,7 +6520,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .tabbed-map-nav ul li a,
 .tabbed-map-nav ul li a:visited {
   font-size: var(--fc_font_size_26);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--fc_gray_3);
@@ -6590,7 +6594,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   background-repeat: no-repeat;
   background-position: center left;
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-size: 20px;
@@ -6609,7 +6613,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   color: var(--fc_gray_4);
 }
 .offering-block-content .heading-2 {
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: var(--fc_font_size_60);
@@ -6619,7 +6623,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .offering-block-content p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 20px;
@@ -6665,7 +6669,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .media-with-text-content-box .kicker {
   color: var(--fc_white);
   font-size: 14px;
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -6674,7 +6678,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .media-with-text-content-box .heading-2 {
   font-size: var(--fc_font_size_60);
   color: var(--fc_white);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: -1.3px;
@@ -6683,7 +6687,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .media-with-text-content-box p {
   font-size: var(--fc_font_size_18);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   color: var(--fc_white);
@@ -6714,7 +6718,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 
 .media-with-text-image-text {
   font-size: var(--fc_font_size_120);
-  font-family: "Yantramanav", arial, sans-serif;
+  font-family: "Source Sans 3", arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--fc_orange);
@@ -7385,32 +7389,14 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 @font-face {
   font-family: "Source Sans 3";
   font-style: normal;
+  font-weight: 300;
+  src: url(fonts/SourceSans3-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
   font-weight: 800;
   src: url(fonts/SourceSans3-ExtraBold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Yantramanav";
-  font-style: normal;
-  font-weight: 500;
-  src: url(fonts/Yantramanav-Medium.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Yantramanav";
-  font-style: normal;
-  font-weight: 300;
-  src: url(fonts/Yantramanav-Light.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Yantramanav";
-  font-style: normal;
-  font-weight: bold;
-  src: url(fonts/Yantramanav-Bold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Yantramanav";
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/Yantramanav-regular.woff2) format("woff2");
 }
 /* ------------------------------------------------------------------
 > Vendors CSS Starts Here
