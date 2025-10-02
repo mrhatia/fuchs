@@ -3890,6 +3890,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   margin-bottom: 12px;
   position: relative;
   left: -3px;
+  color: var(--fc_white);
 }
 .hero-inner-slider .banner-content .kicker,
 .hero-project .banner-content .kicker {
