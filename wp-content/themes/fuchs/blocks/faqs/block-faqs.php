@@ -24,7 +24,7 @@ BaseTheme::block(
 					<div class="faq-with-image faq-block">
 						<?php if($bst_var_faq_image){ ?>
 							<div class="faq-image image-cover">
-								<?php BaseTheme::the_attachment_image( $bst_var_faq_image, 1000 ); ?>
+								<?php BaseTheme::the_attachment_image( $bst_var_faq_image, 1200 ); ?>
 							</div>
 						<?php } ?>
 						<?php if($bst_var_faq_faqs){ ?>

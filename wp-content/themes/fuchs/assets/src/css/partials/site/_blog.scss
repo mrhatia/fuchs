@@ -37,7 +37,8 @@
 	margin-top: 15px;
 }
 
-.post-box-img {
+.post-box-img,
+.post-archive-box-img {
 	overflow: hidden;
 	line-height: 0;
 	// height: 250px;
@@ -201,7 +202,8 @@
 
 
 // blog resources
-.resources-post-box {
+.resources-post-box,
+.post-archive-box-img {
 	border: 0;
 	// overflow: hidden;
 	margin-bottom: 50px;

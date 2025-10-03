@@ -9,6 +9,7 @@
  */
 
 list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
+$terms = get_the_terms( $bst_var_post_id, 'category' );
 
 ?>
 
@@ -30,7 +31,13 @@ list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults(
 	<div class="post-content">
 		<div class="post-box-meta d-flex justify-content-between">
 			<div class="ac-post-cat">
-				<a href="http://basethemedevcause.local/category/cat-a/">Green Design</a>
+				<?php
+					if ( $terms && ! is_wp_error( $terms ) ) {
+						foreach ( $terms as $term ) {
+							echo '<a href="' . esc_url( get_term_link( $term ) ) . '">' . esc_html( $term->name ) . '</a> ';
+						}
+					}
+				 ?>
 			</div>
 		</div>
 		<div class="post-box-title post-title">

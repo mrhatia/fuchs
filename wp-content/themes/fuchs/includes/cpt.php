@@ -55,19 +55,11 @@ new WP_Theme_CPT(
 		'show_ui'      => true,
 		'taxonomies'   => array(
 			array(
-				'slug'          => 'testimonials',
-				'register_key'  => 'testimonials', // if not given default is slug value.
+				'slug'          => 'category',
+				'register_key'  => 'category', // if not given default is slug value.
 				'name'          => 'Category',
 				'singular_name' => 'Category',
 				'plural_name'   => 'Categories',
-			),
-			array(
-				'slug'          => 'types',
-				// 'register_key'  => 'types', // if not given default is slug value.
-				'name'          => 'Type',
-				'singular_name' => 'Type',
-				'plural_name'   => 'Types',
-				// 'include_cpt'   => 'team',
 			),
 		),
 	)

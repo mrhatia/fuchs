@@ -4039,6 +4039,10 @@ li.menu-item-has-children.active > .submenu-icon::before {
   display: none !important;
 }
 
+.slider-disable .slick-dots {
+  display: none !important;
+}
+
 .hero-inner-slider.full-width-image .slick-dots {
   display: none;
 }
@@ -5420,6 +5424,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   width: -moz-max-content;
   width: max-content;
   z-index: -1;
+  color: var(--fc_orange);
 }
 
 .iat-image,
@@ -5584,11 +5589,13 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   margin-top: 15px;
 }
 
-.post-box-img {
+.post-box-img,
+.post-archive-box-img {
   overflow: hidden;
   line-height: 0;
 }
-.post-box-img img {
+.post-box-img img,
+.post-archive-box-img img {
   width: 100%;
   aspect-ratio: 2/2;
   -o-object-fit: cover;
@@ -5707,16 +5714,19 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   background-color: var(--fc_white_2);
 }
 
-.resources-post-box {
+.resources-post-box,
+.post-archive-box-img {
   border: 0;
   margin-bottom: 50px;
 }
-.resources-post-box .post-image a {
+.resources-post-box .post-image a,
+.post-archive-box-img .post-image a {
   height: 100%;
   display: inline-block;
   width: 100%;
 }
-.resources-post-box .rc-post-img:hover img {
+.resources-post-box .rc-post-img:hover img,
+.post-archive-box-img .rc-post-img:hover img {
   transform: scale(1.05);
 }
 

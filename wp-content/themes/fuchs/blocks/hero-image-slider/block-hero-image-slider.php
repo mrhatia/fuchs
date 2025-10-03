@@ -17,13 +17,16 @@ BaseTheme::block(
 		// Block variables.
 		$fh_var_heroimg_slides     = $bst_block_fields['fh_var_heroimg_slides'] ?? null;
 
+		$slide_count = count( $fh_var_heroimg_slides );
+	$slider_class = ( $slide_count <= 1 ) ? 'slider-disable' : '';
+
 
 		?>
 		<?php if($fh_var_heroimg_slides){ ?>
 
 			<section class="ctn-full-width">
 				<div class="wrapper">
-					<div class="hero-inner-slider">
+					<div class="hero-inner-slider <?php echo $slider_class; ?>">
 						<?php
 							foreach ( $fh_var_heroimg_slides as $slide ) {
 								$background_text = $slide['background_text'] ?? null;

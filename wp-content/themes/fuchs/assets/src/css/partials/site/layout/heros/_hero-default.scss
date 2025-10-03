@@ -199,6 +199,12 @@
 	}
 }
 
+.slider-disable {
+	.slick-dots {
+		display: none !important;
+	}
+}
+
 .hero-inner-slider.full-width-image {
 
 	.slick-dots {

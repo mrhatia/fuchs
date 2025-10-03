@@ -2904,6 +2904,7 @@ Mixin for transition
   width: -moz-max-content;
   width: max-content;
   z-index: -1;
+  color: var(--fc_orange);
 }
 .acf-block-preview .iat-image,
 .acf-block-preview .faq-image,

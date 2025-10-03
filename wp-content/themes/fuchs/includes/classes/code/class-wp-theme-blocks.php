@@ -44,6 +44,7 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'testimonials' );
 		self::register_acf_block( 'icon-grid' );
 		self::register_acf_block( 'logo-grid' );
+		self::register_acf_block( 'tabbed-content' );
 		self::register_acf_block( 'media-alongside-text' );
 		self::register_acf_block( 'cta-section' );
 		self::register_acf_block( 'contact-person' );
