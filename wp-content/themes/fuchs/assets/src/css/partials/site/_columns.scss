@@ -10,6 +10,12 @@
 	row-gap: var(--fc_space_30);
 }
 
+.icons-three-columns {
+	display: grid;
+	@include fluidColumns(3, 260px, 6%);
+	row-gap: var(--fc_space_30);
+}
+
 .four-columns {
 	display: grid;
 	@include fluidColumns(4, 250px, 4%);

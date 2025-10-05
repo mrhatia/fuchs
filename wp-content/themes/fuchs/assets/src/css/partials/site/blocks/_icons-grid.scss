@@ -3,7 +3,7 @@
 
 	.kicker {
 		font-size: 12px;
-		padding-top: 16px;
+		padding-top: 10px;
 	}
 
 	.heading-4 {
@@ -11,7 +11,13 @@
 	}
 
 	p {
-		margin-top: 15px;
+		margin-top: 10px;
 		margin-bottom: 0;
+	}
+}
+
+.icons-grid-variation {
+	.column {
+		padding-right: 10%;
 	}
 }

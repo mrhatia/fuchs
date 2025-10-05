@@ -3,9 +3,11 @@
 		width: 45%;
 	}
 
-	.faq-image {
+
+	.faq-image:not(.faq-image-variation) {
 		width: 48%;
 	}
+
 
 	.slide .heading-2 {
 		font-size: 68px;
@@ -24,9 +26,9 @@
 		margin-top: calc(var(--fc_space_128) - 75px);
 	}
 
-	.slide:nth-child(5) .hero-split-text {
-		margin: 35px auto 0;
-	}
+	// .slide:nth-child(5) .hero-split-text {
+	// 	margin: 35px auto 0;
+	// }
 
 	.slide:nth-child(5) .bottom-section {
 		margin-top: calc(var(--fc_space_128) - 75px);
@@ -45,6 +47,7 @@
 	.faq-image {
 		width: 46%;
 	}
+
 
 	.faq-content {
 		max-width: 415px;
@@ -80,6 +83,7 @@
 		width: 46%;
 	}
 
+
 	.faq-content {
 		max-width: 415px;
 	}
@@ -99,6 +103,16 @@
 
 	.offering-block-content {
 		width: 46%;
+	}
+}
+
+@media only screen and (min-width: 1004px) and (max-width: 1345px) {
+	.faq-image-variation {
+		width: 30%;
+	}
+
+	.faq-items.faq-items-variation {
+		width: 65%;
 	}
 }
 
@@ -275,10 +289,6 @@
 		width: 100%;
 	}
 
-	.faq-head .heading-5 {
-		font-size: 26px;
-	}
-
 	.faq-content p {
 		font-size: 18px;
 	}
@@ -453,7 +463,6 @@
 		padding: 15px 45px;
 	}
 
-	.bottom-section,
 	.top-section {
 		left: 0;
 		position: relative;
@@ -484,7 +493,7 @@
 	}
 
 	.hero-split-text {
-		margin-top: 141px;
+		margin-top: 50%;
 	}
 
 	.slide .heading-2 {

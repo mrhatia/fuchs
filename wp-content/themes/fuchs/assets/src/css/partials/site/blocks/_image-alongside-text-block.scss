@@ -7,7 +7,8 @@
 }
 
 .iat-content {
-	width: 47%;
+	position: relative;
+	width: 45%;
 }
 
 .iat-image {
@@ -27,5 +28,24 @@
 		img {
 			width: 100%;
 		}
+	}
+}
+
+.image-alongside-text-variation {
+
+	p,
+	.person-info {
+		font-size: 20px;
+	}
+
+	.double-comma {
+		color: var(--fc_orange);
+		position: absolute;
+		top: -65px;
+		left: -60px;
+	}
+
+	.person-info {
+		color: var(--fc_orange);
 	}
 }

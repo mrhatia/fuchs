@@ -1,0 +1,32 @@
+.blog-teaser-slider {
+	position: relative;
+	padding: 50px 0;
+	padding-left: 15%;
+	overflow: hidden;
+
+	.blog-teaser-item {
+		margin-right: 20px;
+
+		h2,
+		p {
+			color: var(--fc_white);
+		}
+
+		p {
+			width: 90%;
+		}
+
+		h2 {
+			margin-top: 40px;
+		}
+
+		// .slick-prev,
+		// [type="button"] {
+		// 	background-color: var(--fc_blue);
+		// 	padding: 20px 50px;
+		// 	position: absolute;
+		// 	top: 40%;
+		// 	left: 4%;
+		// }
+	}
+}

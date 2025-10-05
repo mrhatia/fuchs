@@ -41,16 +41,19 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'home-hero' );
 		// Register a block - Media Alongside Text.
 		self::register_acf_block( 'section-head' );
+		self::register_acf_block( 'theme-quote' );
 		self::register_acf_block( 'testimonials' );
 		self::register_acf_block( 'icon-grid' );
 		self::register_acf_block( 'logo-grid' );
 		self::register_acf_block( 'tabbed-content' );
 		self::register_acf_block( 'media-alongside-text' );
 		self::register_acf_block( 'cta-section' );
+		self::register_acf_block( 'blog-teaser' );
 		self::register_acf_block( 'contact-person' );
 		self::register_acf_block( 'hero-image-slider' );
 		// Register a block - Jump Location.
 		self::register_acf_block( 'jump-location' );
+		self::register_acf_block( 'theme-blockquote' );
 		// Register a block - AcfBlock.
 		self::register_acf_block(
 			'acfblock',

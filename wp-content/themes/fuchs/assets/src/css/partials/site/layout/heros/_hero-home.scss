@@ -140,6 +140,7 @@
 		margin: 0 auto 0;
 		position: relative;
 		z-index: 3;
+		height: 100%;
 	}
 }
 
@@ -253,6 +254,9 @@
 
 .bottom-section {
 	margin-top: calc(var(--fc_space_128) - 3px);
+	position: absolute;
+	bottom: 50px;
+	left: 0;
 
 	p {
 		@include font(sour, sbold);

@@ -66,3 +66,15 @@ h6,
 .heading-6 {
 	font-size: var(--fc_font_size_16);
 }
+
+.medium-heading {
+	font-size: var(--fc_font_size_48);
+	letter-spacing: -0.025rem;
+	@include font(sour, bold);
+}
+
+.xlarge-heading {
+	font-size: var(--fc_font_size_82);
+	letter-spacing: -0.025rem;
+	@include font(sour, bold);
+}

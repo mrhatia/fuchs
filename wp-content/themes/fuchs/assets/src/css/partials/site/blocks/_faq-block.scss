@@ -138,6 +138,12 @@
 	gap: 50px;
 }
 
+.faq-with-image-variation {
+	align-items: start;
+	gap: 4%;
+	justify-content: space-between;
+}
+
 .faq-image {
 	width: 48.85%;
 
@@ -147,8 +153,27 @@
 	}
 }
 
+.faq-image-variation {
+	width: 21%;
+
+	img {
+		height: 50%;
+		margin-bottom: 40px;
+	}
+
+	p {
+		line-height: 1.5;
+		margin-bottom: 0;
+	}
+}
+
+
 .faq-items {
 	width: 47.3%
+}
+
+.faq-items-variation {
+	width: 70%;
 }
 
 .faq-head {

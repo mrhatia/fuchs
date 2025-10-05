@@ -24,7 +24,8 @@
 	box-sizing: border-box;
 	max-width: 622px;
 	position: absolute;
-	top: 15.8%;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 15.9%;
 
 	.kicker {
@@ -47,7 +48,7 @@
 
 	p {
 		font-size: var(--fc_font_size_18);
-		@include font(sour, lig);
+		@include font(sour, reg);
 		color: var(--fc_white);
 		line-height: 26px;
 		margin-bottom: 0;
@@ -89,4 +90,13 @@
 	position: absolute;
 	bottom: 20%;
 	left: 5%;
+}
+
+.media-with-text-variation {
+
+	.media-with-text-content-box {
+		top: auto;
+		bottom: 0;
+		transform: none;
+	}
 }
