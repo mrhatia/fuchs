@@ -16,7 +16,10 @@ get_header();
 
 list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults();
 
-$bst_var_pagetitle          = $bst_fields['bst_var_pagetitle'] ?? get_the_title();
+$bst_var_trcho_background_text          = $bst_fields['bst_var_trcho_background_text'] ?? null;
+$bst_var_trcho_kicker          = $bst_fields['bst_var_trcho_kicker'] ?? null;
+$bst_var_trcho_text          = $bst_fields['bst_var_trcho_text'] ?? null;
+$bst_var_pagetitle          = $bst_fields['bst_var_trcho_title'] ?? get_the_title();
 $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 
 ?>
@@ -38,18 +41,19 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 									?>
 						</div>
 						<div class="banner-content">
-							<div class="hero-split-text">SCHEDULE</div>
-							<div class="kicker hero-reveal">Explore the features</div>
+							<?php if($bst_var_trcho_background_text){ ?>
+								<div class="hero-split-text"><?php echo html_entity_decode($bst_var_trcho_background_text); ?></div>
+							<?php } ?>
+							<?php if($bst_var_trcho_kicker){ ?>
+								<div class="kicker hero-reveal"><?php echo html_entity_decode($bst_var_trcho_kicker); ?></div>
+							<?php } ?>
 							<h1 class="heading-2 hero-reveal"><?php echo esc_html( $bst_var_pagetitle ); ?></h1>
 							<div class="hero-reveal">
-							<p>Etiam Scelerisque tortor at lectus dapibus, nec fermentum diam feugiat. Morbi rutrum
-								magna et
-								dui feugiat, non tristique mi convallis liquam.</p>
+								<?php if($bst_var_trcho_text){ ?>
+									<?php echo html_entity_decode($bst_var_trcho_text); ?>
+								<?php } ?>
 							</div>
-							<!-- <div class="hero-buttons button-reveal">
-								<a href="#" class="button orange-button">Read More</a>
-								<a href="#" class="button blue-button">Contact us</a>
-							</div> -->
+
 						</div>
 					</div>
 				</div>
