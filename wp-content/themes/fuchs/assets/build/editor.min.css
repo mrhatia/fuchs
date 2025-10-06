@@ -4907,6 +4907,21 @@ Mixin for transition
     width: 46%;
   }
 }
+@media only screen and (min-width: 1360px) and (max-width: 1500px) {
+  .acf-block-preview .section-head .hero-split-text {
+    left: -11%;
+  }
+}
+@media only screen and (min-width: 1003px) and (max-width: 1359px) {
+  .acf-block-preview .section-head .hero-split-text {
+    left: -8%;
+  }
+}
+@media only screen and (min-width: 1003px) and (max-width: 1080px) {
+  .acf-block-preview .section-head .hero-split-text {
+    top: -116px;
+  }
+}
 @media only screen and (min-width: 1004px) and (max-width: 1345px) {
   .acf-block-preview .faq-image-variation {
     width: 30%;
@@ -4930,6 +4945,18 @@ Mixin for transition
   }
 }
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
+  .acf-block-preview .section-head .hero-split-text {
+    top: calc(-36px - var(--fc_font_size_80));
+    left: -45px;
+    opacity: 0.4;
+  }
+  .acf-block-preview .hero-inner-slider .hero-split-text,
+  .acf-block-preview .hero-project .hero-split-text {
+    top: -86px;
+  }
+  .acf-block-preview .home-hero-content .hero-split-text {
+    margin-top: 14%;
+  }
   .acf-block-preview .faq-image {
     width: 100%;
   }
@@ -4983,7 +5010,34 @@ Mixin for transition
     margin: 35px auto 0;
   }
 }
+@media only screen and (min-width: 460px) and (max-width: 747px) {
+  .acf-block-preview .home-hero-content .hero-split-text {
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width: 621px) and (max-width: 747px) {
+  .acf-block-preview .section-head .hero-split-text {
+    top: -85px;
+    left: -25px;
+    opacity: 0.4;
+  }
+}
+@media only screen and (min-width: 578px) and (max-width: 620px) {
+  .acf-block-preview .section-head .hero-split-text {
+    position: absolute;
+    top: -75px;
+    left: -19px;
+    opacity: 0.4;
+  }
+}
 @media only screen and (max-width: 747px) {
+  .acf-block-preview .wrapper {
+    width: 90%;
+  }
+  .acf-block-preview .hero-inner-slider .banner-content,
+  .acf-block-preview .hero-project .banner-content {
+    width: 90%;
+  }
   .acf-block-preview .image-alongside-text.image-at-left .iat-content h2 {
     word-break: break-all;
   }
@@ -5182,7 +5236,7 @@ Mixin for transition
     font-size: 56.25px;
   }
   .acf-block-preview .hero-split-text {
-    margin-top: 50%;
+    margin-top: 40%;
   }
   .acf-block-preview .slide .heading-2 {
     font-size: 22.5px;

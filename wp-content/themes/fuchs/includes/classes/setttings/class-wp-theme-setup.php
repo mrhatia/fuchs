@@ -69,9 +69,6 @@ class WP_Theme_Setup {
 		register_nav_menus(
 			array(
 				'header-nav'       => __( 'Header Nav', 'basetheme_td' ),
-				'footer-nav-one'   => __( 'Footer Nav One', 'basetheme_td' ),
-				'footer-nav-two'   => __( 'Footer Nav Two', 'basetheme_td' ),
-				'footer-nav-three' => __( 'Footer Nav Three', 'basetheme_td' ),
 				'legal-nav'        => __( 'Legal Nav', 'basetheme_td' ),
 			)
 		);

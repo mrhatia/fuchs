@@ -75,7 +75,7 @@
 		ul {
 			transition: none;
 			display: none;
-			padding: 8px 0 20px 20px;
+			padding: 21px 0 5px 0;
 			position: relative;
 			top: initial;
 			left: initial;
@@ -85,7 +85,7 @@
 			box-shadow: none;
 
 			li {
-				margin: 0 0 15px;
+				margin: 0 0 20px;
 
 				&:last-child {
 					margin-bottom: 0;
@@ -97,6 +97,29 @@
 					text-transform: inherit;
 
 					@include font(sour, reg);
+
+					&::after {
+						content: "+";
+						color: var(--fc_orange);
+						font-size: 18px;
+						line-height: inherit;
+						left: 0;
+						position: absolute;
+						top: -1px;
+						opacity: 0;
+						visibility: hidden;
+						transition: all 0.3s ease-in-out;
+					}
+
+					&:hover {
+						padding-left: 20px;
+
+						&::after {
+
+							opacity: 1;
+							visibility: visible;
+						}
+					}
 				}
 
 				&.current-menu-item>a,
@@ -301,17 +324,18 @@ li.menu-item-has-children {
 	.submenu-icon {
 		position: absolute;
 		z-index: 9999;
-		right: 0;
+		left: 0;
 		top: 0;
 		display: block;
-		height: 22px;
-		width: 22px;
+		height: var(--fc_font_size_40);
+		width: 100%;
 		cursor: pointer;
-		background-position: top 8px center;
-		background-size: 9px;
-		background-repeat: no-repeat;
-		background-image: url(../images/submenu-icon.svg);
-		flex: 1 1 auto;
+
+		// background-position: top 8px center;
+		// background-size: 9px;
+		// background-repeat: no-repeat;
+		// background-image: url(../images/submenu-icon.svg);
+		// flex: 1 1 auto;
 	}
 }
 
@@ -330,7 +354,7 @@ li.menu-item-has-children.active>.submenu-icon::before {
 
 	.nav-overlay {
 		top: calc(var(--wp-admin--admin-bar--height) + var(--fc_header-wrapper-default));
-		height: calc(100vh - var(--wp-admin--admin-bar--height));
+		height: 100vh;
 	}
 }
 
