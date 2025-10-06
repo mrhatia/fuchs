@@ -30,15 +30,15 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 						<div class="hero-slide-image">
 
 							<?php
-									if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
-										echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
-									} else {
-										echo get_the_post_thumbnail(
-											$bst_var_post_id,
-											'thumb_900',
-										);
-									}
-									?>
+								if ( ! has_post_thumbnail( $bst_var_post_id ) ) {
+									echo '<img class="" src="' . esc_url( get_template_directory_uri() ) . '/assets/build/images/admin/defaults/default-image.webp" >';
+								} else {
+									echo get_the_post_thumbnail(
+										$bst_var_post_id,
+										'thumb_900',
+									);
+								}
+							?>
 						</div>
 						<div class="banner-content">
 							<?php if($bst_var_trcho_background_text){ ?>
@@ -53,7 +53,6 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 									<?php echo html_entity_decode($bst_var_trcho_text); ?>
 								<?php } ?>
 							</div>
-
 						</div>
 					</div>
 				</div>
