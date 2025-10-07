@@ -139,7 +139,7 @@
 .copy-right {
 	// width: 45%;
 	color: var(--fc_copyright_color);
-	font-size: 18px;
+	font-size: var(--copy-right);
 }
 
 .legal-nav {
@@ -169,7 +169,7 @@
 				color: var(--fc_legal_nav_color);
 				position: relative;
 				display: block;
-				font-size: 18px;
+				font-size: var(--fc_font_size_18);
 
 				&::after {
 					content: "";

@@ -3834,7 +3834,7 @@ Mixin for transition
   gap: 80px;
 }
 .acf-block-preview .offering-block-left {
-  width: 45%;
+  width: 33%;
 }
 .acf-block-preview .offering-block-left .author-tag {
   margin-top: 30px;
@@ -4914,7 +4914,7 @@ Mixin for transition
 }
 @media only screen and (min-width: 1003px) and (max-width: 1359px) {
   .acf-block-preview .section-head .hero-split-text {
-    right: -8%;
+    right: -7%;
   }
 }
 @media only screen and (min-width: 1003px) and (max-width: 1080px) {
@@ -4928,6 +4928,11 @@ Mixin for transition
   }
   .acf-block-preview .faq-items.faq-items-variation {
     width: 65%;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  .acf-block-preview .offering-block-image img {
+    aspect-ratio: 1/1.3;
   }
 }
 @media only screen and (max-width: 1003px) {
@@ -5046,7 +5051,7 @@ Mixin for transition
     left: 0;
   }
   .acf-block-preview .logo-grid {
-    row-gap: 10px;
+    row-gap: 15px;
   }
   .acf-block-preview .single-logo {
     width: 48%;
@@ -5058,7 +5063,6 @@ Mixin for transition
     left: 0;
     margin: 0 auto;
     padding: 35px 22px 45px 20px;
-    inset: 0;
     height: -moz-max-content;
     height: max-content;
     margin: auto;
@@ -5281,6 +5285,34 @@ Mixin for transition
   }
   .acf-block-preview .media-with-text-button {
     margin-top: 20px;
+  }
+  .acf-block-preview .post-box-img img,
+  .acf-block-preview .post-archive-box-img img {
+    aspect-ratio: 2/1.3;
+  }
+  .acf-block-preview .resources-post-box,
+  .acf-block-preview .post-archive-box-img {
+    margin-bottom: 20px;
+  }
+  .acf-block-preview .post-archive-box-title.post-title h4 {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .acf-block-preview .logo-grid .single-logo:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+  .acf-block-preview .logo-grid .single-logo:nth-child(1) img {
+    max-width: 140px;
+  }
+  .acf-block-preview .icons-grid .four-columns .column.center-align {
+    width: 100%;
+    max-width: 100%;
+  }
+  .acf-block-preview .icons-grid .four-columns .column.center-align .icon img {
+    width: auto;
+    max-height: 60px;
   }
 }
 @media only screen and (max-width: 359px) {

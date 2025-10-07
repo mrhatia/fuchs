@@ -26,8 +26,18 @@
 				},
 				{
 					"slug": "black",
-					"color": "var(--fc_black1)",
+					"color": "var(--fc_black)",
 					"name": "Black"
+				},
+				{
+					"slug": "fc_black_1",
+					"color": "var(--fc_black_1)",
+					"name": "Black 100"
+				},
+				{
+					"slug": "fc_black_2",
+					"color": "var(--fc_black_2)",
+					"name": "Black 200"
 				},
 				{
 					"slug": "primary",
@@ -35,9 +45,29 @@
 					"name": "Primary"
 				},
 				{
+					"slug": "fc_green_dark",
+					"color": "var(--fc_green_dark)",
+					"name": "Green Dark"
+				},
+				{
 					"slug": "secondary",
 					"color": "var(--fc_color_secondary)",
 					"name": "Secondary"
+				},
+				{
+					"slug": "fc_orange",
+					"color": "var(--fc_orange)",
+					"name": "Orange"
+				},
+				{
+					"slug": "fc_orange_dark",
+					"color": "var(--fc_orange_dark)",
+					"name": "Orange Dark"
+				},
+				{
+					"slug": "fc_orange_1",
+					"color": "var(--fc_orange_1)",
+					"name": "Orange Light"
 				},
 				{
 					"slug": "gray",
@@ -55,20 +85,16 @@
 					"name": "Gray 2"
 				},
 				{
-					"slug": "blue",
-					"color": "var(--fc_color_blue_6)",
-					"name": "Blue"
+					"slug": "gray3",
+					"color": "var(--fc_gray_3)",
+					"name": "Gray 3"
 				},
 				{
-					"slug": "blue1",
-					"color": "var(--fc_color_blue_1)",
-					"name": "Blue 1"
+					"slug": "gray4",
+					"color": "var(--fc_gray_4)",
+					"name": "Gray 4"
 				},
-				{
-					"slug": "blue2",
-					"color": "var(--fc_color_blue)",
-					"name": "Blue 2"
-				},
+
 				{
 					"slug": "navy",
 					"color": "var(--fc_navy)",

@@ -360,21 +360,23 @@ li.menu-item-has-children.active>.submenu-icon::before {
 
 @media (max-width: 747px) {
 
-	.header-section {
-		background-color: var(--fc_color_primary);
+	// .header-section {
+	// 	background-color: var(--fc_color_primary);
+	// }
+	.header .nav-container {
+		width: 90%;
 	}
 
 	.menu-btn {
 		width: 75px;
-		height: 70px;
+		height: 65px;
 		padding: 0 28px;
 	}
 
 	.logo {
 		width: 190px;
 		position: relative;
-		left: -28px;
-		top: 2px;
+		left: -15px;
 	}
 
 	.nav-overlay .header-nav ul li {

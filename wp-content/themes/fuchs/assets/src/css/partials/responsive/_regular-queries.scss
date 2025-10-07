@@ -81,7 +81,7 @@
 		.copy-right,
 		.menu-legal-nav {
 			width: 100%;
-			margin-bottom: 10px;
+			margin-top: 10px;
 		}
 
 		.legal-nav ul {
@@ -103,6 +103,10 @@
 
 	.image-alongside-text {
 		flex-wrap: wrap;
+
+		.iat-image {
+			order: 2;
+		}
 
 		.iat-content,
 		.iat-image {
@@ -140,7 +144,7 @@
 @media only screen and (max-width: 577px) {
 	.icons-grid {
 		.four-columns {
-			row-gap: 50px;
+			row-gap: 35px;
 		}
 
 		.column.center-align {
@@ -160,7 +164,7 @@
 		.hero-split-text {
 			position: absolute;
 			top: -53px;
-			left: -19px;
+			left: -11px;
 			opacity: 0.4;
 		}
 	}
