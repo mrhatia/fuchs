@@ -411,4 +411,115 @@ jQuery( function() {
 			}
 		} );
 	}
+	// STATS
+	if ( jQuery( '.stats-number' ).length > 0 ) {
+		const $statNumbers = jQuery( '.stats-number' );
+
+		function animateCounter( $element ) {
+			const text = $element.text();
+			const numericText = text.match( /[0-9.]+/ )[ 0 ];
+			const prefix = text.startsWith( '#' ) ? '#' : '';
+			const suffix = text.replace( prefix + numericText, '' ).trim();
+			const targetValue = parseFloat( numericText );
+			if ( isNaN( targetValue ) ) {
+				return;
+			}
+			const startValue = 0;
+			const duration = 1000;
+			const totalFrames = duration / ( 1000 / 60 );
+			const increment = ( targetValue - startValue ) / totalFrames;
+			let animatedValue = startValue;
+			const formatValue = ( value ) => Number.isInteger( targetValue ) ? Math.round( value ) : value.toFixed( 1 );
+			const updateCounter = () => {
+				animatedValue += increment;
+				if ( animatedValue >= targetValue ) {
+					$element.text( prefix + formatValue( targetValue ) + suffix );
+				} else {
+					$element.text( prefix + formatValue( animatedValue ) + suffix );
+					requestAnimationFrame( updateCounter );
+				}
+			};
+			requestAnimationFrame( updateCounter );
+			const value = parseInt( $element.text().trim() );
+			let current = 0;
+			const durationFill = 1500;
+			const step = value / ( durationFill / 16 );
+			function animateFill() {
+				current += step;
+				if ( current < value ) {
+					$element.css( '--percent', current );
+					requestAnimationFrame( animateFill );
+				} else {
+					$element.css( '--percent', value );
+				}
+			}
+			animateFill();
+		}
+
+		const isInViewport = ( element ) => {
+			const rect = element[ 0 ].getBoundingClientRect();
+			return rect.bottom >= 0 && rect.top <= ( window.innerHeight || document.documentElement.clientHeight );
+		};
+
+		jQuery( window )
+			.on( 'scroll resize', () => {
+				$statNumbers.each( function() {
+					const $this = jQuery( this );
+					if ( isInViewport( $this ) && ! $this.hasClass( 'animated' ) ) {
+						animateCounter( $this );
+						$this.addClass( 'animated' );
+					}
+				} );
+			} )
+			.trigger( 'scroll' );
+	}
+	// Animation
+
+	if ( jQuery( '.gallery-slide' ).length > 0 ) {
+		const slides = document.querySelectorAll( '.gallery-slide' );
+		const total = slides.length;
+		let current = 0;
+		let autoplay;
+
+		function updateSlides() {
+			slides.forEach( ( slide, i ) => {
+				gsap.to( slide, { x: 0, scale: 0.6, opacity: 0, zIndex: 1, duration: 0.5 } );
+			} );
+
+			const leftIndex = ( current - 1 + total ) % total;
+			const rightIndex = ( current + 1 ) % total;
+
+			gsap.to( slides[ current ], { x: 0, scale: 1, opacity: 1, zIndex: 3, duration: 0.8, ease: 'power3.out' } );
+			gsap.to( slides[ leftIndex ], { x: '-60%', scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
+			gsap.to( slides[ rightIndex ], { x: '60%', scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
+		}
+
+		function nextSlide() {
+			current = ( current + 1 ) % total;
+			updateSlides();
+		}
+
+		document.querySelector( '.next' ).onclick = () => {
+			nextSlide();
+			resetAutoplay();
+		};
+
+		document.querySelector( '.prev' ).onclick = () => {
+			current = ( current - 1 + total ) % total;
+			updateSlides();
+			resetAutoplay();
+		};
+
+		function startAutoplay() {
+			autoplay = setInterval( nextSlide, 7000 );
+		}
+
+		function resetAutoplay() {
+			clearInterval( autoplay );
+			startAutoplay();
+		}
+
+		updateSlides();
+		startAutoplay();
+	}
 } );

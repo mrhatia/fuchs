@@ -1,4 +1,40 @@
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+	.project-info-content {
+		width: 46%;
+	}
+
+	.project-info-images {
+		width: 50%;
+
+		.project-info-single-image {
+			width: 46.6%;
+		}
+	}
+
+	.stats-column {
+		width: 25.2%;
+	}
+
+	.counter-background {
+		left: -25px;
+	}
+
+	.media-with-text-image-text {
+		bottom: 3%;
+	}
+
+	.iat-two-image .iat-image {
+		gap: 20px;
+
+		.iat-single-image {
+			width: 47.5%;
+		}
+	}
+
+	.stats-variation .stats-column {
+		width: 46%;
+	}
+
 	.offering-block-content {
 		width: 45%;
 	}
@@ -40,6 +76,42 @@
 }
 
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+	.project-info-content {
+		width: 46%;
+	}
+
+	.project-info-images {
+		width: 50%;
+
+		.project-info-single-image {
+			width: 46.6%;
+		}
+	}
+
+	.stats-column {
+		width: 25.2%;
+	}
+
+	.counter-background {
+		left: -25px;
+	}
+
+	.media-with-text-image-text {
+		bottom: 3%;
+	}
+
+	.iat-two-image .iat-image {
+		gap: 20px;
+
+		.iat-single-image {
+			width: 47.5%;
+		}
+	}
+
+	.stats-variation .stats-column {
+		width: 46%;
+	}
+
 	.offering-block-content {
 		width: 47%;
 	}
@@ -75,8 +147,40 @@
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.project-info-content {
+		width: 46%;
+	}
+
+	.project-info-images {
+		width: 50%;
+
+		.project-info-single-image {
+			width: 46.6%;
+		}
+	}
+
+	.stats-column {
+		width: 25.2%;
+	}
+
+	.counter-background {
+		left: -25px;
+	}
+
 	.media-with-text-image-text {
 		bottom: 3%;
+	}
+
+	.iat-two-image .iat-image {
+		gap: 20px;
+
+		.iat-single-image {
+			width: 47.5%;
+		}
+	}
+
+	.stats-variation .stats-column {
+		width: 46%;
 	}
 
 	.faq-image {
@@ -142,6 +246,84 @@
 }
 
 @media only screen and (max-width: 1003px) {
+	.stats-items.stats-variation {
+		row-gap: 40px;
+
+	}
+
+	.stats-variation .stats-column .stats-number {
+		min-width: 130px;
+		min-height: 130px;
+	}
+
+	.stats-column .stats-number {
+		font-size: 60px;
+	}
+
+	.stats-column span {
+		font-size: 35px;
+	}
+
+	.stats-variation .stats-column {
+		width: 100%;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.project-info-content {
+		width: 100%;
+	}
+
+	.project-info-single:nth-child(n+2) {
+		margin-top: 34px;
+	}
+
+	.project-info-images {
+		width: 100%;
+		gap: 20px;
+
+		.project-info-single-image {
+			width: 100%;
+		}
+	}
+
+	.stats-items {
+		row-gap: 120px;
+	}
+
+	.counter-background {
+		left: calc(50% - 150px);
+		font-size: 180px;
+	}
+
+	.stats-column {
+		width: 100%;
+		justify-content: center;
+		gap: 15px;
+	}
+
+
+	.faq-head {
+		gap: 20px;
+	}
+
+	.iat-two-image {
+		.iat-image {
+			gap: 20px;
+		}
+
+		.iat-single-image {
+			width: 100%;
+
+			img {
+				aspect-ratio: 322 / 294;
+			}
+		}
+	}
+
+
 	.media-with-text-image-text {
 		bottom: 5%;
 	}
@@ -280,6 +462,7 @@
 }
 
 @media only screen and (max-width: 747px) {
+
 
 	.wrapper {
 		width: 90%;

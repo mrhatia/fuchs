@@ -49,3 +49,29 @@
 		color: var(--fc_orange);
 	}
 }
+
+.iat-two-image {
+	.iat-image {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	.iat-single-image {
+		width: 47.4%;
+
+		img {
+			aspect-ratio: 302/444;
+
+		}
+	}
+}
+
+.iat-button {
+	line-height: 0.65;
+}

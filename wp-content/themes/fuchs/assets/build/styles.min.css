@@ -6021,12 +6021,13 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 
 .faq-head {
   display: flex;
-  justify-content: space-between;
   padding: 30px 0px 36px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 30px;
 }
 .faq-head.active {
   padding: 30px 0px 14px;
@@ -6047,7 +6048,8 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .faq-head:hover .faq-icon svg rect {
   fill: var(--fc_white);
 }
-.faq-head .heading-5 {
+.faq-head .heading-5,
+.faq-head .faq-number {
   font-size: var(--fc_font_size_26);
   margin: 0;
   color: var(--fc_color_primary);
@@ -6078,6 +6080,10 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .faq-icon svg rect {
   transition: all 0.3s ease-in-out;
   fill: var(--fc_color_primary);
+}
+
+.simple-faq .faq-items {
+  width: 100%;
 }
 
 /*-------------------------------------------------
@@ -6314,6 +6320,25 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .image-alongside-text-variation .person-info {
   color: var(--fc_orange);
+}
+
+.iat-two-image .iat-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.iat-two-image .iat-image::before, .iat-two-image .iat-image::after {
+  display: none;
+}
+.iat-two-image .iat-single-image {
+  width: 47.4%;
+}
+.iat-two-image .iat-single-image img {
+  aspect-ratio: 302/444;
+}
+
+.iat-button {
+  line-height: 0.65;
 }
 
 /*-------------------------------------------------
@@ -6924,6 +6949,220 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 
 /*-------------------------------------------------
+>> Basic styles for Project info
+-------------------------------------------------*/
+.project-info-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 74.5%;
+}
+.project-info-images .project-info-single-image {
+  width: 31.2%;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-info-content {
+  width: 23%;
+}
+.project-info-content .heading-2 {
+  font-size: var(--fc_font_size_40);
+  margin-bottom: 24px;
+}
+.project-info-content .heading-3 {
+  margin-bottom: 21px;
+}
+.project-info-content p {
+  font-size: var(--fc_font_size_18);
+}
+.project-info-content p:last-child {
+  margin: 0;
+}
+.project-info-content .info-title,
+.project-info-content .info-detail {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0 7px 5px 0;
+  color: var(--fc_black_2);
+  text-transform: uppercase;
+}
+.project-info-content .info-title a,
+.project-info-content .info-title a:visited,
+.project-info-content .info-detail a,
+.project-info-content .info-detail a:visited {
+  color: var(--fc_black_2);
+}
+.project-info-content .info-title a:hover, .project-info-content .info-title a:focus-visible,
+.project-info-content .info-title a:visited:hover,
+.project-info-content .info-title a:visited:focus-visible,
+.project-info-content .info-detail a:hover,
+.project-info-content .info-detail a:focus-visible,
+.project-info-content .info-detail a:visited:hover,
+.project-info-content .info-detail a:visited:focus-visible {
+  color: var(--fc_orange_dark);
+}
+
+.project-info-single:nth-child(n+2) {
+  margin-top: 44px;
+}
+
+/*-------------------------------------------------
+>> Basic styles for STATS
+-------------------------------------------------*/
+.stats-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 110px;
+}
+
+.stats-column {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  width: 15.8%;
+  position: relative;
+}
+.stats-column .stats-number {
+  font-size: var(--fc_font_size_60);
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  top: 4px;
+}
+.stats-column .small-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--fc_gray_4);
+}
+.stats-column span {
+  display: block;
+  font-size: var(--fc_font_size_40);
+  line-height: 0.75em;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: var(--fc_color_primary);
+  margin-top: 10px;
+}
+.stats-column p {
+  font-size: var(--fc_font_size_18);
+  margin: 13px 0 0 0;
+  display: block;
+}
+
+.counter-background {
+  float: left;
+  min-width: 186px;
+  color: #f5f6f7;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dedfe0;
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  line-height: 1em;
+  font-weight: 600;
+  overflow: hidden;
+  font-size: var(--fc_font_size_180);
+  position: absolute;
+  z-index: -1;
+  left: -58px;
+}
+
+.stats-variation {
+  row-gap: 30px;
+}
+.stats-variation .stats-column {
+  width: 30.5%;
+  gap: 30px;
+}
+.stats-variation .stats-column .stats-number {
+  min-width: 176px;
+  min-height: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e8e8e9;
+  border-radius: 50%;
+  position: relative;
+  font-size: var(--fc_font_size_60);
+  font-weight: bold;
+}
+.stats-variation .stats-column .stats-number::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid var(--fc_color_primary);
+  mask: conic-gradient(var(--fc_color_primary) calc(var(--percent) * 1%), transparent 0);
+  -webkit-mask: conic-gradient(var(--fc_color_primary) calc(var(--percent) * 1%), transparent 0);
+  transition: mask 1s linear, -webkit-mask 1s linear;
+}
+
+/*-------------------------------------------------
+>> Basic styles for Gallery Slider
+-------------------------------------------------*/
+.gallery-slider {
+  position: relative;
+  height: 650px;
+}
+.gallery-slider .gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75%;
+  height: 100%;
+  transform: translateX(-50%) scale(0.8);
+  overflow: hidden;
+}
+.gallery-slider .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 2;
+  width: 78px;
+  height: 78px;
+  background-color: var(--fc_color_on_primary);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 9px;
+}
+.gallery-slider .btn:hover {
+  background-color: var(--fc_orange);
+}
+.gallery-slider .btn:hover.prev {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzIwMTBfMikiPgo8cGF0aCBkPSJNMTUuMzMzNSAyLjY2Njc1TDIuMDAwMTcgMTYuMDAwMUwxNS4zMzM1IDI5LjMzMzQiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMjAxMF8yIj4KPHJlY3Qgd2lkdGg9IjE4IiBoZWlnaHQ9IjMyIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMTggMCkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K);
+}
+.gallery-slider .btn:hover.next {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNjY2NjcgMi42NjY3NUwxNiAxNi4wMDAxTDIuNjY2NjcgMjkuMzMzNCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+}
+.gallery-slider .prev {
+  left: -17.6%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjAwMDEgMi42NjY3NUwyLjY2Njc1IDE2LjAwMDFMMTYuMDAwMSAyOS4zMzM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+}
+.gallery-slider .next {
+  right: -17.6%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNjY2NjcgMi42NjY3NUwxNiAxNi4wMDAxTDIuNjY2NjcgMjkuMzMzNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+}
+
+/*-------------------------------------------------
 >> Styles for Wp Buttons
 -------------------------------------------------*/
 /****
@@ -7115,6 +7354,33 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 >> Base Responsive queries
 ------------------------------------------------- */
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+  .project-info-content {
+    width: 46%;
+  }
+  .project-info-images {
+    width: 50%;
+  }
+  .project-info-images .project-info-single-image {
+    width: 46.6%;
+  }
+  .stats-column {
+    width: 25.2%;
+  }
+  .counter-background {
+    left: -25px;
+  }
+  .media-with-text-image-text {
+    bottom: 3%;
+  }
+  .iat-two-image .iat-image {
+    gap: 20px;
+  }
+  .iat-two-image .iat-image .iat-single-image {
+    width: 47.5%;
+  }
+  .stats-variation .stats-column {
+    width: 46%;
+  }
   .offering-block-content {
     width: 45%;
   }
@@ -7141,6 +7407,33 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   }
 }
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+  .project-info-content {
+    width: 46%;
+  }
+  .project-info-images {
+    width: 50%;
+  }
+  .project-info-images .project-info-single-image {
+    width: 46.6%;
+  }
+  .stats-column {
+    width: 25.2%;
+  }
+  .counter-background {
+    left: -25px;
+  }
+  .media-with-text-image-text {
+    bottom: 3%;
+  }
+  .iat-two-image .iat-image {
+    gap: 20px;
+  }
+  .iat-two-image .iat-image .iat-single-image {
+    width: 47.5%;
+  }
+  .stats-variation .stats-column {
+    width: 46%;
+  }
   .offering-block-content {
     width: 47%;
   }
@@ -7167,8 +7460,32 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   }
 }
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .project-info-content {
+    width: 46%;
+  }
+  .project-info-images {
+    width: 50%;
+  }
+  .project-info-images .project-info-single-image {
+    width: 46.6%;
+  }
+  .stats-column {
+    width: 25.2%;
+  }
+  .counter-background {
+    left: -25px;
+  }
   .media-with-text-image-text {
     bottom: 3%;
+  }
+  .iat-two-image .iat-image {
+    gap: 20px;
+  }
+  .iat-two-image .iat-image .iat-single-image {
+    width: 47.5%;
+  }
+  .stats-variation .stats-column {
+    width: 46%;
   }
   .faq-image {
     width: 46%;
@@ -7219,6 +7536,63 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   }
 }
 @media only screen and (max-width: 1003px) {
+  .stats-items.stats-variation {
+    row-gap: 40px;
+  }
+  .stats-variation .stats-column .stats-number {
+    min-width: 130px;
+    min-height: 130px;
+  }
+  .stats-column .stats-number {
+    font-size: 60px;
+  }
+  .stats-column span {
+    font-size: 35px;
+  }
+  .stats-variation .stats-column {
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-info-content {
+    width: 100%;
+  }
+  .project-info-single:nth-child(n+2) {
+    margin-top: 34px;
+  }
+  .project-info-images {
+    width: 100%;
+    gap: 20px;
+  }
+  .project-info-images .project-info-single-image {
+    width: 100%;
+  }
+  .stats-items {
+    row-gap: 120px;
+  }
+  .counter-background {
+    left: calc(50% - 150px);
+    font-size: 180px;
+  }
+  .stats-column {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+  .faq-head {
+    gap: 20px;
+  }
+  .iat-two-image .iat-image {
+    gap: 20px;
+  }
+  .iat-two-image .iat-single-image {
+    width: 100%;
+  }
+  .iat-two-image .iat-single-image img {
+    aspect-ratio: 322/294;
+  }
   .media-with-text-image-text {
     bottom: 5%;
   }
