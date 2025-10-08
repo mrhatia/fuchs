@@ -134,14 +134,14 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 					<div class="nav-container">
 						<div class="header-nav">
 							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'header-nav',
-									'fallback_cb'    => 'BaseTheme::nav_fallback',
-									'walker'         => new BaseTheme\Walker\WP_Theme_Walker_Nav(),
-									'container'      => 'nav',
-								)
-							);
+								wp_nav_menu(
+									array(
+										'theme_location' => 'header-nav',
+										'fallback_cb'    => 'BaseTheme::nav_fallback',
+										'walker'         => new BaseTheme\Walker\WP_Theme_Walker_Nav(),
+										'container'      => 'nav',
+									)
+								);
 							?>
 						<?php if ( $bst_var_header_btn ) { ?>
 							<div class="header-btns desktop-hide">

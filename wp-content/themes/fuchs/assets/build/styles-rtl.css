@@ -3331,8 +3331,15 @@ header {
   position: relative;
   z-index: 9;
   line-height: 0;
-  width: 286px;
+  width: 320px;
+  display: flex;
+  align-items: center;
   transition: all 0.2s ease-in-out;
+  background-color: var(--fc_color_primary);
+}
+.logo a,
+.logo img {
+  width: 100%;
 }
 
 .header-inner {
@@ -3840,7 +3847,6 @@ li.menu-item-has-children.active > .submenu-icon::before {
   .logo {
     width: 190px;
     position: relative;
-    right: -15px;
   }
   .nav-overlay .header-nav ul li {
     margin-bottom: 12px;
@@ -4565,16 +4571,12 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
 .footer-widgets .single-widget:nth-child(2) {
   width: 30%;
   max-width: 305px;
-  filter: brightness(0) invert(1);
 }
 .footer-widgets .single-widget:nth-child(2) h4 {
   font-size: var(--fc_font_size_18);
 }
 .footer-widgets .social-icons svg path {
   fill: #ffffff;
-}
-.footer-widgets .social-icons a:hover svg path {
-  fill: #007857 !important;
 }
 
 .footer-nav ul {
@@ -4714,7 +4716,7 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
   margin-left: 20px;
 }
 .social-icons a:hover, .social-icons a:focus-visible {
-  background-color: var(--fc_white_2);
+  background-color: var(--fc_orange);
 }
 
 .social-icons svg {

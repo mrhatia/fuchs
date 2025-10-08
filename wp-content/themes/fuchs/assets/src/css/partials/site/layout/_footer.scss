@@ -42,7 +42,7 @@
 		&:nth-child(2) {
 			width: 30%;
 			max-width: 305px;
-			filter: brightness(0) invert(1);
+			// filter: brightness(0) invert(1);
 		}
 
 		&:nth-child(2) h4 {
@@ -55,12 +55,6 @@
 			fill: #ffffff;
 		}
 
-		a:hover {
-			svg path {
-				fill: #007857 !important;
-			}
-
-		}
 	}
 }
 
@@ -224,7 +218,7 @@
 
 		&:hover,
 		&:focus-visible {
-			background-color: var(--fc_white_2);
+			background-color: var(--fc_orange);
 		}
 	}
 }

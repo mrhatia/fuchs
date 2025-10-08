@@ -27,7 +27,7 @@ BaseTheme::block(
 		$bst_var_blk_ctp_name = $bst_block_fields['bst_var_blk_ctp_name'] ?? null;
 		?>
 
-
+		<div id="contact-person"></div>
 		<section>
 			<div class="wrapper">
 				<div class="offering-block">
