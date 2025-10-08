@@ -323,7 +323,7 @@ jQuery( function() {
 
 	if ( jQuery( '.blog-teaser-slider' ).length > 0 ) {
 		jQuery( '.blog-teaser-slider' ).slick( {
-			slidesToShow: 3,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			infinite: true,
 			arrows: true,
@@ -482,16 +482,18 @@ jQuery( function() {
 		let autoplay;
 
 		function updateSlides() {
-			slides.forEach( ( slide, i ) => {
+			slides.forEach( ( slide ) => {
 				gsap.to( slide, { x: 0, scale: 0.6, opacity: 0, zIndex: 1, duration: 0.5 } );
 			} );
 
 			const leftIndex = ( current - 1 + total ) % total;
 			const rightIndex = ( current + 1 ) % total;
 
+			const offset = window.innerWidth < 768 ? 40 : 60; // % offset for smaller screens
+
 			gsap.to( slides[ current ], { x: 0, scale: 1, opacity: 1, zIndex: 3, duration: 0.8, ease: 'power3.out' } );
-			gsap.to( slides[ leftIndex ], { x: '-60%', scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
-			gsap.to( slides[ rightIndex ], { x: '60%', scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
+			gsap.to( slides[ leftIndex ], { x: `-${ offset }%`, scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
+			gsap.to( slides[ rightIndex ], { x: `${ offset }%`, scale: 0.6, opacity: 1, zIndex: 2, duration: 0.8, ease: 'power3.out' } );
 		}
 
 		function nextSlide() {
@@ -518,6 +520,8 @@ jQuery( function() {
 			clearInterval( autoplay );
 			startAutoplay();
 		}
+
+		window.addEventListener( 'resize', updateSlides ); // Update positions on resize
 
 		updateSlides();
 		startAutoplay();
