@@ -3954,6 +3954,8 @@ Mixin for transition
   top: 50%;
   transform: translateY(-50%);
   right: 15.9%;
+  height: -moz-max-content;
+  height: max-content;
 }
 .acf-block-preview .media-with-text-content-box .kicker {
   color: var(--fc_white);
@@ -4013,11 +4015,6 @@ Mixin for transition
   bottom: 20%;
   left: 5%;
 }
-.acf-block-preview .media-with-text-variation .media-with-text-content-box {
-  top: auto;
-  bottom: 0;
-  transform: none;
-}
 .acf-block-preview .logo-grid {
   display: flex;
   flex-wrap: wrap;
@@ -4042,7 +4039,7 @@ Mixin for transition
   border-top: 1px solid var(--fc_border_3);
   border-left: 1px solid var(--fc_border_3);
   border-right: 1px solid var(--fc_border_3);
-  padding: 50px 50px;
+  padding: 50px 100px 50px 50px;
 }
 .acf-block-preview .highlight-quote .highlight-blockquote::after {
   position: absolute;

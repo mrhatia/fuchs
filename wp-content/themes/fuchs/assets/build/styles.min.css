@@ -6807,6 +6807,8 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   top: 50%;
   transform: translateY(-50%);
   right: 15.9%;
+  height: -moz-max-content;
+  height: max-content;
 }
 .media-with-text-content-box .kicker {
   color: var(--fc_white);
@@ -6870,12 +6872,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   left: 5%;
 }
 
-.media-with-text-variation .media-with-text-content-box {
-  top: auto;
-  bottom: 0;
-  transform: none;
-}
-
 /*-------------------------------------------------
 >> Basic styles for logo grid
 -------------------------------------------------*/
@@ -6912,7 +6908,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   border-top: 1px solid var(--fc_border_3);
   border-left: 1px solid var(--fc_border_3);
   border-right: 1px solid var(--fc_border_3);
-  padding: 50px 50px;
+  padding: 50px 100px 50px 50px;
 }
 .highlight-quote .highlight-blockquote::after {
   position: absolute;
