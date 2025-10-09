@@ -89,6 +89,15 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 		</div>
 		<div class="gl-s96"></div>
 
+			<section id="page-section" class="page-section">
+		<!-- Content Start -->
+		<?php
+				get_template_part( 'partials/content', 'page' );
+
+		?>
+	</section>
+
+
 
 <?php
 get_footer();
