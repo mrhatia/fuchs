@@ -1,6 +1,6 @@
 {
     "key": "group_6264572fc01b7",
-    "title": "Template Projects - Hero Options",
+    "title": "Template - Hero Options",
     "fields": [
         {
             "key": "field_68e31ef310f29",
@@ -94,6 +94,13 @@
                 "operator": "==",
                 "value": "templates\/template-projects.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-overview.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -105,5 +112,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759715275
+    "modified": 1760019783
 }

@@ -21,18 +21,20 @@ BaseTheme::block(
 		$bst_var_blk_mat_text        = $bst_block_fields['bst_var_blk_mat_text'] ?? null;
 		$bst_var_blk_mat_button        = $bst_block_fields['bst_var_blk_mat_button'] ?? null;
 		$bst_var_blk_mat_image        = $bst_block_fields['bst_var_blk_mat_image'] ?? null;
+		$bst_var_blk_mat_image_two        = $bst_block_fields['bst_var_blk_mat_image_two'] ?? null;
 		$bst_var_blk_mat_img_location = $bst_block_fields['bst_var_blk_mat_img_position'] ?? null;
 
 		?>
 
 <?php if($bst_var_blk_mat_design_variation === "regular"){
-			$bst_var_blk_mat_img_location        = ("left" == $bst_var_blk_mat_img_location) ? "image-at-left" : "image-at-right";
+			$bst_var_blk_mat_img_location        = ("left" == $bst_var_blk_mat_img_location) ? " image-at-left " : " image-at-right ";
+			$bst_var_blk_mat_has_two_images        = ($bst_var_blk_mat_image_two) ? " iat-two-image " : "";
 
 			?>
 			<section>
 				<div class="wrapper">
 					<div
-						class="image-alongside-text <?php echo $bst_var_blk_mat_img_location; ?> d-flex justify-content-between flex-wrap align-items-center">
+						class="image-alongside-text <?php echo $bst_var_blk_mat_img_location.$bst_var_blk_mat_has_two_images; ?> d-flex justify-content-between flex-wrap align-items-center">
 						<div class="iat-content column">
 							<?php if ( $bst_var_blk_mat_kicker ) {  ?>
 								<div class="kicker"><?php echo html_entity_decode( $bst_var_blk_mat_kicker ); ?></div>
@@ -49,7 +51,14 @@ BaseTheme::block(
 						</div>
 						<div class="iat-image column">
 							<?php if ( $bst_var_blk_mat_image ) { ?>
-								<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
+								<div class="iat-single-image image-cover">
+									<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
+								</div>
+							<?php } ?>
+							<?php if ( $bst_var_blk_mat_image_two ) { ?>
+								<div class="iat-single-image image-cover">
+									<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image_two, 1000 ); ?>
+								</div>
 							<?php } ?>
 						</div>
 					</div>

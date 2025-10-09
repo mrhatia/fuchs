@@ -69,6 +69,7 @@ BaseTheme::block(
 				<div class="wrapper">
 					<div class="icons-grid icons-grid-variation">
 						<div class="icons-three-columns">
+							<?php if($fh_var_blk_icon_kicker || $fh_var_blk_icon_title){ ?>
 								<div class="column">
 									<?php if ( $fh_var_blk_icon_kicker ) {  ?>
 										<div class="kicker"><?php echo html_entity_decode( $fh_var_blk_icon_kicker ); ?></div>
@@ -77,6 +78,8 @@ BaseTheme::block(
 										<h3 class="medium-heading"><?php echo html_entity_decode( $fh_var_blk_icon_title ); ?></h3>
 									<?php } ?>
 								</div>
+							<?php } ?>
+
 							<?php
 								foreach ( $fh_var_blk_icon_columns as $column ) {
 									$column_kicker      = $column['kicker'] ?? null;

@@ -72,10 +72,12 @@ BaseTheme::block(
 					</div>
 				</div>
 			</section>
-		<?php } else { ?>
+		<?php } else {
+			$bst_var_faq_has_image        = ($bst_var_faq_image) ? " faq-with-image " : " simple-faq ";
+			?>
 			<section>
 				<div class="wrapper">
-					<div class="faq-with-image faq-block">
+					<div class=" <?php echo $bst_var_faq_has_image; ?> faq-block">
 						<?php if($bst_var_faq_image){ ?>
 							<div class="faq-image image-cover">
 								<?php BaseTheme::the_attachment_image( $bst_var_faq_image, 1200 ); ?>
@@ -84,13 +86,19 @@ BaseTheme::block(
 						<?php if($bst_var_faq_faqs){ ?>
 
 							<div class="faq-items">
-								<?php foreach ( $bst_var_faq_faqs as $faq ) {
+								<?php foreach ( $bst_var_faq_faqs as $key => $faq ) {
 									$faq_question      = $faq['question'] ?? null;
 									$faq_answer      = $faq['answer'] ?? null;
 
 									?>
 									<div class="faq">
 										<div class="faq-head">
+											<?php if ( ! $bst_var_faq_image ) { ?>
+												<div class="faq-number">
+													<?php echo str_pad(++$key, 2, '0', STR_PAD_LEFT); ?>
+												</div>
+											<?php } ?>
+
 											<?php if ( $faq_question ) {  ?>
 												<h3 class="heading-5"><?php echo html_entity_decode( $faq_question ); ?></h3>
 											<?php } ?>

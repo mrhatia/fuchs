@@ -67,6 +67,34 @@ new WP_Theme_CPT(
 
 new WP_Theme_CPT(
 	array(
+		'labels'       => array(
+			'singular_capital'   => 'Overview',
+			'plural_capital'     => 'Overviews',
+			'singular_lowercase' => 'overview',
+			'plural_lowercase'   => 'overviews',
+			// CPT Slug & Name.
+			'register_key'       => 'overview',
+			'slug'               => 'overview',
+		),
+		'supports'     => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
+		'menu_icon'    => 'dashicons-format-quote',
+		'public'       => true,
+		'show_in_menu' => true,
+		'show_ui'      => true,
+		'taxonomies'   => array(
+			array(
+				'slug'          => 'type',
+				'register_key'  => 'type', // if not given default is slug value.
+				'name'          => 'Type',
+				'singular_name' => 'Type',
+				'plural_name'   => 'Types',
+			),
+		),
+	)
+);
+
+new WP_Theme_CPT(
+	array(
 		'labels'    => array(
 			'singular_capital'   => 'Team Member',
 			'plural_capital'     => 'Team Members',

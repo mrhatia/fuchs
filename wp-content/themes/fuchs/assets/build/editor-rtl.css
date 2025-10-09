@@ -3239,7 +3239,7 @@ Mixin for transition
 }
 .acf-block-preview .faq-head {
   display: flex;
-  padding: 30px 0px 36px;
+  padding: 30px 0 36px 70px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
@@ -3283,7 +3283,7 @@ Mixin for transition
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 50px;
+  left: 0;
   top: 17px;
   transition: all 0.3s ease-in-out;
 }
@@ -4142,6 +4142,7 @@ Mixin for transition
 .acf-block-preview .project-info-content .info-detail a,
 .acf-block-preview .project-info-content .info-detail a:visited {
   color: var(--fc_black_2);
+  border-bottom: none;
 }
 .acf-block-preview .project-info-content .info-title a:hover, .acf-block-preview .project-info-content .info-title a:focus-visible,
 .acf-block-preview .project-info-content .info-title a:visited:hover,
@@ -4150,6 +4151,7 @@ Mixin for transition
 .acf-block-preview .project-info-content .info-detail a:focus-visible,
 .acf-block-preview .project-info-content .info-detail a:visited:hover,
 .acf-block-preview .project-info-content .info-detail a:visited:focus-visible {
+  border-bottom: none;
   color: var(--fc_orange_dark);
 }
 .acf-block-preview .project-info-single:nth-child(n+2) {

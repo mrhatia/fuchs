@@ -50,10 +50,13 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'cta-section' );
 		self::register_acf_block( 'blog-teaser' );
 		self::register_acf_block( 'contact-person' );
+		self::register_acf_block( 'theme-stats' );
 		self::register_acf_block( 'hero-image-slider' );
+		self::register_acf_block( 'theme-image-slider' );
 		// Register a block - Jump Location.
 		self::register_acf_block( 'jump-location' );
 		self::register_acf_block( 'theme-blockquote' );
+		self::register_acf_block( 'media-collage' );
 		// Register a block - AcfBlock.
 		self::register_acf_block(
 			'acfblock',

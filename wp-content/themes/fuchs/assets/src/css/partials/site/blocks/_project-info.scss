@@ -51,9 +51,11 @@
 		a,
 		a:visited {
 			color: var(--fc_black_2);
+			border-bottom: none;
 
 			&:hover,
 			&:focus-visible {
+				border-bottom: none;
 				color: var(--fc_orange_dark);
 			}
 		}
