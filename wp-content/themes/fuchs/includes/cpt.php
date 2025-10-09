@@ -10,32 +10,6 @@
 
 use BaseTheme\CPT\WP_Theme_CPT;
 
-new WP_Theme_CPT(
-	array(
-		'labels'       => array(
-			'singular_capital'   => 'Testimonial',
-			'plural_capital'     => 'Testimonials',
-			'singular_lowercase' => 'testimonial',
-			'plural_lowercase'   => 'testimonials',
-			// CPT Slug & Name.
-			'register_key'       => 'testimonial',
-			'slug'               => 'testimonial',
-		),
-		'supports'     => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
-		'menu_icon'    => 'dashicons-format-quote',
-		'public'       => false,
-		'show_in_menu' => true,
-		'show_ui'      => true,
-		'taxonomies'   => array(
-			array(
-				'slug'          => 'category',
-				'name'          => 'categories',
-				'singular_name' => 'categories',
-				'plural_name'   => 'categories',
-			),
-		),
-	)
-);
 
 new WP_Theme_CPT(
 	array(
@@ -69,9 +43,9 @@ new WP_Theme_CPT(
 	array(
 		'labels'       => array(
 			'singular_capital'   => 'Overview',
-			'plural_capital'     => 'Overviews',
+			'plural_capital'     => 'Overview',
 			'singular_lowercase' => 'overview',
-			'plural_lowercase'   => 'overviews',
+			'plural_lowercase'   => 'overview',
 			// CPT Slug & Name.
 			'register_key'       => 'overview',
 			'slug'               => 'overview',
@@ -83,45 +57,12 @@ new WP_Theme_CPT(
 		'show_ui'      => true,
 		'taxonomies'   => array(
 			array(
-				'slug'          => 'type',
-				'register_key'  => 'type', // if not given default is slug value.
-				'name'          => 'Type',
-				'singular_name' => 'Type',
-				'plural_name'   => 'Types',
+				'slug'          => 'overview-category',
+				'register_key'  => 'overview-category', // if not given default is slug value.
+				'name'          => 'overview-category',
+				'singular_name' => 'category',
+				'plural_name'   => 'Categories',
 			),
 		),
-	)
-);
-
-new WP_Theme_CPT(
-	array(
-		'labels'    => array(
-			'singular_capital'   => 'Team Member',
-			'plural_capital'     => 'Team Members',
-			'singular_lowercase' => 'team member',
-			'plural_lowercase'   => 'team members',
-			// CPT Slug & Name.
-			'register_key'       => 'team',
-			'slug'               => 'team',
-		),
-		'supports'  => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
-		'menu_icon' => 'dashicons-businessperson',
-		'public'    => false,
-	)
-);
-new WP_Theme_CPT(
-	array(
-		'labels'    => array(
-			'singular_capital'   => 'Resource',
-			'plural_capital'     => 'Resources',
-			'singular_lowercase' => 'resource',
-			'plural_lowercase'   => 'resources',
-			// CPT Slug & Name.
-			'register_key'       => 'resource',
-			'slug'               => 'resource',
-		),
-		'supports'  => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
-		'menu_icon' => 'dashicons-groups',
-		'public'    => true,
 	)
 );
