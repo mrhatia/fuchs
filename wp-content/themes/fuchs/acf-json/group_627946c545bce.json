@@ -198,15 +198,7 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_68e2b6f6eb58b",
-                        "operator": "==",
-                        "value": "regular"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -232,7 +224,15 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_68e2b6f6eb58b",
+                        "operator": "==",
+                        "value": "regular"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -269,5 +269,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759969326
+    "modified": 1760050306
 }

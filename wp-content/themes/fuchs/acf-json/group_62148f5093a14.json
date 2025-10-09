@@ -49,7 +49,7 @@
         },
         {
             "key": "field_68e455dab8c12",
-            "label": "Select Related Projects",
+            "label": "Select Related Projects \/ Overview",
             "name": "bst_var_sngl_related_projects",
             "aria-label": "",
             "type": "relationship",
@@ -121,6 +121,13 @@
                 "operator": "==",
                 "value": "project"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "overview"
+            }
         ]
     ],
     "menu_order": 0,
@@ -132,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759795067
+    "modified": 1760043921
 }

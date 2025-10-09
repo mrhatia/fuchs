@@ -17,7 +17,7 @@ BaseTheme::block(
 		// Block variables.
 
 		?>
-			<section class="ctn-full-width ctn-blue">
+			<section class="ctn-blue">
 			<div class="wrapper">
 				<div class="blog-teaser-slider">
 

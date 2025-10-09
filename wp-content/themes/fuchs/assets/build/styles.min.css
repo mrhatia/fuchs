@@ -6006,6 +6006,9 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .faq-image-variation img {
   height: 50%;
+}
+.faq-image-variation .faq-image {
+  width: 100%;
   margin-bottom: 40px;
 }
 .faq-image-variation p {
@@ -6333,7 +6336,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   display: none;
 }
 .iat-two-image .iat-single-image {
-  width: 47.4%;
+  width: 47.2%;
 }
 .iat-two-image .iat-single-image img {
   aspect-ratio: 302/444;
@@ -6739,6 +6742,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   font-weight: 400;
   font-style: normal;
   background-size: 20px;
+  border: none;
 }
 .offering-block-content a.email,
 .offering-block-content a:visited.email {
@@ -7002,38 +7006,52 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 .project-info-content p:last-child {
   margin: 0;
 }
-.project-info-content .info-title,
-.project-info-content .info-detail {
+.project-info-content .info-single-detail p {
   display: inline-block;
   font-size: 14px;
   line-height: 2em;
   letter-spacing: 0.1em;
   font-weight: 500;
-  line-height: 1em;
-  margin: 0 7px 5px 0;
+  margin: 0 7px 6px 0;
   color: var(--fc_black_2);
   text-transform: uppercase;
 }
-.project-info-content .info-title a,
-.project-info-content .info-title a:visited,
-.project-info-content .info-detail a,
-.project-info-content .info-detail a:visited {
+.project-info-content .info-single-detail p a,
+.project-info-content .info-single-detail p a:visited {
   color: var(--fc_black_2);
   border-bottom: none;
 }
-.project-info-content .info-title a:hover, .project-info-content .info-title a:focus-visible,
-.project-info-content .info-title a:visited:hover,
-.project-info-content .info-title a:visited:focus-visible,
-.project-info-content .info-detail a:hover,
-.project-info-content .info-detail a:focus-visible,
-.project-info-content .info-detail a:visited:hover,
-.project-info-content .info-detail a:visited:focus-visible {
+.project-info-content .info-single-detail p a:hover, .project-info-content .info-single-detail p a:focus-visible,
+.project-info-content .info-single-detail p a:visited:hover,
+.project-info-content .info-single-detail p a:visited:focus-visible {
   border-bottom: none;
   color: var(--fc_orange_dark);
 }
 
 .project-info-single:nth-child(n+2) {
   margin-top: 44px;
+}
+
+.contact-block .wp-block-media-text__content p {
+  display: block;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0 7px 6px 0;
+  color: var(--fc_black_2);
+  text-transform: uppercase;
+}
+.contact-block .wp-block-media-text__content p a,
+.contact-block .wp-block-media-text__content p a:visited {
+  color: var(--fc_black_2);
+  border-bottom: none;
+}
+.contact-block .wp-block-media-text__content p a:hover, .contact-block .wp-block-media-text__content p a:focus-visible,
+.contact-block .wp-block-media-text__content p a:visited:hover,
+.contact-block .wp-block-media-text__content p a:visited:focus-visible {
+  border-bottom: none;
+  color: var(--fc_orange_dark);
 }
 
 /*-------------------------------------------------
@@ -7387,7 +7405,6 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     right: 0;
   }
   .gallery-slider .gallery-slide {
-    left: 20%;
     width: 60%;
   }
   .project-info-content {

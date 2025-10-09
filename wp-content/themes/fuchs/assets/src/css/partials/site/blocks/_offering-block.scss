@@ -37,6 +37,7 @@
 			font-size: var(--fc_font_size_18);
 			@include font(sour, reg);
 			background-size: 20px;
+			border: none;
 		}
 
 		&.email {

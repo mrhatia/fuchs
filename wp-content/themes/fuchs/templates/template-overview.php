@@ -76,9 +76,7 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 								)
 							);
 							?>
-
-
-
+							<?php wp_reset_postdata(); ?>
 					</div>
 				</div>
 			</section>
@@ -90,12 +88,11 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 		<div class="gl-s96"></div>
 
 			<section id="page-section" class="page-section">
-		<!-- Content Start -->
-		<?php
-				get_template_part( 'partials/content', 'page' );
-
-		?>
-	</section>
+			<!-- Content Start -->
+				<?php
+						get_template_part( 'partials/content', 'page' );
+				?>
+			</section>
 
 
 

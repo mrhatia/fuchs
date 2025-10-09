@@ -27,28 +27,34 @@ BaseTheme::block(
 			<section>
 				<div class="wrapper">
 					<div class="faq-with-image faq-with-image-variation d-flex faq-block">
-						<div class="faq-image faq-image-variation image-cover">
+						<div class="faq-left faq-image-variation">
 							<?php if ( $bst_var_faq_image_label ) {  ?>
 								<h3 class="heading-3"><?php echo html_entity_decode( $bst_var_faq_image_label ); ?></h3>
 							<?php } ?>
-
+						<div class="faq-image image-cover">
 							<?php if($bst_var_faq_image){ ?>
 								<?php BaseTheme::the_attachment_image( $bst_var_faq_image, 1200 ); ?>
 							<?php } ?>
-							<?php if ( $bst_var_faq_image_bottom_text ) {  ?>
-								<div class="image-bottom-text"><?php echo html_entity_decode( $bst_var_faq_image_bottom_text ); ?></div>
-							<?php } ?>
 						</div>
+						<?php if ( $bst_var_faq_image_bottom_text ) {  ?>
+							<div class="image-bottom-text"><?php echo html_entity_decode( $bst_var_faq_image_bottom_text ); ?></div>
+						<?php } ?>
+						</div>
+
 						<?php if($bst_var_faq_faqs){ ?>
 
 							<div class="faq-items faq-items-variation">
-								<?php foreach ( $bst_var_faq_faqs as $faq ) {
+									<?php foreach ( $bst_var_faq_faqs as $key => $faq ) {
 									$faq_question      = $faq['question'] ?? null;
 									$faq_answer      = $faq['answer'] ?? null;
 
 									?>
 									<div class="faq">
+
 										<div class="faq-head">
+												<div class="faq-number">
+												<?php echo str_pad(++$key, 2, '0', STR_PAD_LEFT); ?>
+											</div>
 											<?php if ( $faq_question ) {  ?>
 												<h3 class="heading-5"><?php echo html_entity_decode( $faq_question ); ?></h3>
 											<?php } ?>
@@ -93,7 +99,6 @@ BaseTheme::block(
 									?>
 									<div class="faq">
 										<div class="faq-head">
-
 											<div class="faq-number">
 												<?php echo str_pad(++$key, 2, '0', STR_PAD_LEFT); ?>
 											</div>
