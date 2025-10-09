@@ -27,6 +27,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	right: 15.9%;
+	height: max-content;
 
 	.kicker {
 		color: var(--fc_white);
@@ -90,13 +91,4 @@
 	position: absolute;
 	bottom: 20%;
 	left: 5%;
-}
-
-.media-with-text-variation {
-
-	.media-with-text-content-box {
-		top: auto;
-		bottom: 0;
-		transform: none;
-	}
 }

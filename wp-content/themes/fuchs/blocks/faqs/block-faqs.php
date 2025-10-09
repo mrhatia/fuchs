@@ -93,11 +93,11 @@ BaseTheme::block(
 									?>
 									<div class="faq">
 										<div class="faq-head">
-											<?php if ( ! $bst_var_faq_image ) { ?>
-												<div class="faq-number">
-													<?php echo str_pad(++$key, 2, '0', STR_PAD_LEFT); ?>
-												</div>
-											<?php } ?>
+
+											<div class="faq-number">
+												<?php echo str_pad(++$key, 2, '0', STR_PAD_LEFT); ?>
+											</div>
+
 
 											<?php if ( $faq_question ) {  ?>
 												<h3 class="heading-5"><?php echo html_entity_decode( $faq_question ); ?></h3>
