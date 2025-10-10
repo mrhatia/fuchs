@@ -2231,6 +2231,9 @@ Mixin for transition
   /*-------------------------------------------------
   >> Basic styles for Gallery Slider
   -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Gallery Slider
+  -------------------------------------------------*/
   /* Forms */
   /* -------------------------------------------------
   >> Styles for form fields
@@ -4307,13 +4310,98 @@ Mixin for transition
   right: -17.6%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxOCAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNjY2NjcgMi42NjY3NUwxNiAxNi4wMDAxTDIuNjY2NjcgMjkuMzMzNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
 }
+.acf-block-preview .contact-block {
+  display: flow-root;
+  clear: both;
+}
+.acf-block-preview .contact-block-form {
+  width: 48%;
+  float: left;
+  padding: var(--fc_space_96) 0;
+  box-sizing: border-box;
+}
+.acf-block-preview .contact-block-form form {
+  max-width: 590px;
+  margin: 0 0 0 auto;
+}
+.acf-block-preview .contact-block-form .gfield--type-html,
+.acf-block-preview .contact-block-form .gfield--type-captcha {
+  display: none;
+}
+.acf-block-preview .contact-block-form input[type=submit],
+.acf-block-preview .contact-block-form button,
+.acf-block-preview .contact-block-form input[type=button],
+.acf-block-preview .contact-block-form input[type=reset] {
+  margin: 0;
+}
+.acf-block-preview .contact-block-content {
+  float: right;
+  width: 48%;
+  background-color: var(--fc_color_primary);
+  padding: var(--fc_space_96);
+  box-sizing: border-box;
+}
+.acf-block-preview .contact-block-content .heading-2 {
+  font-size: var(--fc_font_size_60);
+  margin-bottom: 24px;
+}
+.acf-block-preview .contact-block-content * {
+  color: var(--fc_white);
+}
+.acf-block-preview .contact-block-content address {
+  display: block;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0 0px 30px 0;
+  color: var(--fc_white);
+  font-style: initial;
+  max-width: 300px;
+}
+.acf-block-preview .contact-block-content .single-widget {
+  margin-top: 30px;
+}
+.acf-block-preview .contact-block-content .single-widget svg {
+  filter: invert(1);
+}
+.acf-block-preview .contact-block-content p {
+  display: block;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0 0px 4px 0;
+  color: var(--fc_white);
+  text-transform: uppercase;
+}
+.acf-block-preview .contact-block-content p a,
+.acf-block-preview .contact-block-content p a:visited {
+  color: var(--fc_white);
+  border-bottom: none;
+}
+.acf-block-preview .contact-block-content p a:hover, .acf-block-preview .contact-block-content p a:focus-visible,
+.acf-block-preview .contact-block-content p a:visited:hover,
+.acf-block-preview .contact-block-content p a:visited:focus-visible {
+  border-bottom: none;
+  color: var(--fc_orange_dark);
+}
+.acf-block-preview .contact-block-content-inner {
+  max-width: 400px;
+  margin-left: 0;
+}
 .acf-block-preview form {
   margin: 0 0 20px;
 }
 .acf-block-preview label {
-  margin: 0 0 6px;
+  margin: 0 0 11px;
   display: inline-block;
   line-height: 1.2;
+  color: #565969;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .acf-block-preview fieldset {
   margin: 10px 0 30px;
@@ -4346,13 +4434,14 @@ Mixin for transition
   font-weight: 400;
   font-style: normal;
   font-size: var(--fc_font_size_18);
-  height: 50px;
+  height: 35px;
   width: 100%;
-  border: 1px solid var(--fc_input_border_color);
+  border: none;
+  border-bottom: 1px solid #e8e8e9;
   background-color: var(--fc_input_bgcolor);
   color: var(--fc_input_color);
   outline: none;
-  padding: 0 0 0 12px;
+  padding: 0 0 0px;
   margin: 0;
   max-width: 100%;
   box-sizing: border-box;
@@ -4377,7 +4466,7 @@ Mixin for transition
 .acf-block-preview select:focus,
 .acf-block-preview textarea:focus,
 .acf-block-preview .gform-text-input-reset:focus {
-  border: 1px solid var(--fc_input_focus_border_color);
+  border-bottom: 1px solid var(--fc_color_primary);
 }
 .acf-block-preview ::input-placeholder {
   color: var(--fc_placeholder_color);
@@ -4472,7 +4561,7 @@ Mixin for transition
 .acf-block-preview .hs-form-field {
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .acf-block-preview .gfield_list_icons {
   margin-top: 20px;
@@ -5100,6 +5189,9 @@ Mixin for transition
   }
 }
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+  .acf-block-preview .contact-block-form form {
+    max-width: 580px;
+  }
   .acf-block-preview .gallery-slider .prev {
     left: 0;
   }
@@ -5162,6 +5254,9 @@ Mixin for transition
   }
 }
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+  .acf-block-preview .contact-block-form form {
+    max-width: 90%;
+  }
   .acf-block-preview .gallery-slider .prev {
     left: 0;
   }
@@ -5225,6 +5320,9 @@ Mixin for transition
   }
 }
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .acf-block-preview .contact-block-form form {
+    max-width: 90%;
+  }
   .acf-block-preview .gallery-slider {
     height: 500px;
   }
@@ -5333,6 +5431,22 @@ Mixin for transition
   }
 }
 @media only screen and (max-width: 1003px) {
+  .acf-block-preview .contact-block-form form {
+    max-width: 100%;
+  }
+  .acf-block-preview .contact-block-form {
+    width: 90%;
+    float: initial;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .acf-block-preview .contact-block-content {
+    width: 100%;
+    margin: 30px auto 0;
+    float: initial;
+    padding: 40px 6%;
+  }
   .acf-block-preview .blog-teaser-slider::before {
     display: none;
   }

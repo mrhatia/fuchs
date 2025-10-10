@@ -5,6 +5,10 @@
 }
 
 @media only screen and (min-width: 1346px) and (max-width: 1800px) {
+	.contact-block-form form {
+		max-width: 580px;
+	}
+
 	.gallery-slider {
 		.prev {
 			left: 0;
@@ -96,6 +100,10 @@
 }
 
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+	.contact-block-form form {
+		max-width: 90%;
+	}
+
 	.gallery-slider {
 		.prev {
 			left: 0;
@@ -182,6 +190,11 @@
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.contact-block-form form {
+		max-width: 90%;
+	}
+
+
 	.gallery-slider {
 		height: 500px;
 
@@ -327,6 +340,26 @@
 }
 
 @media only screen and (max-width: 1003px) {
+	.contact-block-form form {
+		max-width: 100%;
+	}
+
+	.contact-block-form {
+		width: 90%;
+		float: initial;
+		padding: 0;
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+
+	.contact-block-content {
+		width: 100%;
+		margin: 30px auto 0;
+		float: initial;
+		padding: 40px 6%;
+
+	}
+
 	.blog-teaser-slider {
 		&::before {
 			display: none;

@@ -9,9 +9,14 @@ form {
 }
 
 label {
-	margin: 0 0 6px;
+	margin: 0 0 11px;
 	display: inline-block;
 	line-height: 1.2;
+	color: #565969;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 fieldset {
@@ -46,13 +51,14 @@ textarea,
 	@include font(sour, reg);
 
 	font-size: var(--fc_font_size_18);
-	height: 50px;
+	height: 35px;
 	width: 100%;
-	border: 1px solid var(--fc_input_border_color);
+	border: none;
+	border-bottom: 1px solid #e8e8e9;
 	background-color: var(--fc_input_bgcolor);
 	color: var(--fc_input_color);
 	outline: none;
-	padding: 0 0 0 12px;
+	padding: 0 0 0px;
 	margin: 0;
 	max-width: 100%;
 	box-sizing: border-box;
@@ -60,7 +66,7 @@ textarea,
 	@include transition(all, 0.4s, ease-in-out);
 
 	&:focus {
-		border: 1px solid var(--fc_input_focus_border_color);
+		border-bottom: 1px solid var(--fc_color_primary);
 	}
 }
 
@@ -175,7 +181,7 @@ textarea {
 .hs-form-field {
 	box-sizing: border-box;
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 // Lists
