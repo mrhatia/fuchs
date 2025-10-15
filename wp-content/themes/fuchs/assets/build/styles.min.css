@@ -1757,6 +1757,10 @@ textarea {
   margin-top: 20px;
 }
 
+.wpcf7-form label {
+  width: 100%;
+}
+
 /* -------------------------------------------------
 >> Styles for buttons
 ------------------------------------------------- */
@@ -3337,7 +3341,7 @@ header {
   position: relative;
   z-index: 9;
   line-height: 0;
-  width: 320px;
+  width: 282px;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
@@ -6956,6 +6960,24 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   z-index: 2;
   left: 18px;
 }
+.blog-teaser-slider .slick-arrow.slick-prev {
+  background-color: #0a8e6a;
+}
+.blog-teaser-slider .slick-arrow::before {
+  transition: all 0.3s ease-in-out;
+}
+.blog-teaser-slider .slick-arrow:hover {
+  transition: all 0.3s ease-in-out;
+}
+.blog-teaser-slider .slick-arrow:hover.slick-next {
+  background-color: var(--fc_orange);
+}
+.blog-teaser-slider .slick-arrow:hover.slick-prev {
+  background-color: #0a8e6a;
+}
+.blog-teaser-slider .slick-arrow:hover::before {
+  font-size: 20px;
+}
 .blog-teaser-slider .slick-list {
   overflow: visible !important;
 }
@@ -6971,6 +6993,10 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .blog-teaser-slider .blog-teaser-item h2 {
   margin-top: 40px;
+}
+.blog-teaser-slider .blog-teaser-item h2 a {
+  color: inherit;
+  border-bottom: none;
 }
 
 section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
@@ -7218,7 +7244,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 .contact-block-form {
   width: 48%;
   float: left;
-  padding: var(--fc_space_96) 0;
+  padding: var(--fc_space_96) 0 70px;
   box-sizing: border-box;
 }
 .contact-block-form form {
@@ -7257,9 +7283,11 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   letter-spacing: 0.1em;
   font-weight: 500;
   margin: 0 0px 30px 0;
-  color: var(--fc_white);
   font-style: initial;
   max-width: 300px;
+}
+.contact-block-content address * {
+  color: var(--fc_white);
 }
 .contact-block-content .single-widget {
   margin-top: 30px;

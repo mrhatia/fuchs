@@ -18,6 +18,31 @@
 		margin: 0;
 		z-index: 2;
 		left: 18px;
+
+		&.slick-prev {
+			background-color: #0a8e6a;
+		}
+
+
+		&::before {
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover {
+			transition: all 0.3s ease-in-out;
+
+			&.slick-next {
+				background-color: var(--fc_orange);
+			}
+
+			&.slick-prev {
+				background-color: #0a8e6a;
+			}
+
+			&::before {
+				font-size: 20px;
+			}
+		}
 	}
 
 	.slick-list {
@@ -38,6 +63,11 @@
 
 		h2 {
 			margin-top: 40px;
+
+			a {
+				color: inherit;
+				border-bottom: none;
+			}
 		}
 
 	}

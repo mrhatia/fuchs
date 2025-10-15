@@ -41,7 +41,6 @@ $bst_var_ftrop_copyright = $bst_option_fields['bst_var_ftrop_copyright'] ?? null
 $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null;
 
 ?>
-<?php get_template_part( 'partials/cta' ); ?>
 </main>
 <footer id="footer-section" class="footer-section">
 	<!-- Footer Start -->

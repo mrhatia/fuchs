@@ -51,6 +51,7 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'blog-teaser' );
 		self::register_acf_block( 'contact-person' );
 		self::register_acf_block( 'theme-stats' );
+		self::register_acf_block( 'contact-us' );
 		self::register_acf_block( 'hero-image-slider' );
 		self::register_acf_block( 'theme-image-slider' );
 		// Register a block - Jump Location.

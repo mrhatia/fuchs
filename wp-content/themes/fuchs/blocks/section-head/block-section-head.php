@@ -18,9 +18,6 @@ BaseTheme::block(
 		$fh_var_blk_design_variation     = $bst_block_fields['fh_var_blk_design_variation'] ?? null;
 		$fh_var_blk_subheadline     = $bst_block_fields['fh_var_blk_subheadline'] ?? null;
 		$fh_var_blk_headline     = $bst_block_fields['fh_var_blk_headline'] ?? null;
-
-
-
 		?>
 		<?php if($fh_var_blk_design_variation === "with-animated-heading"){ ?>
 			<section class="ctn-1100">
