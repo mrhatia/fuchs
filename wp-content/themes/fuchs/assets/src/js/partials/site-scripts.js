@@ -152,16 +152,14 @@ jQuery( function() {
 			} );
 		} );
 	}
-
 	if ( jQuery( '.hero-home' ).length ) {
 		const slides = jQuery( '.slide' );
 		const dots = jQuery( '.dot' );
 		let current = 0;
 		let animating = false;
-		let touchStartX = 0;
-		let touchEndX = 0;
+		let touchStartY = 0;
+		let touchEndY = 0;
 
-		// Basic setup
 		slides.css( {
 			position: 'absolute',
 			top: 0,
@@ -170,18 +168,15 @@ jQuery( function() {
 			height: '100%',
 		} );
 
-		gsap.set( slides, { x: '100%' } ); // start all slides off-screen right
-		gsap.set( slides.eq( current ), { x: '0%' } ); // show first slide
+		gsap.set( slides, { x: '100%' } );
+		gsap.set( slides.eq( current ), { x: '0%' } );
 
 		function showSlide( index ) {
 			if ( animating || index === current ) {
 				return;
 			}
 			animating = true;
-
 			const prev = current;
-
-			// --- Infinite loop handling ---
 			if ( index >= slides.length ) {
 				index = 0;
 			}
@@ -190,18 +185,12 @@ jQuery( function() {
 			}
 			current = index;
 
-			gsap.set( slides.eq( current ), {
-				x: '0%',
-				zIndex: 1, // new slide niche
-			} );
-
-			// Old slide ko upar le kar aao taake move hota hua dikhe
+			gsap.set( slides.eq( current ), { x: '0%', zIndex: 1 } );
 			gsap.set( slides.eq( prev ), { zIndex: 2 } );
 
-			// Purana slide left → right move hota hua dikhe
 			gsap.to( slides.eq( prev ), {
 				x: '100%',
-				duration: 0.8,
+				duration: 0.7,
 				ease: 'power2.inOut',
 				onComplete: () => {
 					animating = false;
@@ -216,24 +205,24 @@ jQuery( function() {
 			dots.eq( current ).addClass( 'active' );
 		}
 
-		// Initial active
 		slides.eq( current ).addClass( 'active' );
 		dots.eq( current ).addClass( 'active' );
 
-		// Scroll
+		let scrollTimeout;
 		jQuery( window ).on( 'wheel', function( e ) {
 			if ( animating ) {
 				return;
 			}
-			if ( e.originalEvent.deltaY > 0 ) {
-				showSlide( current + 1 );
-			} // next
-			else if ( e.originalEvent.deltaY < 0 ) {
-				showSlide( current - 1 );
-			} // prev
+			clearTimeout( scrollTimeout );
+			scrollTimeout = setTimeout( () => {
+				if ( e.originalEvent.deltaY > 0 ) {
+					showSlide( current + 1 );
+				} else if ( e.originalEvent.deltaY < 0 ) {
+					showSlide( current - 1 );
+				}
+			}, 50 );
 		} );
 
-		// Keyboard
 		jQuery( window ).on( 'keydown', function( e ) {
 			if ( animating ) {
 				return;
@@ -245,28 +234,25 @@ jQuery( function() {
 			}
 		} );
 
-		// Dots
 		dots.on( 'click', function() {
 			const target = parseInt( jQuery( this ).data( 'slide' ) );
 			showSlide( target );
 		} );
 
-		// Touch swipe
 		jQuery( window ).on( 'touchstart', function( e ) {
-			touchStartX = e.originalEvent.touches[ 0 ].clientX;
+			touchStartY = e.originalEvent.touches[ 0 ].clientY;
 		} );
 
 		jQuery( window ).on( 'touchend', function( e ) {
-			touchEndX = e.originalEvent.changedTouches[ 0 ].clientX;
+			touchEndY = e.originalEvent.changedTouches[ 0 ].clientY;
 			if ( animating ) {
 				return;
 			}
-			if ( touchStartX - touchEndX > 50 ) {
+			if ( touchStartY - touchEndY > 50 ) {
 				showSlide( current + 1 );
-			} // swipe left → next
-			else if ( touchEndX - touchStartX > 50 ) {
+			} else if ( touchEndY - touchStartY > 50 ) {
 				showSlide( current - 1 );
-			} // swipe right → prev
+			}
 		} );
 	}
 
@@ -331,6 +317,8 @@ jQuery( function() {
 			touchThreshold: 200,
 			autoplay: true,
 			autoplaySpeed: 3000,
+			prevArrow: '<button type="button" class="slick-prev">← zurück</button>',
+			nextArrow: '<button type="button" class="slick-next">vor →</button>',
 			responsive: [
 				{
 					breakpoint: 768,

@@ -88,7 +88,7 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 		</section>
 		<div class="gl-s96"></div>
 		<div class="load-more d-flex justify-content-center">
-			<a href="#" class="button green-button load-more">Load More</a>
+			<a href="#" class="button green-button load-more">Mehr</a>
 		</div>
 		<div class="gl-s96"></div>
 

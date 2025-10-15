@@ -98,6 +98,12 @@
 }
 
 .contact-block-content-inner {
-	max-width: 400px;
+	max-width: 480px;
 	margin-left: 0;
+}
+.wpcf7-not-valid-tip {
+	color: var(--fc_valiation_error_color) !important;
+	position: INITIAL;
+	top: 4px;
+	margin-top: 15px;
 }

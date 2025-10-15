@@ -145,11 +145,12 @@
 }
 
 .faq-image {
-	width: 48.85%;
+	width: 40%;
 
 	img {
 		aspect-ratio: 635/444;
-		max-height: 444px;
+		max-height: 542px;
+		min-height: 225px;
 	}
 }
 
@@ -174,7 +175,7 @@
 
 
 .faq-items {
-	width: 47.3%
+    width: 55.8%;
 }
 
 .faq-items-variation {
@@ -265,4 +266,9 @@
 	.faq-items {
 		width: 100%;
 	}
+}
+.simple-faq{
+.faq-content{
+	max-width: 100%;
+}
 }

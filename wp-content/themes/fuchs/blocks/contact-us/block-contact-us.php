@@ -46,16 +46,7 @@ $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null
 							<?php if ( $bst_var_blk_cnt_text ) {  ?>
 								<?php echo html_entity_decode( $bst_var_blk_cnt_text ); ?>
 							<?php } ?>
-							<div class="single-widget d-flex flex-column">
 
-								<h4 tabindex="0">
-									FOLLOW US
-								</h4>
-
-								<div class="social-icons d-flex">
-									<?php BaseTheme::the_social_icons( $bst_var_social_profiles ); ?>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
