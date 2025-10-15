@@ -3875,7 +3875,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
   }
   .menu-btn {
     width: 75px;
-    height: 68px;
+    height: 69px;
     padding: 0 28px;
   }
   .logo {
@@ -8380,7 +8380,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 @media (max-width: 480px) {
   .bottom-section {
     bottom: env(safe-area-inset-bottom, 10px);
-    margin-bottom: 25px;
+    margin-bottom: 100px;
   }
 }
 /* ------------------------------------------------------------------

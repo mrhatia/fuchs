@@ -157,6 +157,8 @@ jQuery( function() {
 		const dots = jQuery( '.dot' );
 		let current = 0;
 		let animating = false;
+		let touchStartX = 0;
+		let touchEndX = 0;
 		let touchStartY = 0;
 		let touchEndY = 0;
 
@@ -240,18 +242,26 @@ jQuery( function() {
 		} );
 
 		jQuery( window ).on( 'touchstart', function( e ) {
+			touchStartX = e.originalEvent.touches[ 0 ].clientX;
 			touchStartY = e.originalEvent.touches[ 0 ].clientY;
 		} );
 
 		jQuery( window ).on( 'touchend', function( e ) {
+			touchEndX = e.originalEvent.changedTouches[ 0 ].clientX;
 			touchEndY = e.originalEvent.changedTouches[ 0 ].clientY;
 			if ( animating ) {
 				return;
 			}
-			if ( touchStartY - touchEndY > 50 ) {
-				showSlide( current + 1 );
-			} else if ( touchEndY - touchStartY > 50 ) {
-				showSlide( current - 1 );
+
+			const diffX = touchStartX - touchEndX;
+			const diffY = touchStartY - touchEndY;
+
+			if ( Math.abs( diffX ) > Math.abs( diffY ) && Math.abs( diffX ) > 50 ) {
+				if ( diffX > 0 ) {
+					showSlide( current + 1 );
+				} else {
+					showSlide( current - 1 );
+				}
 			}
 		} );
 	}

@@ -6037,7 +6037,7 @@ Mixin for transition
 @media (max-width: 480px) {
   .acf-block-preview .bottom-section {
     bottom: env(safe-area-inset-bottom, 10px);
-    margin-bottom: 25px;
+    margin-bottom: 100px;
   }
 }
 
