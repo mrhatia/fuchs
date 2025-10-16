@@ -147,9 +147,13 @@ class WP_Theme_Settings {
 					background-position: center center;
 					color:rgba(0, 0, 0, 0);
 					background-size: contain;
-					height: 80px;
-					width: 80%;
+					width: 100%;
 					outline: 0;
+					margin: 0;
+				}
+				.login h1 {
+				    background-color: #016c50;
+    				padding: 20px 42px;
 				}
 			</style>
 		';
