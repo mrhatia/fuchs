@@ -315,6 +315,36 @@
 
 }
 
+
+.post-archive-box {
+	.bottom-section-button {
+
+		a,
+		a:visited {
+
+			span {
+
+				color: var(--fc_black);
+			}
+
+			&:hover,
+			&:focus-visible {
+				.plus-button {
+					background-color: var(--fc_color_primary);
+					color: var(--fc_white);
+				}
+
+				span {
+
+					color: var(--fc_color_primary);
+				}
+			}
+
+
+		}
+	}
+}
+
 section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.active)) {
 	.dot {
 		background-color: var(--fc_white);

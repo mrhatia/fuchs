@@ -3255,7 +3255,7 @@ Mixin for transition
   gap: 30px;
 }
 .acf-block-preview .faq-head.active {
-  padding: 30px 0px 14px;
+  padding: 30px 70px 14px;
 }
 .acf-block-preview .faq-head.active .faq-icon {
   background-color: var(--fc_color_primary);

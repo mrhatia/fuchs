@@ -175,7 +175,7 @@
 
 
 .faq-items {
-    width: 55.8%;
+	width: 55.8%;
 }
 
 .faq-items-variation {
@@ -193,7 +193,7 @@
 	gap: 30px;
 
 	&.active {
-		padding: 30px 0px 14px;
+		padding: 30px 70px 14px;
 
 		.faq-icon {
 			background-color: var(--fc_color_primary);
@@ -267,8 +267,9 @@
 		width: 100%;
 	}
 }
-.simple-faq{
-.faq-content{
-	max-width: 100%;
-}
+
+.simple-faq {
+	.faq-content {
+		max-width: 100%;
+	}
 }

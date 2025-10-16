@@ -22,10 +22,11 @@ $bst_var_tmp_def_button = $bst_fields['bst_var_tmp_def_button'] ?? null;
 
 <section id="hero-section" class="hero-section hero-section-default">
 	<!-- Hero Start -->
+	<div class="ts-80"></div>
 
 	<div class="hero-ctn">
 		<div class="wrapper">
-			<h1><?php echo html_entity_decode( $bst_var_tmp_def_title ); ?></h1>
+			<h1 class="heading-2"><?php echo html_entity_decode( $bst_var_tmp_def_title ); ?></h1>
 		</div>
 	</div>
 	<!-- Hero End -->

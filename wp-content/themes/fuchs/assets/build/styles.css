@@ -4493,6 +4493,22 @@ li.menu-item-has-children.active > .submenu-icon::before {
   transition: background-color 0.5s cubic-bezier(0.49, 0.79, 0.17, 0.94), box-shadow 0.5s 50ms cubic-bezier(0.49, 0.79, 0.17, 0.94);
 }
 
+.post-archive-box .bottom-section-button a span,
+.post-archive-box .bottom-section-button a:visited span {
+  color: var(--fc_black);
+}
+.post-archive-box .bottom-section-button a:hover .plus-button, .post-archive-box .bottom-section-button a:focus-visible .plus-button,
+.post-archive-box .bottom-section-button a:visited:hover .plus-button,
+.post-archive-box .bottom-section-button a:visited:focus-visible .plus-button {
+  background-color: var(--fc_color_primary);
+  color: var(--fc_white);
+}
+.post-archive-box .bottom-section-button a:hover span, .post-archive-box .bottom-section-button a:focus-visible span,
+.post-archive-box .bottom-section-button a:visited:hover span,
+.post-archive-box .bottom-section-button a:visited:focus-visible span {
+  color: var(--fc_color_primary);
+}
+
 section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.active)) .dot {
   background-color: var(--fc_white);
 }
@@ -6084,7 +6100,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   gap: 30px;
 }
 .faq-head.active {
-  padding: 30px 0px 14px;
+  padding: 30px 70px 14px;
 }
 .faq-head.active .faq-icon {
   background-color: var(--fc_color_primary);
