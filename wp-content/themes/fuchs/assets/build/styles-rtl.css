@@ -8412,6 +8412,11 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 }
 @media (max-width: 768px) {
   .bottom-section {
+    bottom: 30px;
+  }
+}
+@media (max-width: 747px) {
+  .bottom-section {
     bottom: 20px;
   }
 }
