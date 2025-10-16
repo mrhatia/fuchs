@@ -6800,6 +6800,19 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 .offering-block-content {
   width: 36%;
 }
+.offering-block-content a,
+.offering-block-content a:visited {
+  color: var(--fc_body_color);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center left;
+  font-size: var(--fc_font_size_18);
+  font-family: "Source Sans 3", arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-size: 20px;
+  border: none;
+}
 .offering-block-content a.link,
 .offering-block-content a:visited.link {
   color: var(--fc_body_color);
@@ -7650,9 +7663,6 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   .offering-block-content {
     width: 45%;
   }
-  .faq-image:not(.faq-image-variation) {
-    width: 48%;
-  }
   .slide .heading-2 {
     font-size: 68px;
   }
@@ -7717,7 +7727,10 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     width: 47%;
   }
   .faq-image {
-    width: 46%;
+    width: 42%;
+  }
+  .faq-items {
+    width: 53.2%;
   }
   .faq-content {
     max-width: 415px;
@@ -7739,6 +7752,9 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   }
 }
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .faq-items {
+    width: 50%;
+  }
   .contact-block-form form {
     max-width: 90%;
   }
@@ -7787,7 +7803,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     width: 46%;
   }
   .faq-image {
-    width: 46%;
+    width: 44.3%;
   }
   .faq-content {
     max-width: 415px;
@@ -8285,7 +8301,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     margin: 120px auto 0;
   }
   .hero-split-text h2 {
-    font-size: 56.25px;
+    font-size: clamp(3.516rem, 5.931vw + 1.981rem, 4.75rem);
   }
   .hero-split-text {
     margin-top: 40%;

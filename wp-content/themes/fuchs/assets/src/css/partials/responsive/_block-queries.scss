@@ -63,12 +63,6 @@
 		width: 45%;
 	}
 
-
-	.faq-image:not(.faq-image-variation) {
-		width: 48%;
-	}
-
-
 	.slide .heading-2 {
 		font-size: 68px;
 	}
@@ -160,10 +154,12 @@
 	}
 
 	.faq-image {
-		width: 46%;
+		width: 42%;
 	}
 
-
+.faq-items {
+    width: 53.2%;
+}
 	.faq-content {
 		max-width: 415px;
 	}
@@ -190,6 +186,10 @@
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.faq-items {
+    width: 50%;
+}
+
 	.contact-block-form form {
 		max-width: 90%;
 	}
@@ -256,7 +256,7 @@
 	}
 
 	.faq-image {
-		width: 46%;
+	        width: 44.3%;
 	}
 
 
@@ -955,7 +955,7 @@
 
 	.hero-split-text {
 		h2 {
-			font-size: 56.25px;
+	font-size: clamp(3.516rem, 5.931vw + 1.981rem, 4.75rem);
 		}
 	}
 

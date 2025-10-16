@@ -25,7 +25,18 @@
 
 .offering-block-content {
 	width: 36%;
+	a,
+	a:visited {
 
+		color: var(--fc_body_color);
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center left;
+		font-size: var(--fc_font_size_18);
+		@include font(sour, reg);
+		background-size: 20px;
+		border: none;
+	}
 	a,
 	a:visited {
 		&.link {
