@@ -6057,11 +6057,12 @@ Mixin for transition
     font-size: clamp(70px, 0.1364764268 * (100vh - 474px) + 70px, 180px);
   }
   .acf-block-preview header .nav-container .header-nav {
-    text-align: right;
     height: 390px;
-    overflow: hidden;
-    overflow-y: auto;
-    width: 100%;
+  }
+}
+@media only screen and (min-height: 500px) and (max-height: 550px) and (min-width: 1003px) {
+  .acf-block-preview header .nav-container .header-nav {
+    height: 270px;
   }
 }
 

@@ -1155,10 +1155,18 @@
 	}
 
 	header .nav-container .header-nav {
-		text-align: left;
+
 		height: 390px;
-		overflow: hidden;
-		overflow-y: auto;
-		width: 100%;
+
+	}
+}
+
+@media only screen and (min-height: 500px) and (max-height: 550px) and (min-width: 1003px) {
+
+
+	header .nav-container .header-nav {
+
+		height: 270px;
+
 	}
 }
