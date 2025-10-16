@@ -203,26 +203,26 @@ header .nav-container {
 		overflow-y: auto;
 		width: 100%;
 
-&::-webkit-scrollbar {
-	width: 6px;
-	background: transparent;
-}
+		&::-webkit-scrollbar {
+			width: 6px;
+			background: transparent;
+		}
 
-&::-webkit-scrollbar-track {
-	background: transparent;
-	background: rgba(255, 255, 255, 0.2);
+		&::-webkit-scrollbar-track {
+			background: transparent;
+			background: rgba(255, 255, 255, 0.2);
 
-}
+		}
 
-&::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.55);
-	border-radius: 10px;
-	transition: background 0.3s ease-in-out;
-}
+		&::-webkit-scrollbar-thumb {
+			background: rgba(255, 255, 255, 0.55);
+			border-radius: 10px;
+			transition: background 0.3s ease-in-out;
+		}
 
-&::-webkit-scrollbar-thumb:hover {
-	background: rgba(255, 255, 255, 0.4);
-}
+		&::-webkit-scrollbar-thumb:hover {
+			background: rgba(255, 255, 255, 0.4);
+		}
 
 	}
 
@@ -388,12 +388,14 @@ li.menu-item-has-children.active>.submenu-icon::before {
 @media (max-width: 747px) {
 
 	.header-section {
-		background-color: var(--fc_white);
+		background-color: var(--fc_color_primary);
 	}
-	header .nav-container{
+
+	header .nav-container {
 		width: 90%;
 
 	}
+
 	.menu-btn {
 		width: 75px;
 		height: 69px;
@@ -404,6 +406,7 @@ li.menu-item-has-children.active>.submenu-icon::before {
 		width: 190px;
 		position: relative;
 	}
+
 	.nav-overlay .header-nav ul li {
 		margin-bottom: 12px;
 
@@ -413,13 +416,17 @@ li.menu-item-has-children.active>.submenu-icon::before {
 			font-size: 30px;
 
 		}
-		ul{
-			padding: 10px 0;
-			li{
-				margin-bottom: 10px;
-				a,a:visited{
-						line-height: 1;
-			font-size: 24px;
+
+		ul {
+			padding: 14px 0 17px;
+
+			li {
+				margin-bottom: 14px;
+
+				a,
+				a:visited {
+					line-height: 1;
+					font-size: 16px;
 				}
 			}
 		}

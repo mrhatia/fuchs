@@ -113,8 +113,11 @@
 
 .editor-styles-wrapper {
 	@include font(sour, reg, family weight);
-	font-size: var(--fc_font_size_20);
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	font-size: var(--fc_font_size_16);
 	color: var(--fc_body_color);
+	background-color: var(--fc_body_bg);
 	line-height: 1.5;
 
 	.acf-block-body {
@@ -122,12 +125,14 @@
 		margin-block-start: 50px !important;
 	}
 
-	/* Editor style */
+	.wp-block.wp-block-post-title {
+		font-size: var(--fc_font_size_48);
+	}
 
+	/* Editor style */
 	@import "editor-static";
 
 	/* Typography */
-
 	@import "partials/typography/typography";
 
 	/* Elements */

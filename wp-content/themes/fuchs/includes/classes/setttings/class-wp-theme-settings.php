@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace BaseTheme\Settings;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  FUCHS Package
  */
 class WP_Theme_Settings {
 	/**

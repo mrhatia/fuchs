@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  FUCHS Package
  */
 class WP_Theme_Acf {
 	/**

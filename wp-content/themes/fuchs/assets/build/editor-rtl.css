@@ -832,8 +832,11 @@ Mixin for transition
 .editor-styles-wrapper {
   font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 400;
-  font-size: var(--fc_font_size_20);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: var(--fc_font_size_16);
   color: var(--fc_body_color);
+  background-color: var(--fc_body_bg);
   line-height: 1.5;
   /* Editor style */
   /* containers */
@@ -1003,6 +1006,9 @@ Mixin for transition
 .editor-styles-wrapper .acf-block-body {
   margin-block-end: 50px !important;
   margin-block-start: 50px !important;
+}
+.editor-styles-wrapper .wp-block.wp-block-post-title {
+  font-size: var(--fc_font_size_48);
 }
 .editor-styles-wrapper .dd-spacer {
   background-image: url(images/spacer.jpg);
@@ -1252,7 +1258,6 @@ Mixin for transition
 .editor-styles-wrapper mark {
   background-color: var(--fc_mark_bgcolor);
   color: var(--fc_mark_color);
-  padding: 3px 7px;
 }
 .editor-styles-wrapper small {
   font-size: 80%;
@@ -2865,6 +2870,7 @@ Mixin for transition
   inset: 0;
   background-color: var(--fc_color_primary);
   z-index: 2000;
+  height: 100vh;
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .acf-block-preview .loader.hide-loader {
@@ -5447,6 +5453,9 @@ Mixin for transition
 @media only screen and (min-width: 1360px) and (max-width: 1500px) {
   .acf-block-preview .section-head .hero-split-text {
     right: -11%;
+    width: 100%;
+    line-height: 0.8;
+    top: -78px;
   }
 }
 @media only screen and (min-width: 1003px) and (max-width: 1359px) {
@@ -6037,7 +6046,22 @@ Mixin for transition
 @media (max-width: 480px) {
   .acf-block-preview .bottom-section {
     bottom: env(safe-area-inset-bottom, 10px);
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-height: 500px) and (max-height: 780px) and (min-width: 1003px) {
+  .acf-block-preview .home-hero-content .heading-2 {
+    font-size: clamp(52px, 0.0347394541 * (100vh - 474px) + 52px, 80px);
+  }
+  .acf-block-preview .hero-split-text .heading-1 {
+    font-size: clamp(70px, 0.1364764268 * (100vh - 474px) + 70px, 180px);
+  }
+  .acf-block-preview header .nav-container .header-nav {
+    text-align: right;
+    height: 390px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
   }
 }
 

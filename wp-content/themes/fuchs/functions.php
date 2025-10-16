@@ -6,7 +6,7 @@
  *
  * Please note that missing files will produce a fatal error.
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 

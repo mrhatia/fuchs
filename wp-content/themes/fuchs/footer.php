@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 

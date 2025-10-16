@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/post-types/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -42,13 +42,13 @@ new WP_Theme_CPT(
 new WP_Theme_CPT(
 	array(
 		'labels'       => array(
-			'singular_capital'   => 'Overview',
-			'plural_capital'     => 'Overview',
-			'singular_lowercase' => 'overview',
-			'plural_lowercase'   => 'overview',
+			'singular_capital'   => 'Reference',
+			'plural_capital'     => 'References',
+			'singular_lowercase' => 'reference',
+			'plural_lowercase'   => 'references',
 			// CPT Slug & Name.
-			'register_key'       => 'overview',
-			'slug'               => 'overview',
+			'register_key'       => 'reference',
+			'slug'               => 'reference',
 		),
 		'supports'     => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),
 		'menu_icon'    => 'dashicons-format-quote',
@@ -57,9 +57,9 @@ new WP_Theme_CPT(
 		'show_ui'      => true,
 		'taxonomies'   => array(
 			array(
-				'slug'          => 'overview-category',
-				'register_key'  => 'overview-category', // if not given default is slug value.
-				'name'          => 'overview-category',
+				'slug'          => 'reference-category',
+				'register_key'  => 'reference-category', // if not given default is slug value.
+				'name'          => 'reference-category',
 				'singular_name' => 'category',
 				'plural_name'   => 'Categories',
 			),

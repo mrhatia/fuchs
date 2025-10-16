@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since   1.0.0
  */
 

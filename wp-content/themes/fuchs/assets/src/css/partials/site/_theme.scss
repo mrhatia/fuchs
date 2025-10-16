@@ -545,6 +545,7 @@ body {
 	inset: 0;
 	background-color: var(--fc_color_primary);
 	z-index: 2000;
+	height: 100vh;
 	transition: transform 1s cubic-bezier(.86, 0, .07, 1);
 
 	&.hide-loader {

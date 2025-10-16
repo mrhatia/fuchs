@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -19,7 +19,7 @@ use \Walker_Nav_Menu;
  * Template Class
  *
  * @category Walker_Class
- * @package  Base Theme Package
+ * @package  FUCHS Package
  */
 class WP_Theme_Walker_Nav extends \Walker_Nav_Menu {
 

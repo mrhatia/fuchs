@@ -4,7 +4,7 @@
  *
  * @link https://www.advancedcustomfields.com/resources/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace BaseTheme\Acf\Acf_Fields;
  * Template Class
  *
  * @category Acf_Field
- * @package  Base Theme Package
+ * @package  FUCHS Package
  */
 class Acf_Field_Advance_Video extends \acf_field {
 	/**

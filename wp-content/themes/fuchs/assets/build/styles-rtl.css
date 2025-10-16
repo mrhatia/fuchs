@@ -309,7 +309,7 @@
   \***************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /*
-Theme Name: Base Theme Package
+Theme Name: FUCHS Package
 Theme URI: https://devdives.com
 Author: Team DevDives
 Author URI: https://devdives.com/team
@@ -993,7 +993,6 @@ address {
 mark {
   background-color: var(--fc_mark_bgcolor);
   color: var(--fc_mark_color);
-  padding: 3px 7px;
 }
 
 small {
@@ -3868,7 +3867,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
 
 @media (max-width: 747px) {
   .header-section {
-    background-color: var(--fc_white);
+    background-color: var(--fc_color_primary);
   }
   header .nav-container {
     width: 90%;
@@ -3891,14 +3890,15 @@ li.menu-item-has-children.active > .submenu-icon::before {
     font-size: 30px;
   }
   .nav-overlay .header-nav ul li ul {
-    padding: 10px 0;
+    padding: 14px 0 17px;
   }
   .nav-overlay .header-nav ul li ul li {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
-  .nav-overlay .header-nav ul li ul li a, .nav-overlay .header-nav ul li ul li a:visited {
+  .nav-overlay .header-nav ul li ul li a,
+  .nav-overlay .header-nav ul li ul li a:visited {
     line-height: 1;
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
@@ -5467,6 +5467,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   inset: 0;
   background-color: var(--fc_color_primary);
   z-index: 2000;
+  height: 100vh;
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .loader.hide-loader {
@@ -7576,9 +7577,11 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   }
   .section-head .hero-split-text {
     position: absolute;
-    top: -53px;
+    top: -40px;
     right: -11px;
     opacity: 0.4;
+    width: 100%;
+    line-height: 1;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -7806,6 +7809,9 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 @media only screen and (min-width: 1360px) and (max-width: 1500px) {
   .section-head .hero-split-text {
     right: -11%;
+    width: 100%;
+    line-height: 0.8;
+    top: -78px;
   }
 }
 @media only screen and (min-width: 1003px) and (max-width: 1359px) {
@@ -8396,7 +8402,22 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 @media (max-width: 480px) {
   .bottom-section {
     bottom: env(safe-area-inset-bottom, 10px);
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-height: 500px) and (max-height: 780px) and (min-width: 1003px) {
+  .home-hero-content .heading-2 {
+    font-size: clamp(52px, 0.0347394541 * (100vh - 474px) + 52px, 80px);
+  }
+  .hero-split-text .heading-1 {
+    font-size: clamp(70px, 0.1364764268 * (100vh - 474px) + 70px, 180px);
+  }
+  header .nav-container .header-nav {
+    text-align: right;
+    height: 390px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
   }
 }
 /* ------------------------------------------------------------------

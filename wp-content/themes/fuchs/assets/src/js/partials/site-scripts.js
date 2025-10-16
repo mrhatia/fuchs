@@ -15,6 +15,17 @@ import gsapScroll from '../vendors/ScrollTrigger.min';
 // 	}
 // } );
 
+jQuery( window ).on( 'load', function() {
+	const loader = jQuery( '.loader' );
+	const spinner = jQuery( '.spinner-text' );
+
+	spinner.addClass( 'spinner-loaded' );
+
+	setTimeout( function() {
+		loader.addClass( 'hide-loader' );
+	}, 3000 );
+} );
+
 jQuery( function() {
 	/**
 	 * Header Wrapper Height Calculation for Navigation Overlay
@@ -256,28 +267,25 @@ jQuery( function() {
 			const diffX = touchStartX - touchEndX;
 			const diffY = touchStartY - touchEndY;
 
+			// Detect swipe direction
 			if ( Math.abs( diffX ) > Math.abs( diffY ) && Math.abs( diffX ) > 50 ) {
+				// Horizontal swipe
 				if ( diffX > 0 ) {
-					showSlide( current + 1 );
+					showSlide( current + 1 ); // swipe left → next slide
 				} else {
-					showSlide( current - 1 );
+					showSlide( current - 1 ); // swipe right → previous slide
+				}
+			} else if ( Math.abs( diffY ) > 50 ) {
+				// Vertical swipe
+				if ( diffY > 0 ) {
+					showSlide( current + 1 ); // swipe up → next slide
+				} else {
+					showSlide( current - 1 ); // swipe down → previous slide
 				}
 			}
 		} );
 	}
 
-	if ( jQuery( '.loader' ).length ) {
-		jQuery( window ).on( 'load', function() {
-			const loader = jQuery( '.loader' );
-			const spinner = jQuery( '.spinner-text' );
-
-			spinner.addClass( 'spinner-loaded' );
-
-			setTimeout( function() {
-				loader.addClass( 'hide-loader' );
-			}, 3000 );
-		} );
-	}
 	if ( jQuery( '.hero-inner-slider' ).length ) {
 		jQuery( '.hero-inner-slider' ).slick( {
 			slidesToShow: 1,

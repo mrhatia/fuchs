@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -60,7 +60,7 @@ $bst_var_tbar_btn      = $bst_option_fields['bst_var_tbar_btn'] ?? null;
 		href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/pwa/site.webmanifest">
 	<meta name="theme-color" content="#007857">
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="Base Theme Package">
+	<meta name="application-name" content="FUCHS Package">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton_color" content="#007857">
 	<meta name="msapplication-TileColor" content="#007857">

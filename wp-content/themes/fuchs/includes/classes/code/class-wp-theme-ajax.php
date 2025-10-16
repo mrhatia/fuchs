@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/AJAX#Ajax_in_WordPress
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
@@ -16,7 +16,7 @@ namespace BaseTheme\Ajax;
  * Template Class
  *
  * @category Setting_Class
- * @package  Base Theme Package
+ * @package  FUCHS Package
  */
 class WP_Theme_Ajax {
 	/**

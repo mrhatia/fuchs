@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/including-css-javascript/
  *
- * @package Base Theme Package
+ * @package FUCHS Package
  * @since 1.0.0
  */
 
