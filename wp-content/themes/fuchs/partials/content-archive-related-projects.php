@@ -39,7 +39,7 @@ list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults(
 		<div class="bottom-section-button">
 			<a href="<?php the_permalink(); ?>">
 				<span>
-					Read More
+					Mehr Infos
 				</span>
 				<div class="plus-button">
 					+

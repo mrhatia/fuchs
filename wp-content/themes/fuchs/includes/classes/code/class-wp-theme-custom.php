@@ -81,7 +81,7 @@ class WP_Theme_Custom extends \Boilerplate {
 
 
 	/**
-	 * Excerpt with no read more option
+	 * Excerpt with no Mehr Infos option
 	 *
 	 * Function used to create custom excerpt.
 	 *

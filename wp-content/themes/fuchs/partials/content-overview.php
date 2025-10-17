@@ -85,7 +85,7 @@ $bst_var_sngl_related_projects = $bst_fields['bst_var_sngl_related_projects'] ??
 												<div class="bottom-section-button">
 													<a href="<?php the_permalink($bst_var_post_id); ?>">
 														<span>
-															Read More
+															Mehr Infos
 														</span>
 														<div class="plus-button">
 															+
@@ -156,7 +156,7 @@ $bst_var_sngl_related_projects = $bst_fields['bst_var_sngl_related_projects'] ??
 											<div class="bottom-section-button">
 												<a href="<?php the_permalink(); ?>">
 													<span>
-														Read More
+														Mehr Infos
 													</span>
 													<div class="plus-button">
 														+
