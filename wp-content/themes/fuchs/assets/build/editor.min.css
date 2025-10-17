@@ -3226,9 +3226,7 @@ Mixin for transition
   width: 40%;
 }
 .acf-block-preview .faq-image img {
-  aspect-ratio: 635/444;
   max-height: 542px;
-  min-height: 225px;
 }
 .acf-block-preview .faq-image-variation {
   width: 21%;
@@ -5651,9 +5649,6 @@ Mixin for transition
   .acf-block-preview .hero-project .hero-split-text {
     top: -86px;
   }
-  .acf-block-preview .home-hero-content .hero-split-text {
-    margin-top: 14%;
-  }
   .acf-block-preview .faq-image {
     width: 100%;
   }
@@ -6084,6 +6079,11 @@ Mixin for transition
 @media only screen and (min-height: 500px) and (max-height: 550px) and (min-width: 1003px) {
   .acf-block-preview header .nav-container .header-nav {
     height: 270px;
+  }
+}
+@media only screen and (min-height: 1024px) and (max-height: 1380px) and (min-width: 768px) and (max-width: 1024px) {
+  .acf-block-preview .hero-split-text {
+    margin: 40% auto 0;
   }
 }
 

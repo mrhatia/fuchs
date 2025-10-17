@@ -6062,9 +6062,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   width: 40%;
 }
 .faq-image img {
-  aspect-ratio: 635/444;
   max-height: 542px;
-  min-height: 225px;
 }
 
 .faq-image-variation {
@@ -8007,9 +8005,6 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   .hero-project .hero-split-text {
     top: -86px;
   }
-  .home-hero-content .hero-split-text {
-    margin-top: 14%;
-  }
   .faq-image {
     width: 100%;
   }
@@ -8440,6 +8435,11 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 @media only screen and (min-height: 500px) and (max-height: 550px) and (min-width: 1003px) {
   header .nav-container .header-nav {
     height: 270px;
+  }
+}
+@media only screen and (min-height: 1024px) and (max-height: 1380px) and (min-width: 768px) and (max-width: 1024px) {
+  .hero-split-text {
+    margin: 40% auto 0;
   }
 }
 /* ------------------------------------------------------------------
