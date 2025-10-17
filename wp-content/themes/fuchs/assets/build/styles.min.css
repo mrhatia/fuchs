@@ -5683,6 +5683,10 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   white-space: pre;
 }
 
+.word-wrap {
+  word-break: break-all;
+}
+
 /*-------------------------------------------------
 >> Basic styles for Blog post
 -------------------------------------------------*/
@@ -8418,7 +8422,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
 @media (max-width: 480px) {
   .bottom-section {
     bottom: env(safe-area-inset-bottom, 10px);
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (min-height: 500px) and (max-height: 780px) and (min-width: 1003px) {
