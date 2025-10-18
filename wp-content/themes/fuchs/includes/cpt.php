@@ -47,7 +47,7 @@ new WP_Theme_CPT(
 			'singular_lowercase' => 'reference',
 			'plural_lowercase'   => 'references',
 			// CPT Slug & Name.
-			'register_key'       => 'reference',
+			'register_key'       => 'overview',
 			'slug'               => 'reference',
 		),
 		'supports'     => array( 'title', 'editor', 'thumbnail', 'author', 'excerpt' ),

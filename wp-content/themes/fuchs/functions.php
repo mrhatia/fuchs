@@ -61,3 +61,90 @@ function bst_includes( $directory ) {
 
 	return $folders;
 }
+
+
+function fuchs_load_more_projects() {
+	$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+	$next_page = $page + 1;
+
+	$args = array(
+		'post_type'      => 'project',
+		'posts_per_page' => 9,
+		'paged'          => $next_page,
+	);
+
+	$query = new WP_Query($args);
+
+	ob_start();
+
+	if ($query->have_posts()) {
+		while ($query->have_posts()) {
+			$query->the_post();
+			get_template_part('partials/content', 'archive-project');
+		}
+	}
+
+	$html = ob_get_clean();
+
+	wp_send_json_success(array(
+		'html'     => $html,
+		'paged'    => $next_page,
+		'max_page' => $query->max_num_pages,
+	));
+	wp_die();
+}
+add_action('wp_ajax_fuchs_load_more_projects', 'fuchs_load_more_projects');
+add_action('wp_ajax_nopriv_fuchs_load_more_projects', 'fuchs_load_more_projects');
+
+
+function fuchs_load_more_reference() {
+	$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+	$next_page = $page + 1;
+
+	$args = array(
+		'post_type'      => 'overview',
+		'posts_per_page' => 9,
+		'paged'          => $next_page,
+	);
+
+	$query = new WP_Query($args);
+
+	ob_start();
+
+	if ($query->have_posts()) {
+		while ($query->have_posts()) {
+			$query->the_post();
+			get_template_part('partials/content', 'archive-overview');
+		}
+	}
+
+	$html = ob_get_clean();
+
+	wp_send_json_success(array(
+		'html'     => $html,
+		'paged'    => $next_page,
+		'max_page' => $query->max_num_pages,
+	));
+	wp_die();
+}
+add_action('wp_ajax_fuchs_load_more_reference', 'fuchs_load_more_reference');
+add_action('wp_ajax_nopriv_fuchs_load_more_reference', 'fuchs_load_more_reference');
+
+
+
+
+function fuchs_enqueue_ajax_scripts() {
+    wp_enqueue_script(
+        'fuchs-load-more',
+        get_template_directory_uri() . '/assets/src/js/partials/load-more-projects.js',
+        array('jquery'),
+        null,
+        true
+    );
+
+   wp_localize_script('fuchs-load-more', 'fuchs_ajax_obj', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        // 'nonce' => wp_create_nonce('fuchs_load_more_nonce'), // optional
+    ));
+}
+add_action('wp_enqueue_scripts', 'fuchs_enqueue_ajax_scripts');

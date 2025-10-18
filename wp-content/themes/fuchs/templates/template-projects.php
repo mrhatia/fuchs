@@ -61,35 +61,46 @@ $bst_var_trcho_feature_post = $bst_fields['bst_var_trcho_feature_post'] ?? null;
 
 
 		<div class="gl-s72"></div>
-		<section id="" class="page-section">
-			<section id="page-section" class="page-section">
-				<!-- Content Start -->
-				<div class="wrapper">
-					<div class="post-archive three-columns">
-						<?php
-							// WP_Query.
-							$bst_query = BaseTheme::query(
-								array(
-									'post_type'     => 'project',
-									'template'      => 'archive-project',
-									'template_none' => 'none',
-								)
-							);
+		<section id="page-section" class="page-section">
+			<!-- Content Start -->
+			<?php
+			// WP_Query for initial load (12 posts)
+			$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 
-							?>
-							<?php wp_reset_postdata(); ?>
+			$args = array(
+				'post_type'      => 'project',
+				'posts_per_page' => 9,
+				'paged'          => $paged,
+			);
 
+			$bst_query = new WP_Query($args);
+			?>
 
-
-
-					</div>
+			<div class="wrapper">
+				<div class="post-archive three-columns" id="project-container">
+					<?php
+					if ($bst_query->have_posts()) :
+						while ($bst_query->have_posts()) :
+							$bst_query->the_post();
+							get_template_part('partials/content', 'archive-project');
+						endwhile;
+					else :
+						echo '<p>No projects found.</p>';
+					endif;
+					?>
 				</div>
-			</section>
+			</div>
+
+			<?php wp_reset_postdata(); ?>
+
+			<?php if ($bst_query->found_posts > 9) : ?>
+				<div class="gl-s96"></div>
+				<div class="load-more d-flex justify-content-center">
+					<a href="#" class="button green-button" id="load-more-projects" data-page="1">Mehr</a>
+				</div>
+			<?php endif; ?>
 		</section>
-		<div class="gl-s96"></div>
-		<div class="load-more d-flex justify-content-center">
-			<a href="#" class="button green-button load-more">Mehr</a>
-		</div>
+
 		<div class="gl-s96"></div>
 
 			<section id="page-section" class="page-section">
