@@ -58,6 +58,7 @@ class WP_Theme_Blocks {
 		self::register_acf_block( 'jump-location' );
 		self::register_acf_block( 'theme-blockquote' );
 		self::register_acf_block( 'media-collage' );
+		self::register_acf_block( 'media-with-map' );
 		// Register a block - AcfBlock.
 		self::register_acf_block(
 			'acfblock',

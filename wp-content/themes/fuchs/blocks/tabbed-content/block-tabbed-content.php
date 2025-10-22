@@ -157,7 +157,7 @@ BaseTheme::block(
 															map: map,
 															title: "Client Location", // shows tooltip on hover
 															icon: {
-																url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.svg" // default red marker
+																url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.png" // default red marker
 															}
 															});
 														}
@@ -165,7 +165,7 @@ BaseTheme::block(
 													</script>
 
 													<!-- Load map and call initMap when ready -->
-													<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCSzbkGtpx5S-09kZIWth_6GLlrwllKXM&callback=initMap" async defer></script>
+													<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFMhCgstBslEOAzj77X5dX5aKXkoRBue8&callback=initMap" async defer></script>
 													<div id="map"></div>
 
 												</div>

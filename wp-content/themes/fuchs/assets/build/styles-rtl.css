@@ -4438,7 +4438,7 @@ li.menu-item-has-children.active > .submenu-icon::before {
 .bottom-section {
   margin-top: calc(var(--fc_space_128) - 3px);
   position: absolute;
-  bottom: 50px;
+  bottom: 70px;
   right: 0;
 }
 .bottom-section p {
@@ -5684,6 +5684,10 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 
 .word-wrap {
   word-break: break-all;
+}
+
+.moove_gdpr_icon svg {
+  margin-bottom: 0 !important;
 }
 
 /*-------------------------------------------------
@@ -8138,9 +8142,6 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   .hero-project .banner-content {
     width: 90%;
   }
-  .image-alongside-text.image-at-left .iat-content h2 {
-    word-break: break-all;
-  }
   .media-with-text.variation .media-with-text-content-box {
     right: 0;
     left: 0;
@@ -8344,14 +8345,14 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     font-size: clamp(3.516rem, 5.931vw + 1.981rem, 4.75rem);
   }
   .hero-split-text {
-    margin-top: 40%;
+    margin-top: 35%;
   }
   .slide .heading-2 {
     font-size: 22.5px;
     letter-spacing: -0.1px;
   }
   .slide .home-hero-content {
-    padding-top: 157px;
+    padding-top: 140px;
     width: 92.5%;
   }
   .home-hero-content .kicker {
@@ -8400,6 +8401,9 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   }
   .post-archive-box-title.post-title h4 {
     margin-bottom: 10px;
+  }
+  .size-26-m .heading-2 {
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 500px) {
