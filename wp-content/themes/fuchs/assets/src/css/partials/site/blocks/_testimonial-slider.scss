@@ -211,8 +211,15 @@
 	box-sizing: border-box;
 	cursor: grab;
 
+	.slick-track {
+		display: flex;
+		align-items: stretch;
+	}
+
+
 	.slick-slide {
 		margin: 0 15px;
+		height: auto !important;
 
 		.slick-list {
 			margin: 0 -15px;

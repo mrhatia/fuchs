@@ -38,9 +38,16 @@ $bst_var_sngl_related_projects = $bst_fields['bst_var_sngl_related_projects'] ??
 				<?php } ?>
 				<?php
 				if($bst_var_sngl_variation === "manual"){
+					$bst_var_post_count = is_array( $bst_var_sngl_related_projects ) ? count( $bst_var_sngl_related_projects ) : 0;
+					if($bst_var_post_count === 2) {
+						$bst_var_column_class = "have-two-columns";
+					} elseif($bst_var_post_count === 3) {
+						$bst_var_column_class = "four-columns";
+					}
+
 					?>
 
-					<div class="post-archive three-columns">
+					<div class="post-archive three-columns <?php echo $bst_var_column_class; ?>">
 						<?php
 							if ( $bst_var_sngl_related_projects ) {
 							?>
@@ -48,11 +55,9 @@ $bst_var_sngl_related_projects = $bst_fields['bst_var_sngl_related_projects'] ??
 									foreach( $bst_var_sngl_related_projects as $key =>  $project_id ){
 										list( $bst_var_post_id, $bst_fields, $bst_option_fields ) = BaseTheme::defaults($project_id);
 										$terms = get_the_terms( $bst_var_post_id, 'category' );
-
-
 										?>
 
-										<article id="post-<?php the_ID($bst_var_post_id); ?>" <?php post_class( 'post-archive-box column' ); ?>>
+										<article id="post-<?php the_ID($bst_var_post_id); ?>" <?php post_class( "post-archive-box column" ); ?>>
 											<div class="post-archive-box-img post-image">
 												<a href="<?php the_permalink($bst_var_post_id); ?>">
 													<?php

@@ -89,7 +89,7 @@ BaseTheme::block(
 										map: map,
 										title: "Client Location", // shows tooltip on hover
 										icon: {
-											url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.png" // default red marker
+											url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.svg" // default red marker
 										}
 										});
 									}

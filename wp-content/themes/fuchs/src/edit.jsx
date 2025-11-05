@@ -13,8 +13,6 @@ import { __ } from '@wordpress/i18n';
  */
 import { InspectorControls, InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import { Panel, PanelBody, PanelRow, RadioControl } from '@wordpress/components';
-import Media from './components/Media.jsx';
-import Popup from './components/Popup.jsx';
 import DesignOption from './components/DesignOption.jsx';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -62,9 +60,10 @@ export default function Edit( props ) {
 								selected={ bgWidth }
 								options={ [
 
-									{ label: 'Width 1180px (Default)', value: 'ctn' },
+									{ label: 'Width 1100px (Default)', value: 'ctn' },
 									{ label: 'Width 980px', value: 'ctn-980' },
 									{ label: 'Width 760px', value: 'ctn-760' },
+									{ label: 'Width Full Width', value: 'ctn-full-width' },
 								]
 								}
 								onChange={ ( value ) => setAttributes( {
@@ -84,49 +83,11 @@ export default function Edit( props ) {
 							DesignKey="bgDesignType"
 							help="Click to select value"
 							options={ [
-								{ label: 'Container Red', value: 'ctn-red', display: '#ff0000' },
-								{ label: 'Container Black', value: 'ctn-black', display: 'ctn-black.png' },
-								{ label: 'Container Sea Green', value: 'ctn-sea-green', display: 'ctn-sea-green.png' },
+								{ label: 'Container Green', value: 'ctn-green', display: '#016c50' },
+								{ label: 'Container Orange', value: 'ctn-orange', display: '#fe8400' },
 							] }
 						/>
 					</PanelBody>
-					<PanelBody
-						title={ __( 'Container Overlay' ) }
-						className="dc-media-component"
-						initialOpen={ true }
-					>
-						<PanelRow>
-							<Media
-								props={ props }
-								help="Please upload the overlay image."
-							/>
-
-						</PanelRow>
-					</PanelBody>
-
-					<PanelBody
-						title={ __( 'Popup Options (Test)' ) }
-						className="dc-popup-component"
-						initialOpen={ true }
-					>
-						<PanelRow>
-							<Popup
-								props={ props }
-								PopupKey="ctnShape"
-								PopupValue={ ctnShape }
-								ButtonText="Click for Options"
-								help="Click to change or remove the value."
-								options={ [
-									{ label: 'Container Light Gray', value: 'ctn-lgray', display: 'ctn-lgray.png' },
-									{ label: 'Container White', value: 'ctn-white', display: 'ctn-white.png' },
-									{ label: 'Container Green', value: 'ctn-green', display: '#bfff00' },
-									{ label: 'Container Purple', value: 'ctn-purple', display: 'ctn-purple.png' },
-								] }
-							/>
-
-						</PanelRow>
-					</PanelBody>
-
 				</Panel>
 
 			</InspectorControls>

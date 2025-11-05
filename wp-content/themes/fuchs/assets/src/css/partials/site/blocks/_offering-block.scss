@@ -8,7 +8,7 @@
 }
 
 .offering-block-left {
-	width: 33%;
+	width: 45%;
 
 	.author-tag {
 		margin-top: 30px;
@@ -24,7 +24,8 @@
 }
 
 .offering-block-content {
-	width: 36%;
+	width: 45%;
+
 	a,
 	a:visited {
 
@@ -37,6 +38,7 @@
 		background-size: 20px;
 		border: none;
 	}
+
 	a,
 	a:visited {
 		&.link {

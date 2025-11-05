@@ -4,7 +4,6 @@
  *
 ****/
 
-
 .wrapper {
 	max-width: 1300px;
 	width: 90%;
@@ -37,10 +36,24 @@
 }
 
 
-.ctn-navy {
-	background-color: var(--wp--preset--color--navy);
+.ctn-orange {
+	background-color: var(--fc_orange);
+	padding: var(--fc_space_96) 0;
 }
 
-.ctn-blue {
+.ctn-green {
 	background-color: var(--fc_green_dark);
+	padding: var(--fc_space_96) 0;
+}
+
+.ctn-orange,
+.ctn-green {
+	* {
+		color: var(--fc_white);
+	}
+
+	.stats-variation .stats-column .stats-number::before {
+		// background-color: var(--fc_white);
+		border-color: var(--fc_white);
+	}
 }

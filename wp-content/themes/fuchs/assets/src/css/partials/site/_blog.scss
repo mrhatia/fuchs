@@ -52,6 +52,16 @@
 	}
 }
 
+.have-two-columns {
+
+	.post-box-img,
+	.post-archive-box-img {
+		img {
+			aspect-ratio: 2 / 1.2;
+		}
+	}
+}
+
 .post-box-title {
 
 	h2 a,

@@ -67,3 +67,41 @@ BaseTheme::block(
 	}
 );
 
+?>
+
+
+<style>
+.hero-slide-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-slide-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	object-fit: cover;
+	transform: translateY(0);
+	will-change: transform;
+	transition: transform 0.1s linear;
+}
+</style>
+
+<script>
+document.addEventListener("scroll", function() {
+  const images = document.querySelectorAll(".hero-slide-image img");
+
+  images.forEach(function(img) {
+    const section = img.closest(".hero-slide-item");
+    const rect = section.getBoundingClientRect();
+
+    // Only animate if the section is visible
+    if (rect.top < window.innerHeight) {
+      const progress = rect.top / window.innerHeight;
+      img.style.transform = "translateY(" + progress * 60 + "px)";
+    }
+  });
+});
+</script>

@@ -146,19 +146,19 @@ BaseTheme::block(
 															const clientLocation = { lat: <?php echo ($latitude) ?? ""; ?>, lng: <?php echo ($longitude) ?? ""; ?> };
 
 															const map = new google.maps.Map(document.getElementById("map"), {
-															center: clientLocation,
-															zoom: 12,
-															styles: styledMap
+																center: clientLocation,
+																zoom: 12,
+																styles: styledMap
 															});
 
 															// 🔴 Red default marker
 															new google.maps.Marker({
-															position: clientLocation,
-															map: map,
-															title: "Client Location", // shows tooltip on hover
-															icon: {
-																url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.png" // default red marker
-															}
+																position: clientLocation,
+																map: map,
+																title: "Client Location", // shows tooltip on hover
+																icon: {
+																	url: "<?php echo get_template_directory_uri(); ?>/assets/src/images/map-c-icon.svg" // default red marker
+																}
 															});
 														}
 														window.initMap = initMap;

@@ -16,6 +16,8 @@
 		max-width: 1309px;
 		width: calc(90% - 100px);
 		height: max-content;
+		top: 50%;
+		transform: translateY(-50%);
 
 		h1 {
 
@@ -45,7 +47,7 @@
 
 		p {
 			font-size: var(--fc_font_size_20);
-			max-width: 597px;
+			max-width: 680px;
 			@include font(sour, lig);
 			letter-spacing: 0;
 			margin-bottom: 31px;
@@ -218,10 +220,10 @@
 		height: 550px;
 	}
 
-	.banner-content {
+	// .banner-content {
 
-		margin-top: 217px;
-	}
+	// 	margin-top: 217px;
+	// }
 
 }
 
@@ -337,9 +339,10 @@
 		}
 	}
 }
+
 .single-overview {
-	.banner-content{
-		.heading-2{
+	.banner-content {
+		.heading-2 {
 			font-size: var(--fc_font_size_68);
 		}
 	}

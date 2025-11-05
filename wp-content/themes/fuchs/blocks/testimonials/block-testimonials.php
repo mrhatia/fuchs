@@ -111,7 +111,7 @@ BaseTheme::block(
 						spaceBetween: 0,
 						autoHeight: true,
 					autoplay: {
-							delay: 3000,
+							delay: 10000,
 							disableOnInteraction: false,
 						},
 						pagination: {

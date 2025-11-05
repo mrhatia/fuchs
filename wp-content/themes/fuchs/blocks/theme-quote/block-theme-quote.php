@@ -31,7 +31,7 @@ BaseTheme::block(
 					class="image-alongside-text image-alongside-text-variation <?php echo $bst_var_blk_quote_img_position; ?> d-flex justify-content-between flex-wrap align-items-center">
 					<div class="iat-content column">
 						<?php if ( $bst_var_blk_quote_text ) {  ?>
-							<p><strong><?php echo html_entity_decode( $bst_var_blk_quote_text ); ?></strong></p>
+							<?php echo html_entity_decode( $bst_var_blk_quote_text ); ?>
 						<?php } ?>
 						<?php if ( $bst_var_blk_quote_name || $bst_var_blk_quote_designation ) {  ?>
 							<div class="person-info"><?php echo html_entity_decode( $bst_var_blk_quote_name ); ?><br><?php echo html_entity_decode($bst_var_blk_quote_designation); ?></div>
