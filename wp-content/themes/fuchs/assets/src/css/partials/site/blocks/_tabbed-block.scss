@@ -18,7 +18,7 @@
 			a:visited {
 				font-size: var(--fc_font_size_26);
 				@include font(sour, med);
-				color: var(--fc_gray_3);
+				color: inherit;
 
 				&.active,
 				&:hover {
@@ -33,7 +33,7 @@
 	max-width: 1060px;
 
 	p {
-		color: var(--fc_gray_4);
+		color: inherit;
 		font-size: var(--fc_font_size_20);
 		@include font(sour, regular);
 		font-weight: 600;

@@ -62,15 +62,16 @@ BaseTheme::block(
 													<?php echo html_entity_decode( $slide_text ); ?>
 												</div>
 											<?php } ?>
-
-											<div class="hero-buttons button-reveal">
-												<?php if ( $slide_button_one ) { ?>
-													<?php echo BaseTheme::button( $slide_button_one, 'button orange-button' ); ?>
-												<?php } ?>
-												<?php if ( $slide_button_two ) { ?>
-													<?php echo BaseTheme::button( $slide_button_two, 'button green-button' ); ?>
-												<?php } ?>
-											</div>
+											<?php if($slide_button_one || $slide_button_two){ ?>
+												<div class="hero-buttons button-reveal">
+													<?php if ( $slide_button_one ) { ?>
+														<?php echo BaseTheme::button( $slide_button_one, 'button orange-button' ); ?>
+													<?php } ?>
+													<?php if ( $slide_button_two ) { ?>
+														<?php echo BaseTheme::button( $slide_button_two, 'button green-button' ); ?>
+													<?php } ?>
+												</div>
+											<?php } ?>
 										</div>
 									</div>
 							<?php } ?>

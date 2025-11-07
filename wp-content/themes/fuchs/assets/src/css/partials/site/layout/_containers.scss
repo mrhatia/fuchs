@@ -56,4 +56,11 @@
 		// background-color: var(--fc_white);
 		border-color: var(--fc_white);
 	}
+
+	.tabbed-map-nav ul li a.active,
+	.tabbed-map-nav ul li a:hover,
+	.tabbed-map-nav ul li a:visited.active,
+	.tabbed-map-nav ul li a:visited:hover {
+		color: var(--fc_orange);
+	}
 }

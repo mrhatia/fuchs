@@ -51,7 +51,7 @@ $bst_var_social_profiles = $bst_option_fields['bst_var_social_profiles'] ?? null
 				<div class="single-widget">
 					<div class="footer-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo.svg"
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/site-logo-footer.svg"
 								alt="Logo" />
 						</a>
 					</div>

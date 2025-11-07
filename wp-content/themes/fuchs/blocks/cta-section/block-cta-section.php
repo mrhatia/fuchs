@@ -78,7 +78,7 @@ BaseTheme::block(
 
 .hero-slide-image img {
 	position: absolute;
-	top: 0;
+	top: -50px;
 	left: 0;
 	width: 100%;
 	height: 120%;

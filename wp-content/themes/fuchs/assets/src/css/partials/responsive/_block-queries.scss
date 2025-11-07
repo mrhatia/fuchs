@@ -375,7 +375,7 @@
 		width: 100%;
 		margin: 30px auto 0;
 		float: initial;
-		padding: 40px 6%;
+		padding: 40px 4%;
 
 	}
 
@@ -474,7 +474,7 @@
 
 	.counter-background {
 		left: calc(50% - 150px);
-		font-size: 150px;
+		font-size: 110px;
 	}
 
 	.stats-column {
@@ -744,6 +744,7 @@
 
 	.faq-content p {
 		font-size: 18px;
+		text-align: justify;
 	}
 
 	.testimonial-single-content p {
@@ -803,12 +804,13 @@
 
 	.tabbed-map-nav ul {
 		gap: 20px;
+		display: block;
 
 		li {
 
 			a,
 			a:visited {
-				font-size: 22px;
+				font-size: 24px;
 			}
 		}
 	}
@@ -816,6 +818,11 @@
 
 
 	.tabbed-content-single {
+
+		#map {
+			height: 300px;
+		}
+
 		.two-columns {
 			row-gap: 50px;
 		}

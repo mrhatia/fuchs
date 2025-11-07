@@ -3844,7 +3844,7 @@ Mixin for transition
   font-family: "Source Sans 3", arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: var(--fc_gray_3);
+  color: inherit;
 }
 .acf-block-preview .tabbed-map-nav ul li a.active, .acf-block-preview .tabbed-map-nav ul li a:hover,
 .acf-block-preview .tabbed-map-nav ul li a:visited.active,
@@ -3855,7 +3855,7 @@ Mixin for transition
   max-width: 1060px;
 }
 .acf-block-preview .tabbed-content-single p {
-  color: var(--fc_gray_4);
+  color: inherit;
   font-size: var(--fc_font_size_20);
   font-weight: 600;
   line-height: 1.3;
@@ -4061,6 +4061,9 @@ Mixin for transition
 }
 .acf-block-preview .section-head-simple h2 {
   text-transform: uppercase;
+}
+.acf-block-preview .section-head-simple .shd-text {
+  word-break: break-all;
 }
 .acf-block-preview .highlight-quote .highlight-blockquote {
   position: relative;
@@ -4453,6 +4456,7 @@ Mixin for transition
 .acf-block-preview .contact-block-content p a:visited.link.email {
   position: relative;
   padding-right: 28px;
+  letter-spacing: -0.5px;
 }
 .acf-block-preview .contact-block-content p a.link.email::before,
 .acf-block-preview .contact-block-content p a:visited.link.email::before {
@@ -5578,7 +5582,7 @@ Mixin for transition
     width: 100%;
     margin: 30px auto 0;
     float: initial;
-    padding: 40px 6%;
+    padding: 40px 4%;
   }
   .acf-block-preview .blog-teaser-slider::before {
     display: none;
@@ -5651,7 +5655,7 @@ Mixin for transition
   }
   .acf-block-preview .counter-background {
     right: calc(50% - 150px);
-    font-size: 150px;
+    font-size: 110px;
   }
   .acf-block-preview .stats-column {
     width: 100%;
@@ -5840,6 +5844,7 @@ Mixin for transition
   }
   .acf-block-preview .faq-content p {
     font-size: 18px;
+    text-align: justify;
   }
   .acf-block-preview .testimonial-single-content p {
     font-size: 20px;
@@ -5882,10 +5887,14 @@ Mixin for transition
   }
   .acf-block-preview .tabbed-map-nav ul {
     gap: 20px;
+    display: block;
   }
   .acf-block-preview .tabbed-map-nav ul li a,
   .acf-block-preview .tabbed-map-nav ul li a:visited {
-    font-size: 22px;
+    font-size: 24px;
+  }
+  .acf-block-preview .tabbed-content-single #map {
+    height: 300px;
   }
   .acf-block-preview .tabbed-content-single .two-columns {
     row-gap: 50px;
