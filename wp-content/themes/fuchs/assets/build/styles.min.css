@@ -1099,7 +1099,7 @@ body {
   font-weight: 400;
   transition: all 0.3s ease-in-out;
   position: relative;
-  font-size: var(--fc_font_size_16);
+  font-size: var(--fc_font_size_18);
   color: var(--fc_body_color);
   background-color: var(--fc_body_bg);
   line-height: 1.5;
@@ -4829,6 +4829,14 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
   padding: var(--fc_space_96) 0;
 }
 
+.ctn-orange .stats-column .small-text,
+.ctn-green .stats-column .small-text {
+  color: var(--fc_white);
+}
+.ctn-orange .stats-column span,
+.ctn-green .stats-column span {
+  color: var(--fc_white);
+}
 .ctn-orange *,
 .ctn-green * {
   color: var(--fc_white);
