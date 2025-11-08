@@ -177,10 +177,9 @@ jQuery( function() {
 		let current = 0;
 		let animating = false;
 		let touchStartX = 0;
-		let touchEndX = 0;
 		let touchStartY = 0;
-		let touchEndY = 0;
 
+		// Setup slides
 		slides.css( {
 			position: 'absolute',
 			top: 0,
@@ -197,6 +196,7 @@ jQuery( function() {
 				return;
 			}
 			animating = true;
+
 			const prev = current;
 			if ( index >= slides.length ) {
 				index = 0;
@@ -209,9 +209,10 @@ jQuery( function() {
 			gsap.set( slides.eq( current ), { x: '0%', zIndex: 1 } );
 			gsap.set( slides.eq( prev ), { zIndex: 2 } );
 
+			// Smooth, elegant transition
 			gsap.to( slides.eq( prev ), {
 				x: '100%',
-				duration: 0.7,
+				duration: 1.1, // slowed for smoothness
 				ease: 'power2.inOut',
 				onComplete: () => {
 					animating = false;
@@ -221,7 +222,6 @@ jQuery( function() {
 			slides.removeClass( 'active remove-active' );
 			slides.eq( prev ).addClass( 'remove-active' );
 			slides.eq( current ).addClass( 'active' );
-
 			dots.removeClass( 'active' );
 			dots.eq( current ).addClass( 'active' );
 		}
@@ -229,21 +229,23 @@ jQuery( function() {
 		slides.eq( current ).addClass( 'active' );
 		dots.eq( current ).addClass( 'active' );
 
-		let scrollTimeout;
+		// 🖱️ Desktop scroll — perfectly balanced speed & feel
+		let lastScrollTime = 0;
 		jQuery( window ).on( 'wheel', function( e ) {
-			if ( animating ) {
+			const now = Date.now();
+			if ( animating || now - lastScrollTime < 900 ) {
 				return;
+			} // debounce for balance
+			lastScrollTime = now;
+
+			if ( e.originalEvent.deltaY > 0 ) {
+				showSlide( current + 1 );
+			} else if ( e.originalEvent.deltaY < 0 ) {
+				showSlide( current - 1 );
 			}
-			clearTimeout( scrollTimeout );
-			scrollTimeout = setTimeout( () => {
-				if ( e.originalEvent.deltaY > 0 ) {
-					showSlide( current + 1 );
-				} else if ( e.originalEvent.deltaY < 0 ) {
-					showSlide( current - 1 );
-				}
-			}, 50 );
 		} );
 
+		// ⌨️ Keyboard navigation
 		jQuery( window ).on( 'keydown', function( e ) {
 			if ( animating ) {
 				return;
@@ -255,19 +257,21 @@ jQuery( function() {
 			}
 		} );
 
+		// 🔘 Dot navigation
 		dots.on( 'click', function() {
 			const target = parseInt( jQuery( this ).data( 'slide' ) );
 			showSlide( target );
 		} );
 
+		// 📱 Mobile swipe (unchanged)
 		jQuery( window ).on( 'touchstart', function( e ) {
 			touchStartX = e.originalEvent.touches[ 0 ].clientX;
 			touchStartY = e.originalEvent.touches[ 0 ].clientY;
 		} );
 
 		jQuery( window ).on( 'touchend', function( e ) {
-			touchEndX = e.originalEvent.changedTouches[ 0 ].clientX;
-			touchEndY = e.originalEvent.changedTouches[ 0 ].clientY;
+			const touchEndX = e.originalEvent.changedTouches[ 0 ].clientX;
+			const touchEndY = e.originalEvent.changedTouches[ 0 ].clientY;
 			if ( animating ) {
 				return;
 			}
@@ -277,18 +281,16 @@ jQuery( function() {
 
 			// Detect swipe direction
 			if ( Math.abs( diffX ) > Math.abs( diffY ) && Math.abs( diffX ) > 50 ) {
-				// Horizontal swipe
 				if ( diffX > 0 ) {
-					showSlide( current + 1 ); // swipe left → next slide
+					showSlide( current + 1 );
 				} else {
-					showSlide( current - 1 ); // swipe right → previous slide
+					showSlide( current - 1 );
 				}
 			} else if ( Math.abs( diffY ) > 50 ) {
-				// Vertical swipe
 				if ( diffY > 0 ) {
-					showSlide( current + 1 ); // swipe up → next slide
+					showSlide( current + 1 );
 				} else {
-					showSlide( current - 1 ); // swipe down → previous slide
+					showSlide( current - 1 );
 				}
 			}
 		} );
