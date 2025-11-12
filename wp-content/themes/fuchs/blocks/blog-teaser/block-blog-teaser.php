@@ -20,7 +20,7 @@ BaseTheme::block(
 		?>
 
 		<?php if($bst_var_blk_bltsr_variation === "manual" && $bst_var_blk_bltsr_blog_posts){ ?>
-			<section class="ctn-blue">
+			<section class="ctn-green">
 				<div class="wrapper">
 					<div class="blog-teaser-slider">
 
@@ -58,7 +58,7 @@ BaseTheme::block(
 				</div>
 			</section>
 		<?php } else { ?>
-				<section class="ctn-blue">
+				<section class="ctn-green">
 				<div class="wrapper">
 					<div class="blog-teaser-slider">
 

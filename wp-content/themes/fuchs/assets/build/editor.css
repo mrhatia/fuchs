@@ -4456,7 +4456,6 @@ Mixin for transition
 .acf-block-preview .contact-block-content p a:visited.link.email {
   position: relative;
   padding-left: 28px;
-  letter-spacing: -0.5px;
 }
 .acf-block-preview .contact-block-content p a.link.email::before,
 .acf-block-preview .contact-block-content p a:visited.link.email::before {
@@ -5774,6 +5773,17 @@ Mixin for transition
   }
 }
 @media only screen and (max-width: 747px) {
+  .acf-block-preview .map-alongside-media.wp-block-media-text .wp-block-media-text__content {
+    padding: 0;
+  }
+  .acf-block-preview .map-alongside-media.wp-block-media-text .wp-block-media-text__content,
+  .acf-block-preview .map-alongside-media.wp-block-media-text .wp-block-media-text__media {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  .acf-block-preview .map-alongside-media.wp-block-media-text .wp-block-media-text__media #map {
+    height: 300px;
+  }
   .acf-block-preview .highlight-quote .highlight-blockquote {
     font-size: 20px;
     padding: 50px 15px;
@@ -5844,7 +5854,6 @@ Mixin for transition
   }
   .acf-block-preview .faq-content p {
     font-size: 18px;
-    text-align: justify;
   }
   .acf-block-preview .testimonial-single-content p {
     font-size: 20px;

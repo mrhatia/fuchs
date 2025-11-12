@@ -29,7 +29,7 @@ BaseTheme::block(
 
 		<section class=" ctn ">
 			<div class="wrapper">
-				<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile">
+				<div class="map-alongside-media wp-block-media-text has-media-on-the-right is-stacked-on-mobile">
 					<div class="wp-block-media-text__content">
 
 						<?php if ( $bst_var_blk_map_title ) {  ?>

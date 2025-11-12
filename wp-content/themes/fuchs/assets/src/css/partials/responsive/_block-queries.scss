@@ -645,6 +645,25 @@
 
 @media only screen and (max-width: 747px) {
 
+	.map-alongside-media.wp-block-media-text {
+
+		.wp-block-media-text__content {
+			padding: 0;
+		}
+
+		.wp-block-media-text__content,
+		.wp-block-media-text__media {
+			grid-column: unset !important;
+			grid-row: unset !important;
+		}
+
+		.wp-block-media-text__media {
+			#map {
+				height: 300px;
+			}
+		}
+	}
+
 	.highlight-quote .highlight-blockquote {
 		font-size: 20px;
 		padding: 50px 15px;
@@ -744,7 +763,6 @@
 
 	.faq-content p {
 		font-size: 18px;
-		text-align: justify;
 	}
 
 	.testimonial-single-content p {

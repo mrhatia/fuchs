@@ -418,6 +418,7 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
 	width: 0;
 	background-color: var(--fc_white);
 	z-index: 1;
+	transform: translate(0) !important;
 }
 
 .slide {
@@ -436,13 +437,13 @@ section:has(.slide.has-green-bg.active):not(:has(section .slide.has-green-bg.act
 }
 
 @keyframes overlayEnter {
-	0% {
-		width: 0;
-	}
+	// 0% {
+	// 	width: 0;
+	// }
 
-	100% {
-		width: 50%;
-	}
+	// 100% {
+	// 	width: 50%;
+	// }
 }
 
 @keyframes overlayExit {
