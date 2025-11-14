@@ -4063,7 +4063,7 @@ Mixin for transition
   text-transform: uppercase;
 }
 .acf-block-preview .section-head-simple .shd-text {
-  word-break: break-all;
+  word-break: break-word;
 }
 .acf-block-preview .highlight-quote .highlight-blockquote {
   position: relative;
@@ -4247,6 +4247,7 @@ Mixin for transition
   align-items: center;
   width: 15.8%;
   position: relative;
+  color: var(--fc_color_primary);
 }
 .acf-block-preview .stats-column .stats-number {
   font-size: var(--fc_font_size_60);
@@ -4259,7 +4260,7 @@ Mixin for transition
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
-  color: var(--fc_gray_4);
+  color: inherit;
 }
 .acf-block-preview .stats-column span {
   display: block;
@@ -4267,7 +4268,7 @@ Mixin for transition
   line-height: 0.75em;
   letter-spacing: 0;
   font-weight: 700;
-  color: var(--fc_color_primary);
+  color: inherit;
   margin-top: 10px;
 }
 .acf-block-preview .stats-column p {
@@ -5553,9 +5554,6 @@ Mixin for transition
   }
 }
 @media only screen and (min-width: 1004px) {
-  .acf-block-preview .offering-block-image img {
-    aspect-ratio: 1/1.3;
-  }
   .acf-block-preview .testimonial-item-content {
     width: 100%;
   }
@@ -5773,6 +5771,10 @@ Mixin for transition
   }
 }
 @media only screen and (max-width: 747px) {
+  .acf-block-preview .icons-grid-variation .column {
+    text-align: center;
+    padding-right: 0;
+  }
   .acf-block-preview .map-alongside-media.wp-block-media-text .wp-block-media-text__content {
     padding: 0;
   }
@@ -5797,6 +5799,18 @@ Mixin for transition
   .acf-block-preview .hero-inner-slider .banner-content,
   .acf-block-preview .hero-project .banner-content {
     width: 90%;
+  }
+  .acf-block-preview .contact-block-content p {
+    font-size: 14px;
+  }
+  .acf-block-preview .contact-block-content p a.link.email::before {
+    width: 18px;
+    height: 18px;
+    top: 0px;
+  }
+  .acf-block-preview .contact-block-content p a.link.email,
+  .acf-block-preview .contact-block-content p a.link.phone {
+    font-size: 14px;
   }
   .acf-block-preview .media-with-text.variation .media-with-text-content-box {
     left: 0;

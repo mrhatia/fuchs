@@ -7012,7 +7012,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   text-transform: uppercase;
 }
 .section-head-simple .shd-text {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 /*-------------------------------------------------
@@ -7218,6 +7218,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   align-items: center;
   width: 15.8%;
   position: relative;
+  color: var(--fc_color_primary);
 }
 .stats-column .stats-number {
   font-size: var(--fc_font_size_60);
@@ -7230,7 +7231,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
-  color: var(--fc_gray_4);
+  color: inherit;
 }
 .stats-column span {
   display: block;
@@ -7238,7 +7239,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   line-height: 0.75em;
   letter-spacing: 0;
   font-weight: 700;
-  color: var(--fc_color_primary);
+  color: inherit;
   margin-top: 10px;
 }
 .stats-column p {
@@ -7667,6 +7668,7 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
     opacity: 0.4;
     width: 100%;
     line-height: 1;
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -7936,9 +7938,6 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   }
 }
 @media only screen and (min-width: 1004px) {
-  .offering-block-image img {
-    aspect-ratio: 1/1.3;
-  }
   .testimonial-item-content {
     width: 100%;
   }
@@ -8156,6 +8155,10 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   }
 }
 @media only screen and (max-width: 747px) {
+  .icons-grid-variation .column {
+    text-align: center;
+    padding-left: 0;
+  }
   .map-alongside-media.wp-block-media-text .wp-block-media-text__content {
     padding: 0;
   }
@@ -8180,6 +8183,18 @@ section:has(.blog-teaser-slider):not(:has(section .blog-teaser-slider)) {
   .hero-inner-slider .banner-content,
   .hero-project .banner-content {
     width: 90%;
+  }
+  .contact-block-content p {
+    font-size: 14px;
+  }
+  .contact-block-content p a.link.email::before {
+    width: 18px;
+    height: 18px;
+    top: 0px;
+  }
+  .contact-block-content p a.link.email,
+  .contact-block-content p a.link.phone {
+    font-size: 14px;
   }
   .media-with-text.variation .media-with-text-content-box {
     right: 0;
