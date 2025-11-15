@@ -501,7 +501,7 @@ Mixin for transition
   --fc_font_size_48: clamp(30 * 1px, 18 / 806 * (100vw - 474 * 1px) + 30 * 1px, 48 * 1px);
   --fc_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
   --fc_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
-  --fc_font_size_80: clamp(52 * 1px, 28 / 806 * (100vw - 474 * 1px) + 52 * 1px, 80 * 1px);
+  --fc_font_size_80: clamp(48 * 1px, 32 / 806 * (100vw - 474 * 1px) + 48 * 1px, 80 * 1px);
   --fc_font_size_82: clamp(55 * 1px, 27 / 806 * (100vw - 474 * 1px) + 55 * 1px, 82 * 1px);
   --fc_font_size_120: clamp(40 * 1px, 80 / 806 * (100vw - 474 * 1px) + 40 * 1px, 120 * 1px);
   --fc_font_size_160: clamp(65 * 1px, 95 / 806 * (100vw - 474 * 1px) + 65 * 1px, 160 * 1px);
