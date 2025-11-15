@@ -349,6 +349,8 @@
 @media only screen and (max-width: 1003px) {
 	.contact-block-content p {
 		display: block;
+		letter-spacing: 1px;
+		font-size: 16PX;
 	}
 
 	.contact-block-form form {
@@ -669,6 +671,15 @@
 		}
 	}
 
+	.icons-three-columns {
+		justify-content: center;
+		text-align: center;
+
+		.column {
+			padding: 0;
+		}
+	}
+
 	.highlight-quote .highlight-blockquote {
 		font-size: 20px;
 		padding: 50px 15px;
@@ -912,7 +923,13 @@
 	.single-overview {
 		.banner-content {
 			.heading-2 {
-				font-size: 36px;
+				font-size: 30px;
+
+				text-wrap: balance;
+
+				br {
+					display: none;
+				}
 			}
 		}
 	}
@@ -967,7 +984,7 @@
 	}
 
 	.has-image .hero-split-text {
-		padding: 15px 45px;
+		padding: 15px 0px;
 	}
 
 	.top-section {
@@ -1000,7 +1017,7 @@
 	}
 
 	.hero-split-text {
-		margin-top: 35%;
+		margin-top: 40%;
 	}
 
 	.slide .heading-2 {
@@ -1127,6 +1144,15 @@
 
 }
 
+@media only screen and (max-width: 440px) {
+	.hero-split-text {
+		h2 {
+			font-size: 60px;
+		}
+	}
+
+}
+
 @media only screen and (max-width: 359px) {
 	.single-logo {
 		width: 100%;
@@ -1178,12 +1204,48 @@
 }
 
 @media (max-width: 747px) {
+	.faq-head.active {
+		padding: 30px 70px 25px 0;
+	}
+
+	.section-head-simple {
+		.shd-text {
+			h2 {
+				font-size: 42px;
+			}
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.faq-with-image::after {
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+
 	.bottom-section {
 		bottom: 100px;
 	}
 
 	.style-for-mac .bottom-section {
 		bottom: 120px;
+	}
+
+	.full-width-image {
+		&.hero-inner-slider {
+			.hero-slide-image {
+				min-height: max-content;
+			}
+
+			.banner-content {
+				inset: 0;
+				transform: initial;
+
+			}
+		}
 	}
 }
 

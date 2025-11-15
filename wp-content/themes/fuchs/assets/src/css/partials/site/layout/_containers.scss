@@ -39,6 +39,7 @@
 .ctn-orange {
 	background-color: var(--fc_orange);
 	padding: var(--fc_space_96) 0;
+
 }
 
 .ctn-green {
@@ -48,6 +49,13 @@
 
 .ctn-orange,
 .ctn-green {
+	.stats-column .small-text{
+		color: var(--fc_white);
+
+	}
+	.stats-column span{
+		color: var(--fc_white);
+	}
 	* {
 		color: var(--fc_white);
 	}
