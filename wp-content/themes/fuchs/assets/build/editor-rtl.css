@@ -3545,6 +3545,9 @@ Mixin for transition
 .acf-block-preview .image-alongside-text-variation .person-info {
   color: var(--fc_orange);
 }
+.acf-block-preview .iat-single-image video {
+  margin-bottom: 0;
+}
 .acf-block-preview .iat-two-image .iat-image {
   display: flex;
   flex-wrap: wrap;

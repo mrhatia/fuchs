@@ -16,11 +16,13 @@ BaseTheme::block(
 
 		// Block variables.
 		$bst_var_blk_mat_design_variation        = $bst_block_fields['bst_var_blk_mat_design_variation'] ?? null;
+		$bst_var_blk_mat_type        = $bst_block_fields['bst_var_blk_mat_type'] ?? null;
 		$bst_var_blk_mat_kicker        = $bst_block_fields['bst_var_blk_mat_kicker'] ?? null;
 		$bst_var_blk_mat_title        = $bst_block_fields['bst_var_blk_mat_title'] ?? null;
 		$bst_var_blk_mat_text        = $bst_block_fields['bst_var_blk_mat_text'] ?? null;
 		$bst_var_blk_mat_button        = $bst_block_fields['bst_var_blk_mat_button'] ?? null;
 		$bst_var_blk_mat_image        = $bst_block_fields['bst_var_blk_mat_image'] ?? null;
+		$bst_var_blk_mat_video        = $bst_block_fields['bst_var_blk_mat_video'] ?? null;
 		$bst_var_blk_mat_image_two        = $bst_block_fields['bst_var_blk_mat_image_two'] ?? null;
 		$bst_var_blk_mat_img_location = $bst_block_fields['bst_var_blk_mat_img_position'] ?? null;
 
@@ -49,18 +51,52 @@ BaseTheme::block(
 								<?php echo BaseTheme::button( $bst_var_blk_mat_button, 'button' ); ?>
 							<?php } ?>
 						</div>
-						<div class="iat-image column">
-							<?php if ( $bst_var_blk_mat_image ) { ?>
-								<div class="iat-single-image image-cover">
-									<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
-								</div>
-							<?php } ?>
-							<?php if ( $bst_var_blk_mat_image_two ) { ?>
-								<div class="iat-single-image image-cover">
-									<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image_two, 1000 ); ?>
-								</div>
-							<?php } ?>
-						</div>
+						<?php if ( $bst_var_blk_mat_type === 'video' ) { ?>
+							<div class="iat-image column">
+								<?php if ( $bst_var_blk_mat_video ) { ?>
+									<div class="iat-single-image image-cover">
+
+										<?php
+										$video_url = $bst_var_blk_mat_video;
+
+										// Check if it's a URL (not attachment ID)
+										if ( filter_var( $video_url, FILTER_VALIDATE_URL ) ) :
+										?>
+											<video
+												src="<?php echo esc_url( $video_url ); ?>"
+												autoplay
+												muted
+												loop
+												playsinline
+												preload="metadata"
+											></video>
+
+										<?php else : ?>
+											<?php
+											// fallback if it's still an attachment ID
+											echo wp_get_attachment_url( $video_url ) ?
+												'<video src="'. esc_url( wp_get_attachment_url( $video_url ) ) .'" autoplay muted loop playsinline preload="metadata"></video>'
+												: '';
+											?>
+										<?php endif; ?>
+
+									</div>
+								<?php } ?>
+							</div>
+						<?php } else { ?>
+							<div class="iat-image column">
+								<?php if ( $bst_var_blk_mat_image ) { ?>
+									<div class="iat-single-image image-cover">
+										<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
+									</div>
+								<?php } ?>
+								<?php if ( $bst_var_blk_mat_image_two ) { ?>
+									<div class="iat-single-image image-cover">
+										<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image_two, 1000 ); ?>
+									</div>
+								<?php } ?>
+							</div>
+						<?php }  ?>
 					</div>
 				</div>
 			</section>
@@ -71,11 +107,44 @@ BaseTheme::block(
 				<div class="wrapper">
 					<div class="media-with-text <?php echo $bst_var_blk_mat_img_location; ?>">
 
-						<?php if ( $bst_var_blk_mat_image ) { ?>
-							<div class="media-with-text-image image-cover">
-								<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
-							</div>
-						<?php } ?>
+
+						<?php if ( $bst_var_blk_mat_type === 'video' ) { ?>
+							<?php if ( $bst_var_blk_mat_video ) { ?>
+								<div class="media-with-text-image image-cover">
+
+									<?php
+									$video_url = $bst_var_blk_mat_video;
+
+									// Check if it's a URL (not attachment ID)
+									if ( filter_var( $video_url, FILTER_VALIDATE_URL ) ) :
+									?>
+										<video
+											src="<?php echo esc_url( $video_url ); ?>"
+											autoplay
+											muted
+											loop
+											playsinline
+											preload="metadata"
+										></video>
+
+									<?php else : ?>
+										<?php
+										// fallback if it's still an attachment ID
+										echo wp_get_attachment_url( $video_url ) ?
+											'<video src="'. esc_url( wp_get_attachment_url( $video_url ) ) .'" autoplay muted loop playsinline preload="metadata"></video>'
+											: '';
+										?>
+									<?php endif; ?>
+
+								</div>
+							<?php } ?>
+						<?php } else { ?>
+							<?php if ( $bst_var_blk_mat_image ) { ?>
+								<div class="media-with-text-image image-cover">
+									<?php BaseTheme::the_attachment_image( $bst_var_blk_mat_image, 1000 ); ?>
+								</div>
+							<?php } ?>
+						<?php }  ?>
 						<div class="media-with-text-content-box iat-image-appear">
 							<?php if ( $bst_var_blk_mat_kicker ) {  ?>
 								<div class="kicker"><?php echo html_entity_decode( $bst_var_blk_mat_kicker ); ?></div>

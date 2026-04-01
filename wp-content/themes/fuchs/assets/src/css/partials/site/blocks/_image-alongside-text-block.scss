@@ -50,6 +50,11 @@
 	}
 }
 
+.iat-single-image video {
+	margin-bottom: 0;
+}
+
+
 .iat-two-image {
 	.iat-image {
 		display: flex;
@@ -69,6 +74,8 @@
 			aspect-ratio: 302/444;
 
 		}
+
+
 	}
 }
 
